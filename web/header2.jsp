@@ -19,7 +19,7 @@
 							<ul class="list-main">
 								<li><i class="ti-location-pin"></i> No 45 , Pitipana Road , Homagama</li>
 							    <li><i class="ti-user"></i> <a href="#">My account</a></li>
-								<li><i class="ti-power-off"></i><a href="login.html">Login</a></li>
+								<li><i class="ti-power-off"></i><a href="login.jsp">Login</a></li>
 							</ul>
 						</div>
 						<!-- End Top Right -->
@@ -34,7 +34,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.html"><h2>Fashion Fusion</h2></a>
+							<a href="index.jsp"><h2>Fashion Fusion</h2></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
@@ -100,7 +100,7 @@
 											<span>Total</span>
 											<span class="total-amount">$134.00</span>
 										</div>
-										<a href="checkout.html" class="btn animate">Checkout</a>
+										<a href="checkout.jsp" class="btn animate">Checkout</a>
 									</div>
 								</div>
 								<!--/ End Shopping Item -->
@@ -128,8 +128,8 @@
 													<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 														<ul class="dropdown">
 															
-															<li><a href="cart.html">Cart</a></li>
-															<li><a href="checkout.html">Checkout</a></li>
+															<li><a href="cart.jsp">Cart</a></li>
+															<li><a href="checkout.jsp">Checkout</a></li>
 														</ul>
 													</li>
 													<!--<li><a href="#">Pages</a></li>-->								
@@ -138,8 +138,8 @@
 															<li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
 														</ul>
 													</li>-->
-													<li><a href="about.html">About Us</a></li>
-													<li><a href="contact.html">Contact Us</a></li>
+													<li><a href="about.jsp">About Us</a></li>
+													<li><a href="contact.jsp">Contact Us</a></li>
 												</ul>
 											</div>
 										</div>
