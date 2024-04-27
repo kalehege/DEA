@@ -29,3 +29,4 @@
 	<script src="js/easing.js"></script>
 	<!-- Active JS -->
 	<script src="js/active.js"></script>
+        <script src="js/signup2.js"></script>
