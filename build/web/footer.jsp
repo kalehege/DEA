@@ -21,9 +21,9 @@
 							<ul>
 								<li><a href="#">About Us</a></li>
 								
-								<li><a href="#">Terms & Conditions</a></li>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">Help</a></li>
+								<li><a href="terms.jsp">Terms & Conditions</a></li>
+								<li><a href="contact.jsp">Contact Us</a></li>
+								
 							</ul>
 						</div>
 						<!-- End Single Widget -->
