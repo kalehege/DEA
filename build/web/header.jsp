@@ -57,7 +57,7 @@
 							<div class="search-bar">
 								<select>
 									<option selected="selected">All Category</option>
-									<option >Mens wear</option>
+                                                                        <option >Mens wear</option>
 									<option >Ladies wear</option>
 									
 								</select>
@@ -124,7 +124,7 @@
 									<li>
 									
 											<li class="single-menu">
-												<a href="men.html" class="title-link"><B>Shop Men's</B></a>
+												<a href="mens.jsp" class="title-link"><B>Shop Men's</B></a>
 											</li>
 											<li class="single-menu">
 												<a href="women.html" class="title-link"><b>Shop Women's</b></a>
