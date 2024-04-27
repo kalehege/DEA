@@ -47,47 +47,47 @@
 		</div>
 	</div>
 	<!-- End Breadcrumbs -->
-	
+        <h1 class='mh1'>Women's Wear</h1>
     <table align="center">
         <tr>
-            <td><div class="card">
+            <td><div class="mcard">
                 <img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%">
                 <h3>Button Frok</h3>
                 <p>Floral Print Maxi Dress</p>
                 <p>Available Sizes: S, M, L, XL</p>
                 <p class="price">LKR 2999</p>
                 <center>
-                    <input type="button" a href="#" class="add-to-cart" value="Add-to-cart">
+                    <input type="button" a href="#" class="madd-to-cart" value="Add-to-cart">
 
                 </center>
                 
               </div></td>
 
-              <td><div class="card">
+              <td><div class="mcard">
                 <img src="images/women/frok2.jpg" alt="Example Image" style="width:100%">
                 <h3>Short Frok</h3>
                 <p>Ruffle Sleeve A-Line Dress</p>
                 <p>Available Sizes: XS, S, M, L</p>
                 <p class="price">LKR 2999</p>
                 <center>
-                    <input type="button" a href="#" class="add-to-cart" value="Add-to-cart">
+                    <input type="button" a href="#" class="madd-to-cart" value="Add-to-cart">
                 </center>
               </div></td>
 
-              <td><div class="card">
+              <td><div class="mcard">
                 <img src="images/women/frok3.jpg" alt="Example Image" style="width:100%">
                 <h3>Midlong Frok</h3>
                 <p>Lace Fit and Flare Dress</p>
                 <p>Available Sizes: S, M, L</p>
                 <p class="price">LKR 2999</p>
                 <center>
-                    <input type="button" a href="#" class="add-to-cart" value="Add-to-cart">
+                    <input type="button" a href="#" class="madd-to-cart" value="Add-to-cart">
                 </center>
                   </div></td>
         </tr>
         
         <tr>
-            <td><div class="card">
+            <td><div class="mcard">
                 <img src="images/women/skirt1.jpg" alt="Example Image" style="width:auto">
                 <h3>Pink skirt</h3>
                 <p>Denim Mini Skirt</p>
@@ -95,11 +95,11 @@
                 <p class="price">LKR 3999</p>
                 
                 <center>
-                    <input type="button" a href="#" class="add-to-cart" value="Add-to-cart">
+                    <input type="button" a href="#" class="madd-to-cart" value="Add-to-cart">
                 </center>
               </div></td>
 
-              <td><div class="card">
+              <td><div class="mcard">
                 <img src="images/women/skirt2.jpg" alt="Example Image" style="width:auto">
                 <h3>Brown skirt</h3>
                 <p>Pleated Maxi Skirt</p>
@@ -107,11 +107,11 @@
                 <p class="price">LKR 3999</p>
                 
                 <center>
-                    <input type="button" a href="#" class="add-to-cart" value="Add-to-cart">
+                    <input type="button" a href="#" class="madd-to-cart" value="Add-to-cart">
                 </center>
               </div></td>
 
-              <td><div class="card">
+              <td><div class="mcard">
                 <img src="images/women/skirt3.jpg" alt="Example Image" style="width:auto">
                 <h3>Red skirt</h3>
                 <p>Floral Print Midi Skirt</p>
@@ -119,7 +119,7 @@
                 <p class="price">LKR 3999</p>
                 
                 <center>
-                    <input type="button" a href="#" class="add-to-cart" value="Add-to-cart">
+                    <input type="button" a href="#" class="madd-to-cart" value="Add-to-cart">
                 </center>
                   </div></td>
         </tr>

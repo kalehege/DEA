@@ -1,4 +1,4 @@
-.card {
+.ccard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 200px;
@@ -8,19 +8,19 @@
     margin: 20px;
   }
   
-  .card:hover {
+  .ccard:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
   
-  .card img {
+  .ccard img {
     border-radius: 5px;
   }
   
-  .card p {
+  .ccard p {
     font-family: Arial, sans-serif;
   }
   
-  .card a {
+  .ccard a {
     text-decoration: none;
     color: #333;
     font-weight: bold;

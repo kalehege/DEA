@@ -98,25 +98,25 @@
 
                         <table align="center">
 							<tr>
-								<td><div class="card">
+								<td><div class="ccard">
 									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
 									<h5><center>Malinda Kaushalya</center></h5><br>
 									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
 								  </div></td>
 
-								  <td><div class="card">
+								  <td><div class="ccard">
 									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
 									<h5><center>Thilina Sandaruwan</center></h5><br>
 									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
 								  </div></td>
 					
-								  <td><div class="card">
+								  <td><div class="ccard">
 									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
 									<h5><center>Ravindra Sampath</center></h5><br>
 									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
 								  </div></td>
 
-								  <td><div class="card">
+								  <td><div class="ccard">
 									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
 									<h5><center>Chamini Gamage</center></h5><br>
 									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
@@ -125,25 +125,25 @@
 								</tr>
 							
 								<tr>
-									<td><div class="card">
+									<td><div class="ccard">
 									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
 									<h5><center>Charith Bhupa</center></h5><br>
 									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
 								  </div></td>
 						
-								  <td><div class="card">
+								  <td><div class="ccard">
 									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
 									<h5><center>Ravindu Pahan</center></h5><br>
 									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
 								  </div></td>
 						
-								  <td><div class="card">
+								  <td><div class="ccard">
 									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
 									<h5><center>Bhanuka</center></h5><br>
 									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
 								  </div></td>
 						
-								  <td><div class="card">
+								  <td><div class="ccard">
 									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
 									<h5><center>Hashan Shavindha</center></h5><br>
 									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
@@ -152,13 +152,13 @@
 								</tr>
 
 								<tr><center>
-									<td><div class="card">
+									<td><div class="ccard">
 										<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
 										<h5><center>Chamod Tharindu</center></h5><br>
 										<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
 									  </div></td>
 						
-									  <td><div class="card">
+									  <td><div class="ccard">
 										<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
 										<h5><center>Tharindu Premrathne</center></h5><br>
 										<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
