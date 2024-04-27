@@ -17,3 +17,4 @@
 <link rel="stylesheet" href="css/themify-icons.css"><!-- comment -->
 <link rel="stylesheet" href="css/menscard.css"><!-- comment -->
 <link rel="stylesheet" href="css/about.css"><!-- comment -->
+<link rel="stylesheet" href="css/accessories.css">
