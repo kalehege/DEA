@@ -7,7 +7,7 @@
 						<!-- Top Left -->
 						<div class="top-left">
 							<ul class="list-main">
-								<li><i class="ti-headphone"></i> 077 200 2000</li>
+								<li><i class="ti-headphone-alt"></i> 077 200 2000</li>
 								<li><i class="ti-email"></i> fashionfusion@gmail.com</li>
 							</ul>
 						</div>
@@ -19,7 +19,7 @@
 							<ul class="list-main">
 								<li><i class="ti-location-pin"></i> No 45 , Pitipana Road , Homagama</li>
 							    <li><i class="ti-user"></i> <a href="#">My account</a></li>
-								<li><i class="ti-power-off"></i><a href="login.jsp">Login</a></li>
+								<li><i class="ti-power-off"></i><a href="login.html">Login</a></li>
 							</ul>
 						</div>
 						<!-- End Top Right -->
@@ -34,7 +34,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.jsp"><h2>Fashion Fusion</h2></a>
+							<a href="index.html"><h2>Fashion Fusion</h2></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
@@ -57,7 +57,7 @@
 							<div class="search-bar">
 								<select>
 									<option selected="selected">All Category</option>
-                                                                        <option >Mens wear</option>
+									<option >Mens wear</option>
 									<option >Ladies wear</option>
 									
 								</select>
@@ -124,18 +124,11 @@
 									<li>
 									
 											<li class="single-menu">
-<<<<<<< HEAD
-												<a href="men.jsp" class="title-link"><B>Shop Men's</B></a>
-=======
-												<a href="mens.jsp" class="title-link"><B>Shop Men's</B></a>
->>>>>>> c59be4b036ba411ac29cf399d9a32520cd046909
+												<a href="men.html" class="title-link"><B>Shop Men's</B></a>
 											</li>
 											<li class="single-menu">
-												<a href="women.jsp" class="title-link"><b>Shop Women's</b></a>
+												<a href="women.html" class="title-link"><b>Shop Women's</b></a>
 											</li>
-                                                                                        <li class="single-menu">
-												<a href="#" class="title-link"><b>Shop Accessories</b></a>
-											</l
 										</ul>
 									</li>
 								</ul>
@@ -148,14 +141,9 @@
 									<div class="navbar-collapse">	
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
-<<<<<<< HEAD
-												<li class="active"><a href="index.jsp">Home</a></li>
+												<li class="active"><a href="index.html">Home</a></li>
 												<!--<li><a href="#">Product</a></li>-->												
 												<!--<li><a href="#">Service</a></li>-->
-=======
-												<li class="active"><a href="index.html">Home</a></li>
-												
->>>>>>> c59be4b036ba411ac29cf399d9a32520cd046909
 												<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 													<ul class="dropdown">
 														<li><a href="cart.html">Cart</a></li>
@@ -168,8 +156,8 @@
 														<li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
 													</ul>
 												</li>-->
-												<li><a href="about.jsp">About Us</a></li>
-												<li><a href="contact.jsp">Contact Us</a></li>
+												<li><a href="about.html">About Us</a></li>
+												<li><a href="contact.html">Contact Us</a></li>
 												</ul>
 										</div>
 									</div>
