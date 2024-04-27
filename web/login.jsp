@@ -34,7 +34,7 @@
 	
 	
 	<!-- Header -->
-	<%@include file="header2.jsp" %>
+	<%@include file="header.jsp" %>
 	
 	<!-- Breadcrumbs -->
 	<div class="breadcrumbs">
@@ -43,8 +43,8 @@
 				<div class="col-12">
 					<div class="bread-inner">
 						<ul class="bread-list">
-							<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="login.html">Login</a></li>
+							<li><a href="index.jsp">Home<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="login.jsp">Login</a></li>
 						</ul>
 					</div>
 				</div>
@@ -73,7 +73,7 @@
                 </div>
                 <button type="submit">Login</button>
             </form>
-            <p>Don't have an account? <a href="signup2.jsp">Create one</a></p>
+            <p>Don't have an account? <a href="createacc.jsp">Create one</a></p>
         </div>
     </div>
 
