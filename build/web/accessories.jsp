@@ -31,7 +31,7 @@
 					<div class="bread-inner">
 						<ul class="bread-list">
 							<li><a href="index.jsp">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="accessories.html">Accessories</a></li>
+							<li class="active"><a href="accessories.jsp">Accessories</a></li>
 						</ul>
 					</div>
 				</div>
