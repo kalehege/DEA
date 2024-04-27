@@ -48,11 +48,13 @@
 						<div class="text-inner">
 							<div class="row">
 								<div class="col-lg-7 col-12">
+                                                                    
 									<div class="hero-text">
+                                                                            
 										<h1><span><h3>Elegent</h3> </span>Shirts For Man</h1>
-										
+										<img src="images/webbannermadoc.jpg" alt="men.html">
 										<div class="button">
-											<a href="#" class="btn">Shop Now!</a>
+                                                                                    <a href="mens.jsp" class="btn">Shop Now!</a>
 										</div>
 									</div>
 								</div>
