@@ -7,7 +7,7 @@
 						<!-- Top Left -->
 						<div class="top-left">
 							<ul class="list-main">
-								<li><i class="ti-headphone-alt"></i> 077 200 2000</li>
+								<li><i class="ti-headphone"></i> 077 200 2000</li>
 								<li><i class="ti-email"></i> fashionfusion@gmail.com</li>
 							</ul>
 						</div>
@@ -129,6 +129,9 @@
 											<li class="single-menu">
 												<a href="women.html" class="title-link"><b>Shop Women's</b></a>
 											</li>
+                                                                                        <li class="single-menu">
+												<a href="#" class="title-link"><b>Shop Accessories</b></a>
+											</l
 										</ul>
 									</li>
 								</ul>
@@ -142,8 +145,7 @@
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
 												<li class="active"><a href="index.html">Home</a></li>
-												<!--<li><a href="#">Product</a></li>-->												
-												<!--<li><a href="#">Service</a></li>-->
+												
 												<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 													<ul class="dropdown">
 														<li><a href="cart.html">Cart</a></li>
@@ -157,7 +159,7 @@
 													</ul>
 												</li>-->
 												<li><a href="about.html">About Us</a></li>
-												<li><a href="contact.html">Contact Us</a></li>
+												<li><a href="contact.jsp">Contact Us</a></li>
 												</ul>
 										</div>
 									</div>
