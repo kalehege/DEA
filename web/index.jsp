@@ -77,7 +77,7 @@
 						<div class="content">
 							<p>Men's Collectons</p>
 							<h3>Handy Men <br> Choice</h3>
-							<a href="#">Discover Now</a>
+							<a href="mens.jsp">Discover Now</a>
 						</div>
 					</div>
 				</div>
@@ -89,7 +89,7 @@
 						<div class="content">
 							<p>Ladies Collectons</p>
 							<h3>Elegent Girls <br> Choice</h3>
-							<a href="#">Shop Now</a>
+							<a href="mens.jsp">Shop Now</a>
 						</div>
 					</div>
 				</div>
