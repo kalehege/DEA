@@ -52,7 +52,7 @@
 									<div class="hero-text">
                                                                             
 										<h1><span><h3>Elegent</h3> </span>Shirts For Man</h1>
-										<img src="images/webbannermadoc.jpg" alt="men.html">
+										
 										<div class="button">
                                                                                     <a href="mens.jsp" class="btn">Shop Now!</a>
 										</div>
@@ -91,7 +91,7 @@
 						<div class="content">
 							<p>Ladies Collectons</p>
 							<h3>Elegent Girls <br> Choice</h3>
-							<a href="mens.jsp">Shop Now</a>
+							<a href="women.jsp">Shop Now</a>
 						</div>
 					</div>
 				</div>

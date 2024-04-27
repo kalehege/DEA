@@ -1174,14 +1174,15 @@
 .hero-slider {
 	background: #fff;
 	overflow: hidden;
+        
 }
 .hero-slider .single-slider {
 	height: auto;
-	background-image: url('images/webbannermadoc.jpg');
+	background-image:url('webbannermadoc.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-    height: 510px;
+        height: 510px;
 }
 .hero-slider .text-inner {
 	

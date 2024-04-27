@@ -19,7 +19,7 @@
 						<div class="single-footer links">
 							<h4>Information</h4>
 							<ul>
-								<li><a href="#">About Us</a></li>
+								<li><a href="about.jsp">About Us</a></li>
 								
 								<li><a href="terms.jsp">Terms & Conditions</a></li>
 								<li><a href="contact.jsp">Contact Us</a></li>
@@ -37,7 +37,7 @@
 								
 								
 								
-								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="privacypolicy.jsp">Privacy Policy</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->
@@ -75,7 +75,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p align="center">Copyright ©2024 <a href="http://www.wpthemesgrid.com" target="_blank"><i>team_builders</i></a>  -  All Rights Reserved.</p>
+								<p align="center">Copyright ©2024 <a href="#" target="_blank"><i>team_builders</i></a>  -  All Rights Reserved.</p>
 							</div>
 						</div>
 						<div class="col-lg-6 col-12">
