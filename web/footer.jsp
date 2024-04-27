@@ -7,7 +7,7 @@
 						<!-- Single Widget -->
 						<div class="single-footer about">
 							<div class="logo">
-								<a href="index.html"><h2><b>Fashion Fusion</b></h2>
+								<a href="index.jsp"><h2><b>Fashion Fusion</b></h2>
 							</div>
 							<p class="text">" Your go-to destination for cutting-edge fashion trends, quality garments, and personalized style consultations... "</p>
                                                         <p class="call"> Got Question..? Call us 24/7<span><center>011 200 2000</center></p></span></p>

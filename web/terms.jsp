@@ -26,10 +26,7 @@
 
 
 	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 20px;
-		}
+		
 		h1 {
 			text-align: center;
 		}
@@ -38,13 +35,22 @@
 		}
 	</style>
 </head>
-<body>
-
-<!-- Header -->
-
+<body class="js">
 	
-<%@include file="header.jsp" %>
-
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="preloader-inner">
+			<div class="preloader-icon">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<!-- End Preloader -->
+	
+	
+	<!-- Header -->
+	<%@include file="header2.jsp" %>
 <!-- Breadcrumbs -->
 <div class="breadcrumbs">
 	<div class="container">
@@ -52,8 +58,8 @@
 			<div class="col-12">
 				<div class="bread-inner">
 					<ul class="bread-list">
-						<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-						<li class="active"><a href="blog-single.html">Cart</a></li>
+						<li><a href="index.jsp">Home<i class="ti-arrow-right"></i></a></li>
+						<li class="active"><a href="terms.jsp">Cart</a></li>
 					</ul>
 				</div>
 			</div>

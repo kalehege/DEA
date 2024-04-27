@@ -17,5 +17,5 @@
 <link rel="stylesheet" href="css/themify-icons.css"><!-- comment -->
 <link rel="stylesheet" href="css/menscard.css"><!-- comment -->
 <link rel="stylesheet" href="css/about.css"><!-- comment -->
-<link rel="stylesheet" href="css/accessories.css
-<link rel="stylesheet" href="css/signup2.css">
+<link rel="stylesheet" href="css/accessories.css">
+<link rel="stylesheet" href="css/signup.css">
