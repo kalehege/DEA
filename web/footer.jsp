@@ -52,7 +52,7 @@
 									<li>NO.45</li>
 									<li>Pitipana road</li>
 									<li>Homagama</li>
-									<li>077 200 2000</li>
+                                                                        <li>077 200 2000</li>
 									
 								</ul>
 							</div>
