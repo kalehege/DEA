@@ -129,6 +129,9 @@
 											<li class="single-menu">
 												<a href="women.html" class="title-link"><b>Shop Women's</b></a>
 											</li>
+                                                                                        <li class="single-menu">
+												<a href="#" class="title-link"><b>Shop Accessories</b></a>
+											</l
 										</ul>
 									</li>
 								</ul>
@@ -157,7 +160,7 @@
 													</ul>
 												</li>-->
 												<li><a href="about.html">About Us</a></li>
-												<li><a href="contact.html">Contact Us</a></li>
+												<li><a href="contact.jsp">Contact Us</a></li>
 												</ul>
 										</div>
 									</div>
