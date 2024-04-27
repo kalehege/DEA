@@ -11,10 +11,11 @@
 <link rel="stylesheet" href="css/owl-carousel.css"><!-- comment -->
 <link rel="stylesheet" href="css/reset.css"><!-- comment -->
 <link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/signup.css"><!-- comment -->
+<link rel="stylesheet" href="css/signup2.css"><!-- comment -->
 <link rel="stylesheet" href="css/slicknav.min.css"><!-- comment -->
 <link rel="stylesheet" href="css/style.css"><!-- comment -->
 <link rel="stylesheet" href="css/themify-icons.css"><!-- comment -->
 <link rel="stylesheet" href="css/menscard.css"><!-- comment -->
 <link rel="stylesheet" href="css/about.css"><!-- comment -->
-<link rel="stylesheet" href="css/accessories.css">
+<link rel="stylesheet" href="css/accessories.css
+<link rel="stylesheet" href="css/signup2.css">
