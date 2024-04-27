@@ -7,7 +7,7 @@
 						<!-- Top Left -->
 						<div class="top-left">
 							<ul class="list-main">
-								<li><i class="ti-headphone-alt"></i> 077 200 2000</li>
+								<li><i class="ti-headphone"></i> 077 200 2000</li>
 								<li><i class="ti-email"></i> fashionfusion@gmail.com</li>
 							</ul>
 						</div>
@@ -57,7 +57,7 @@
 							<div class="search-bar">
 								<select>
 									<option selected="selected">All Category</option>
-									<option >Mens wear</option>
+                                                                        <option >Mens wear</option>
 									<option >Ladies wear</option>
 									
 								</select>
@@ -124,7 +124,11 @@
 									<li>
 									
 											<li class="single-menu">
+<<<<<<< HEAD
 												<a href="men.jsp" class="title-link"><B>Shop Men's</B></a>
+=======
+												<a href="mens.jsp" class="title-link"><B>Shop Men's</B></a>
+>>>>>>> c59be4b036ba411ac29cf399d9a32520cd046909
 											</li>
 											<li class="single-menu">
 												<a href="women.jsp" class="title-link"><b>Shop Women's</b></a>
@@ -144,9 +148,14 @@
 									<div class="navbar-collapse">	
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
+<<<<<<< HEAD
 												<li class="active"><a href="index.jsp">Home</a></li>
 												<!--<li><a href="#">Product</a></li>-->												
 												<!--<li><a href="#">Service</a></li>-->
+=======
+												<li class="active"><a href="index.html">Home</a></li>
+												
+>>>>>>> c59be4b036ba411ac29cf399d9a32520cd046909
 												<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 													<ul class="dropdown">
 														<li><a href="cart.html">Cart</a></li>
