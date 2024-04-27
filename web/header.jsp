@@ -130,7 +130,7 @@
 												<a href="women.jsp" class="title-link"><b>Shop Women's</b></a>
 											</li>
                                                                                         <li class="single-menu">
-												<a href="accessories.html" class="title-link"><B>Shop Accessories</B></a>
+												<a href="accessories.jsp" class="title-link"><B>Shop Accessories</B></a>
 											</li>
 										</ul>
 									</li>
