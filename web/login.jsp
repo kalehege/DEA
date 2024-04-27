@@ -73,7 +73,7 @@
                 </div>
                 <button type="submit">Login</button>
             </form>
-            <p>Don't have an account? <a href="createacc.html">Create one</a></p>
+            <p>Don't have an account? <a href="signup2.jsp">Create one</a></p>
         </div>
     </div>
 
