@@ -8,7 +8,7 @@
   <%@include file="allcss.jsp" %>
 </head>
 <body>
-   <%@include file="header.jsp" %>
+   <%@include file="header2.jsp" %>
   <div class="container">
     <h1>Sign Up</h1>
     <form id="signup-form">
