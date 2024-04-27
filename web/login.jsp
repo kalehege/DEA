@@ -60,7 +60,7 @@
                 <div class="input-group">
                     <table>
                     <tr>
-                        <td><label for="username">Username</label></td>
+                        <td><label for="username">Username &nbsp;</label></td>
                         <td><input type="text" id="username" name="username" required></td>
                     </tr>
 

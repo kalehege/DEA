@@ -4912,12 +4912,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .login-container {
-    background-color: #e8a210;
-    padding: 50px;
+    background-color: #ECCA9C;
+    padding: 60px;
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
