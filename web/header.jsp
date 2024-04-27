@@ -19,7 +19,7 @@
 							<ul class="list-main">
 								<li><i class="ti-location-pin"></i> No 45 , Pitipana Road , Homagama</li>
 							    <li><i class="ti-user"></i> <a href="#">My account</a></li>
-								<li><i class="ti-power-off"></i><a href="login.html">Login</a></li>
+								<li><i class="ti-power-off"></i><a href="login.jsp">Login</a></li>
 							</ul>
 						</div>
 						<!-- End Top Right -->
@@ -34,7 +34,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.html"><h2>Fashion Fusion</h2></a>
+							<a href="index.jsp"><h2>Fashion Fusion</h2></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
@@ -124,10 +124,10 @@
 									<li>
 									
 											<li class="single-menu">
-												<a href="men.html" class="title-link"><B>Shop Men's</B></a>
+												<a href="men.jsp" class="title-link"><B>Shop Men's</B></a>
 											</li>
 											<li class="single-menu">
-												<a href="women.html" class="title-link"><b>Shop Women's</b></a>
+												<a href="women.jsp" class="title-link"><b>Shop Women's</b></a>
 											</li>
                                                                                         <li class="single-menu">
 												<a href="#" class="title-link"><b>Shop Accessories</b></a>
@@ -144,7 +144,7 @@
 									<div class="navbar-collapse">	
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
-												<li class="active"><a href="index.html">Home</a></li>
+												<li class="active"><a href="index.jsp">Home</a></li>
 												<!--<li><a href="#">Product</a></li>-->												
 												<!--<li><a href="#">Service</a></li>-->
 												<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
@@ -159,7 +159,7 @@
 														<li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
 													</ul>
 												</li>-->
-												<li><a href="about.html">About Us</a></li>
+												<li><a href="about.jsp">About Us</a></li>
 												<li><a href="contact.jsp">Contact Us</a></li>
 												</ul>
 										</div>
