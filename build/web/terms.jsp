@@ -63,26 +63,26 @@
 <!-- End Breadcrumbs -->
 
 
-	<h2><b>Terms and Conditions</B></h2>
+<h2><b>Terms and Conditions</B></h2><br>
 
 	<center><h4>Welcome to FASHION FUSION By accessing and using our website, you agree to be bound by the following terms and conditions:</h4></center>
     <br>
     <br>   
 
-	<h3>Product Information</h3>
+    <h3><center>Product Information</center></h3><br><br>
 	<p>We make every effort to display accurate product information, including descriptions, images, and pricing. However, we do not warrant that product descriptions or other content is accurate, complete, reliable, current, or error-free. Prices and availability are subject to change without notice.</p>
-
-	<h3>Ordering and Payment</h3>
+        <br>
+        <h3><center>Ordering and Payment</center></h3><br><br>
 	<p>When you place an order, you are offering to purchase the products from us. We will send you a confirmation email once we have accepted your order. All payments must be made securely through our website using a valid payment method. We reserve the right to cancel any order if there is an issue with payment.</p>
-
-	<h3>Shipping and Delivery</h3>
+        <br>
+        <h3><center>Shipping and Delivery</center></h3><br><br>
 	<p>We ship orders within 2-5 business days after payment is received. Shipping times may vary based on your location and the selected shipping method. We are not responsible for any delays caused by the shipping carrier.</p>
-
-	<h3>Returns and Exchanges</h3>
+        <br>
+        <h3><center>Returns and Exchanges</center></h3><br><br>
 	<p>We accept returns and exchanges for unworn, unwashed items with original tags within 14 days of delivery. Please refer to our Returns Policy for complete details.</p>
 <br>
-<br>
-	<center><h3>By using our website and services, you agree to these terms and conditions. We reserve the right to modify or update these terms at any time.</h3></center>
+
+	<center> <h4>By using our website and services, you agree to these terms and conditions. We reserve the right to modify or update these terms at any time.</h4></center>
 
         <!-- Footer Area -->
         <%@include file="footer.jsp" %>
