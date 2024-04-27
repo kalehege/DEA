@@ -1,0 +1,39 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    border-radius: 5px;
+  }
+  
+  .card p {
+    font-family: Arial, sans-serif;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .add-to-cart {
+    background-color: #faa300;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .add-to-cart:hover {
+    background-color: #0056b3;
+  }
