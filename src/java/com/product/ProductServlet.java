@@ -48,12 +48,20 @@ public class ProductServlet extends HttpServlet {
                 case "/admin/product-view":
                     listProduct(request, response);
                     break;
+                default:
+                    showDefualt(request, response);
+                    break;
             }
         } catch (SQLException ex) {
             throw new ServletException(ex);
         }
     }
-    
+        
+    private void showDefualt(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+        dispatcher.forward(request, response);
+    }
         
     private void listProduct(HttpServletRequest request, HttpServletResponse response)
     throws SQLException, IOException, ServletException {
