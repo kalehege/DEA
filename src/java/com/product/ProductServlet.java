@@ -46,7 +46,7 @@ public class ProductServlet extends HttpServlet {
                     insertProduct(request, response);
                     break;
                 case "/admin/product-view":
-                    listProduct(request, response);
+                    listProductAdmin(request, response);
                     break;
                     
                                     
@@ -69,18 +69,30 @@ public class ProductServlet extends HttpServlet {
     }
         
     private void showAllProduct(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
+        throws SQLException, IOException, ServletException {
+        List < Product > listProduct = storeDB.selectAllProducts();
+        request.setAttribute("listProduct", listProduct);
         RequestDispatcher dispatcher = request.getRequestDispatcher("view_all_product.jsp");
         dispatcher.forward(request, response);
     }
         
-    private void listProduct(HttpServletRequest request, HttpServletResponse response)
+    private void listProductAdmin(HttpServletRequest request, HttpServletResponse response)
     throws SQLException, IOException, ServletException {
         List < Product > listProduct = storeDB.selectAllProducts();
         request.setAttribute("listProduct", listProduct);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/view_admin_products.jsp");
         dispatcher.forward(request, response);
     }
+    
+        
+//    private void listProductNormal(HttpServletRequest request, HttpServletResponse response)
+//    throws SQLException, IOException, ServletException {
+//        List < Product > listProduct = storeDB.selectAllProducts();
+//        request.setAttribute("listProduct", listProduct);
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("view_all_product.jsp");
+//        dispatcher.forward(request, response);
+//    }
+    
         
     private void showNewForm(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
