@@ -11,7 +11,7 @@
     <div class="container mt-4">
 
         <h1 class="col-12">Product Insert</h1>
-        <form method="post" action="AddProduct">
+        <form method="post" action="insert">
             <div class="row mb-3">
                 <div class="col-md-4">
                     <label for="title">Name:</label>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-md-6">
                     <label for="size">Size:</label>
-                    <input type="text" name="sizes" class="form-control">
+                    <input type="text" name="size" class="form-control">
                 </div>
                 
                 <div class="col-md-12">
