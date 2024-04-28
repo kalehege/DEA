@@ -48,7 +48,12 @@ public class ProductServlet extends HttpServlet {
                 case "/admin/product-view":
                     listProduct(request, response);
                     break;
-                default:
+                    
+                                    
+                case "/all-products":
+                    showAllProduct(request, response);
+                    break;
+                case "/home":
                     showDefualt(request, response);
                     break;
             }
@@ -60,6 +65,12 @@ public class ProductServlet extends HttpServlet {
     private void showDefualt(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+        dispatcher.forward(request, response);
+    }
+        
+    private void showAllProduct(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view_all_product.jsp");
         dispatcher.forward(request, response);
     }
         
