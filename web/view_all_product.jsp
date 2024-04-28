@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <html lang="en">
 <head>
  
@@ -51,18 +53,20 @@
     <div class="container">
     <!-- First Row -->
     <div class="row">
+        <c:forEach var="product" items="${listProduct}">
         <div class="col-md-4">
-            <div class="mcard">
-                <img src="images/Men/vs1.jpg" alt="Example Image" style="width: auto">
-                <h3>Viscos Shirts</h3>
-                <p>Relaxed Fit Viscose Shirt</p>
-                <p>Available Sizes: S, M, L, XL</p>
-                <p class="price">Rs1500.00</p>
+            <div class="mcard" style="text-align: center;">
+                <img src="public/images/Men/vs1.jpg" alt="Example Image" >
+                <h3><c:out value="${product.name}" /></h3>
+                <p><c:out value="${product.description}" /></p>
+                <p><c:out value="${product.size}" /></p>
+                <p class="price">Rs <c:out value="${product.price}" /></p>
                 <center>
                     <input type="button" class="btn btn-primary madd-to-cart" value="Add to cart">
                 </center>
             </div>
-        </div>   
+        </div> 
+        </c:forEach>
     </div>
   
 </div>
