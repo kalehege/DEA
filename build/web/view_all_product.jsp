@@ -52,8 +52,8 @@
     <!-- First Row -->
     <div class="row">
         <div class="col-md-4">
-            <div class="mcard">
-                <img src="images/Men/vs1.jpg" alt="Example Image" style="width: auto">
+            <div class="mcard" style="text-align: center;">
+                <img src="public/images/Men/vs1.jpg" alt="Example Image" >
                 <h3>Viscos Shirts</h3>
                 <p>Relaxed Fit Viscose Shirt</p>
                 <p>Available Sizes: S, M, L, XL</p>
