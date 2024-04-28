@@ -20,7 +20,10 @@ public class StoreDB {
     private static final String INSERT_PRODUCT_SQL = "INSERT INTO product" + "  (name, description, size, price) VALUES " +
         " (?, ?, ?, ?);";
 
-    private static final String SELECT_ALL_Products = "select * from product";
+    private static final String SELECT_ALL_Products = "select * from product ORDER BY ID DESC;";
+
+        
+    private static final String SELECT_Product_BY_ID = "select id,name,description,size,price from product where id =?";
 
     public StoreDB() {}
     
@@ -75,6 +78,27 @@ public class StoreDB {
             printSQLException(e);
         }
         return products;
+    }
+    
+    public Product selectProduct(int id) {
+        Product product = null;
+        try (Connection connection = getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_Product_BY_ID);) {
+            preparedStatement.setInt(1, id);
+            System.out.println(preparedStatement);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            while (rs.next()) {
+                String name = rs.getString("name");
+                String description = rs.getString("description");
+                String size = rs.getString("size");        
+                String price = rs.getString("price");
+                product = new Product(id, name, description, size, price);
+            }
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+        return product;
     }
     
     private void printSQLException(SQLException ex) {

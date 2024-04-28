@@ -48,7 +48,10 @@ public class ProductServlet extends HttpServlet {
                 case "/admin/product-view":
                     listProductAdmin(request, response);
                     break;
-                    
+                                  
+                case "/product":
+                    showEditForm(request, response);
+                    break;  
                                     
                 case "/all-products":
                     showAllProduct(request, response);
@@ -85,13 +88,15 @@ public class ProductServlet extends HttpServlet {
     }
     
         
-//    private void listProductNormal(HttpServletRequest request, HttpServletResponse response)
-//    throws SQLException, IOException, ServletException {
-//        List < Product > listProduct = storeDB.selectAllProducts();
-//        request.setAttribute("listProduct", listProduct);
-//        RequestDispatcher dispatcher = request.getRequestDispatcher("view_all_product.jsp");
-//        dispatcher.forward(request, response);
-//    }
+    private void showEditForm(HttpServletRequest request, HttpServletResponse response)
+    throws SQLException, ServletException, IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        Product existingProduct = storeDB.selectProduct(id);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("single_item_view.jsp");
+        request.setAttribute("product", existingProduct);
+        dispatcher.forward(request, response);
+
+    }
     
         
     private void showNewForm(HttpServletRequest request, HttpServletResponse response)

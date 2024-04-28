@@ -56,7 +56,7 @@
         <c:forEach var="product" items="${listProduct}">
             <div class="col-md-4">
                 <div class="mcard" style="text-align: center;">
-                    <a href="#">
+                    <a href="product?id=<c:out value='${product.id}' />">
                         <img src="public/images/Men/vs1.jpg" alt="Example Image">
                     </a>
                     <h3><c:out value="${product.name}" /></h3>
