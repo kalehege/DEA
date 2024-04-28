@@ -43,17 +43,8 @@ public class ProductServlet extends HttpServlet {
                     showNewForm(request, response);
                     break;
                 case "/admin/insert":
-                    insertUser(request, response);
+                    insertProduct(request, response);
                     break;
-//                case "/delete":
-//                    deleteUser(request, response);
-//                    break;
-//                case "/edit":
-//                    showEditForm(request, response);
-//                    break;
-//                case "/update":
-//                    updateUser(request, response);
-//                    break;
                 case "/admin/product-view":
                     listProduct(request, response);
                     break;
@@ -78,14 +69,14 @@ public class ProductServlet extends HttpServlet {
         dispatcher.forward(request, response);
     }
         
-    private void insertUser(HttpServletRequest request, HttpServletResponse response)
+    private void insertProduct(HttpServletRequest request, HttpServletResponse response)
     throws SQLException, IOException {
         String name = request.getParameter("name");
         String description = request.getParameter("description");
         String size = request.getParameter("size");     
         String price = request.getParameter("price");
-        Product newUser = new Product(name, description, size, price);
-        storeDB.insertUser(newUser);
+        Product newProduct = new Product(name, description, size, price);
+        storeDB.insertUser(newProduct);
         response.sendRedirect("product-view");
     }
 
