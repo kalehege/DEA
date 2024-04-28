@@ -54,20 +54,23 @@
     <!-- First Row -->
     <div class="row">
         <c:forEach var="product" items="${listProduct}">
-        <div class="col-md-4">
-            <div class="mcard" style="text-align: center;">
-                <img src="public/images/Men/vs1.jpg" alt="Example Image" >
-                <h3><c:out value="${product.name}" /></h3>
-                <p><c:out value="${product.description}" /></p>
-                <p><c:out value="${product.size}" /></p>
-                <p class="price">Rs <c:out value="${product.price}" /></p>
-                <center>
-                    <input type="button" class="btn btn-primary madd-to-cart" value="Add to cart">
-                </center>
-            </div>
-        </div> 
+            <div class="col-md-4">
+                <div class="mcard" style="text-align: center;">
+                    <a href="#">
+                        <img src="public/images/Men/vs1.jpg" alt="Example Image">
+                    </a>
+                    <h3><c:out value="${product.name}" /></h3>
+                    <p><c:out value="${product.description}" /></p>
+                    <p><c:out value="${product.size}" /></p>
+                    <p class="price">Rs <c:out value="${product.price}" /></p>
+                    <center>
+                        <input type="button" class="btn btn-primary madd-to-cart" value="Add to cart">
+                    </center>
+                </div>
+            </div> 
         </c:forEach>
     </div>
+
   
 </div>
 
