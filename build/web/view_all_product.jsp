@@ -48,82 +48,25 @@
 
 
 <h1 class='mh1'>Men's Wear</h1>
-    <table align="center">
-        <tr>
-            <td><div class="mcard">
+    <div class="container">
+    <!-- First Row -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="mcard">
                 <img src="images/Men/vs1.jpg" alt="Example Image" style="width: auto">
                 <h3>Viscos Shirts</h3>
                 <p>Relaxed Fit Viscose Shirt</p>
                 <p>Available Sizes: S, M, L, XL</p>
                 <p class="price">Rs1500.00</p>
                 <center>
-                    <input type="button" a href="#" class="madd-to-cart" value="Add-to-cart">
-
+                    <input type="button" class="btn btn-primary madd-to-cart" value="Add to cart">
                 </center>
-                
-              </div></td>
+            </div>
+        </div>   
+    </div>
+  
+</div>
 
-              <td><div class="mcard">
-                <img src="images/Men/ox1.webp" alt="Example Image" style="width:auto">
-                <h3>Formal Oxford Shirts</h3>
-                <p>Oxford Cloth Button-Down Shirt</p>
-                <p>Available Sizes: XS, S, M, L</p>
-                <p class="price">RS.7990.00</p>
-                <center>
-                    <input type="button" a href="#" class="madd-to-cart" value="Add-to-cart">
-                </center>
-              </div></td>
-
-              <td><div class="mcard">
-                <img src="images/Men/polo.webp" alt="Example Image" style="width:auto">
-                <h3>Polo Shirt</h3>
-                <p>Effortless Sophistication:Polo Essential</p>
-                <p>Available Sizes: S, M, L</p>
-                <p class="price">RS. 6250.00</p>
-                <center>
-                    <input type="button" a href="#" class="madd-to-cart" value="Add-to-cart">
-                </center>
-              </div></td>
-        </tr>
-
-        <tr>
-            <td><div class="mcard">
-                <img src="images/Men/li1.webp" alt="Example Image" style="width:auto">
-                <h3>Lightweight Shirt</h3>
-                <p>Lightweight Lounge Sweatshirt</p>
-                <p>Available Sizes: S, M, L</p>
-                <p class="price">8590.00</p>
-        
-
-                <center>
-                    <input type="button" a href="#" class="madd-to-cart" value="Add-to-cart">
-                </center>
-              </div></td>
-
-              <td><div class="mcard">
-                <img src="images/Men/vnt1.webp" alt="Example Image" style="width:auto">
-                <h3>V-neck T-shirts</h3>
-                <p>Casual Comfort V</p>
-                <p>Available Sizes: S, M, L</p>
-                <p class="price">RS.3870.00</p>
-                <center>
-                    <input type="button" a href="#" class="madd-to-cart" value="Add-to-cart">
-                </center>
-              </div></td>
-
-              <td><div class="mcard">
-                <img src="images/Men/pot1.webp" alt="Example Image" style="width:auto">
-                <h3>Polo T-Shirt</h3>
-                <p>Wardrobe Polo Must-Have</p>
-                <p>Available Sizes: S, M, L</p>
-                <p class="price">RS. 4990.00</p>
-                
-                <center>
-                    <input type="button" a href="#" class="madd-to-cart" value="Add-to-cart">
-                </center>
-              </div></td>
-        </tr>    
-    </table>
 
 	<!-- Start Footer Area -->
 	<%@include file="footer.jsp" %>
