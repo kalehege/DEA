@@ -34,7 +34,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.jsp"><h2>Fashion Fusion</h2></a>
+							<a href="index.jsp"><img src = "images/logo.png"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->

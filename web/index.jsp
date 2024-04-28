@@ -103,7 +103,7 @@
 						<div class="content">
 							<p>Flash Sale</p>
 							<h3>Unique <br> Accessories <br> Up to <span>40%</span> Off</h3>
-							<a href="#">Discover Now</a>
+                                                        <a href="accessories.jsp">Discover Now</a>
 						</div>
 					</div>
 				</div>
