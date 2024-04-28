@@ -19,25 +19,25 @@ public class AddProduct extends HttpServlet {
    private static final long serialVersionUID = 1L;
 
 
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		String name = request.getParameter("name");
-		String description = request.getParameter("description");
-		String sizes = request.getParameter("sizes");
-		String price = request.getParameter("price");
-                
-		boolean isTrue;
-		
-		isTrue = StoreDB.insertProduct(name,description,sizes,price);
-		
-		if(isTrue == true) {
-			RequestDispatcher dis = request.getRequestDispatcher("success.jsp");
-			dis.forward(request, response);
-		} else {
-			RequestDispatcher dis2 = request.getRequestDispatcher("unsuccess.jsp");
-			dis2.forward(request, response);
-		}
-		
-    }
+//    @Override
+//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//		
+//		String name = request.getParameter("name");
+//		String description = request.getParameter("description");
+//		String sizes = request.getParameter("sizes");
+//		String price = request.getParameter("price");
+//                
+//		boolean isTrue;
+//		
+//		isTrue = StoreDB.insertProduct(name,description,sizes,price);
+//		
+//		if(isTrue == true) {
+//			RequestDispatcher dis = request.getRequestDispatcher("success.jsp");
+//			dis.forward(request, response);
+//		} else {
+//			RequestDispatcher dis2 = request.getRequestDispatcher("unsuccess.jsp");
+//			dis2.forward(request, response);
+//		}
+//		
+//    }
 }
