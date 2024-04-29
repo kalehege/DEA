@@ -42,7 +42,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.jsp"><img src = "images/logo.png"></a>
+							<a href="index.jsp"><img src = "public/images/logo.png"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->

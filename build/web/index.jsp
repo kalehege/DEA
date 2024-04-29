@@ -75,7 +75,7 @@
 				<!-- Single Banner  -->
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="single-banner">
-						<img src="images/medium.jpg" alt="men.html">
+						<img src="public/images/medium.jpg" alt="men.html">
 						<div class="content">
 							<p>Men's Collectons</p>
 							<h3>Handy Men <br> Choice</h3>
@@ -87,7 +87,7 @@
 				<!-- Single Banner  -->
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="single-banner">
-						<img src="images/medium%20woman.jpg" alt="#">
+						<img src="public/images/medium%20woman.jpg" alt="#">
 						<div class="content">
 							<p>Ladies Collectons</p>
 							<h3>Elegent Girls <br> Choice</h3>
@@ -99,7 +99,7 @@
 				<!-- Single Banner  -->
 				<div class="col-lg-4 col-12">
 					<div class="single-banner tab-height">
-						<img src="images/medium%20accessories%20l.jpg" alt="#">
+						<img src="public/images/medium%20accessories%20l.jpg" alt="#">
 						<div class="content">
 							<p>Flash Sale</p>
 							<h3>Unique <br> Accessories <br> Up to <span>40%</span> Off</h3>
@@ -134,8 +134,8 @@
 						<div class="single-product">
 							<div class="product-img">
 								<a href="product-details.html">
-									<img class="default-img" src="images/hot item 550,750/sunglass.png" alt="#">
-									<img class="hover-img" src="images/hot item 550,750/sunglass.pn" alt="#">
+									<img class="default-img" src="public/images/hot item 550,750/sunglass.png" alt="#">
+									<img class="hover-img" src="public/images/hot item 550,750/sunglass.pn" alt="#">
 									<span class="out-of-stock">Hot</span>
 								</a>
 								<div class="button-head">
@@ -162,8 +162,8 @@
 						<div class="single-product">
                             <div class="product-img">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="images/hot item 550,750/hot coll.png" alt="Womens Hot Collection">
-                                    <img class="hover-img" src="images/hot item 550,750/hot coll.png" alt="Womens Hot Collection">
+                                    <img class="default-img" src="public/images/hot item 550,750/hot coll.png" alt="Womens Hot Collection">
+                                    <img class="hover-img" src="public/images/hot item 550,750/hot coll.png" alt="Womens Hot Collection">
                                 </a>
 								<div class="button-head">
 									<div class="product-action">
@@ -188,8 +188,8 @@
 						<div class="single-product">
                             <div class="product-img">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="images/hot item 550,750/pink.png" alt="#">
-                                    <img class="hover-img" src="images/hot item 550,750/pink.png" alt="#">
+                                    <img class="default-img" src="public/images/hot item 550,750/pink.png" alt="#">
+                                    <img class="hover-img" src="public/images/hot item 550,750/pink.png" alt="#">
 									<span class="new">New</span>
                                 </a>
 								<div class="button-head">
@@ -215,8 +215,8 @@
 						<div class="single-product">
                             <div class="product-img">
                                 <a href="product-details.html">
-                                    <img class="default-img" src="images/hot item 550,750/bag.png" alt="#">
-                                    <img class="hover-img" src="images/hot item 550,750/bag.png" alt="#">
+                                    <img class="default-img" src="public/images/hot item 550,750/bag.png" alt="#">
+                                    <img class="hover-img" src="public/images/hot item 550,750/bag.png" alt="#">
                                 </a>
 								<div class="button-head">
 									<div class="product-action">
@@ -261,7 +261,7 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="images/115,140 on sale/115.140 on sale1.png" alt="#">
+									<img src="public/images/115,140 on sale/115.140 on sale1.png" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
@@ -279,7 +279,7 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="images/115,140 on sale/115.140 on sale2.png" alt="#">
+									<img src="public/images/115,140 on sale/115.140 on sale2.png" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
@@ -297,7 +297,7 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="images/115,140 on sale/115.140 on sale3.png" alt="#">
+									<img src="public/images/115,140 on sale/115.140 on sale3.png" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
@@ -324,7 +324,7 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="images/115,140 on sale/115.140 on sale4.png" alt="#">
+									<img src="public/images/115,140 on sale/115.140 on sale4.png" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
@@ -342,7 +342,7 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="images/115,140 on sale/115.140 on sale5.png" alt="#">
+									<img src="public/images/115,140 on sale/115.140 on sale5.png" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
@@ -360,7 +360,7 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="images/115,140 on sale/115.140 on sale6.png" alt="#">
+									<img src="public/images/115,140 on sale/115.140 on sale6.png" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
@@ -387,7 +387,7 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="images/115,140 on sale/115.140 on sale7.png" alt="#">
+									<img src="public/images/115,140 on sale/115.140 on sale7.png" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
@@ -405,7 +405,7 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="images/115,140 on sale/115.140 on sale8.png" alt="#">
+									<img src="public/images/115,140 on sale/115.140 on sale8.png" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
@@ -423,7 +423,7 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="images/115,140 on sale/115.140 on sale9.png" alt="#">
+									<img src="public/images/115,140 on sale/115.140 on sale9.png" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
