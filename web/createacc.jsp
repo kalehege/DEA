@@ -58,16 +58,21 @@
         <h2>SIGN UP</h2>
         <form>
             <div class="form-group">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
+              <label for="f_name">First Name:</label>
+              <input type="text" id="f_name" name="f_name" required>
+            </div>
+                        
+            <div class="form-group">     
+              <label for="l_name">Last Name:</label>
+              <input type="text" id="l_name" name="l_name" required>
             </div>
             <div class="form-group">
               <label for="email">Email</label>
               <input type="text" id="email" name="email" required>
             </div>
             <div class="form-group">
-              <label for="birthday">Birthday:</label>
-              <input type="date" id="birthday" name="birthday" required>
+              <label for="dob">Birthday:</label>
+              <input type="date" id="dob" name="dob" required>
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
