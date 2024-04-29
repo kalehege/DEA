@@ -64,7 +64,7 @@
           </div>
           <button type="submit">Sign In</button>
         </form>          
-        <p>Don't have an account? <a href="createacc.jsp">Create one</a></p>
+        <p>Don't have an account? <a href="sign-up">Create one</a></p>
 
       </div>
 
