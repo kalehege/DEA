@@ -55,7 +55,7 @@
 
     <!--Form-->
     <div class="scontainer">
-        <h2>SING UP</h2>
+        <h2>SIGN UP</h2>
         <form>
             <div class="form-group">
               <label for="name">Name:</label>
