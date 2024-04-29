@@ -84,23 +84,7 @@
               <div class="col-md-6 custom-height">
                 <!-- Product details -->
                 <h1 class="brand-color mac">Viscose Shirt</h1>
-                <p class="mt-3 mac">Introducing our Polo T-Shirt: crafted from premium cotton blend fabric for comfort and durability.</p>
-                <p calss="mac">Available Colors:
-                  <select id="colorSelect" class="ml-2">
-                    <option value="red">Red</option>
-                    <option value="blue">Blue</option>
-                    <option value="green">Green</option>
-                    <!-- Add more color options as needed -->
-                  </select>
-                </p>
-                <p class="mac">Available Sizes:
-                  <select id="sizeSelect" class="ml-2">
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                    <!-- Add more size options as needed -->
-                  </select>
-                </p>
+                <p class="mt-3 mac">Introducing our Polo T-Shirt: crafted from premium cotton blend fabric for comfort and durability. Features classic polo collar, button placket, and a tailored fit.</p>
                 
                 <p class="mac">Quantity:
                   <input type="number" id="quantityInput" value="1" min="1" onchange="calculateTotalPrice()">
