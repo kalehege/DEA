@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.product.Product;
+import com.product.Customer;
 
 public class StoreDB {
     
@@ -17,13 +18,17 @@ public class StoreDB {
     private String jdbcUsername = "root";
     private String jdbcPassword = "";
 
-    private static final String INSERT_PRODUCT_SQL = "INSERT INTO product" + "  (name, description, size, price) VALUES " +
+    private static final String INSERT_PRODUCT_SQL = "INSERT INTO products" + "  (name, description, size, price) VALUES " +
         " (?, ?, ?, ?);";
+    
+       
+    private static final String INSERT_CUSTOMER_SQL = "INSERT INTO customers" + "  (email, f_name, l_name, password, dob) VALUES " +
+        " (?, ?, ?, ?, ?);";
 
-    private static final String SELECT_ALL_Products = "select * from product ORDER BY ID DESC;";
+    private static final String SELECT_ALL_Products = "select * from products ORDER BY ID DESC;";
 
         
-    private static final String SELECT_Product_BY_ID = "select id,name,description,size,price from product where id =?";
+    private static final String SELECT_Product_BY_ID = "select id,name,description,size,price from products where id =?";
 
     public StoreDB() {}
     
@@ -56,6 +61,24 @@ public class StoreDB {
             printSQLException(e);
         }
     }
+    
+        
+    public void userRegister(Customer customer) throws SQLException {
+    System.out.println(INSERT_CUSTOMER_SQL);
+    try (Connection connection = getConnection(); 
+         PreparedStatement preparedStatement = connection.prepareStatement(INSERT_CUSTOMER_SQL)) {
+        preparedStatement.setString(1, customer.getEmail());
+        preparedStatement.setString(2, customer.getF_name());
+        preparedStatement.setString(3, customer.getL_name());               
+        preparedStatement.setString(4, customer.getPassword());  
+        preparedStatement.setString(5, customer.getDob());
+        System.out.println(preparedStatement);
+        preparedStatement.executeUpdate();
+    } catch (SQLException e) {
+        printSQLException(e);
+    }
+}
+
     
     public List < Product > selectAllProducts() {
 

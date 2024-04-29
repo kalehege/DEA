@@ -56,7 +56,7 @@
     <!--Form-->
     <div class="scontainer">
         <h2>SIGN UP</h2>
-        <form>
+        <form action="register" method="post">
             <div class="form-group">
               <label for="f_name">First Name:</label>
               <input type="text" id="f_name" name="f_name" required>
@@ -77,10 +77,6 @@
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="text" id="password" name="password" required>
-            </div>
-            <div class="form-group">
-                <label for="con_password">Password Confirm</label>
-                <input type="text" id="con_password" name="con_password" required>
             </div>
           <button type="submit">Sign Up</button>
         </form>

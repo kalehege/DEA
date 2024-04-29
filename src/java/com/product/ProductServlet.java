@@ -51,7 +51,7 @@ public class ProductServlet extends HttpServlet {
                                   
                 case "/product":
                     showEditForm(request, response);
-                    break;  
+                    break;    
                                     
                 case "/all-products":
                     showAllProduct(request, response);
@@ -59,6 +59,19 @@ public class ProductServlet extends HttpServlet {
                 case "/home":
                     showDefualt(request, response);
                     break;
+                    
+                                    
+                case "/sign-in":
+                    showLoginForm(request, response);
+                    break; 
+                                                   
+                case "/register":
+                    userRegister(request, response);
+                    break;
+                                    
+                case "/sign-up":
+                    showRegisterForm(request, response);
+                    break;  
             }
         } catch (SQLException ex) {
             throw new ServletException(ex);
@@ -115,5 +128,31 @@ public class ProductServlet extends HttpServlet {
         storeDB.insertProduct(newProduct);
         response.sendRedirect("product-view");
     }
+    
+        
+    private void userRegister(HttpServletRequest request, HttpServletResponse response)
+    throws SQLException, IOException {
+        String email = request.getParameter("email");
+        String f_name = request.getParameter("f_name");
+        String l_name = request.getParameter("l_name");     
+        String password = request.getParameter("password");
+        String dob = request.getParameter("dob");
+        Customer newCustomer = new Customer(email, f_name, l_name, password, dob);
+        storeDB.userRegister(newCustomer);
+        response.sendRedirect("sign-in");
+    }
 
+   
+    private void showRegisterForm(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+        RequestDispatcher dispatcher = request.getRequestDispatcher("createacc.jsp");
+        dispatcher.forward(request, response);
+    }
+    
+        
+    private void showLoginForm(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+        RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+        dispatcher.forward(request, response);
+    }
 }
