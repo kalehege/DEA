@@ -29,6 +29,9 @@ public class StoreDB {
 
         
     private static final String SELECT_Product_BY_ID = "select id,name,description,size,price from products where id =?";
+    
+        private static final String SELECT_validateUser_ID = "SELECT * FROM customers WHERE email = ? AND password = ?";
+
 
     public StoreDB() {}
     
@@ -46,6 +49,22 @@ public class StoreDB {
         return connection;
     }
     
+    public boolean validateUser(String email, String password) throws SQLException {
+    boolean isValidUser = false;         
+    System.out.println(SELECT_validateUser_ID);
+    try (Connection connection = getConnection();
+         PreparedStatement preparedStatement = connection.prepareStatement(SELECT_validateUser_ID)) {
+        preparedStatement.setString(1, email);
+        preparedStatement.setString(2, password);      
+        try (ResultSet resultSet = preparedStatement.executeQuery()) {
+            if (resultSet.next()) {
+                isValidUser = true;
+            }
+        }
+    }
+    return isValidUser;
+}
+
 
         
     public void insertProduct(Product product) throws SQLException {
@@ -77,7 +96,8 @@ public class StoreDB {
     } catch (SQLException e) {
         printSQLException(e);
     }
-}
+
+    }
 
     
     public List < Product > selectAllProducts() {

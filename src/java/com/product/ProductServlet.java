@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.product.StoreDB;
 import com.product.Product;
+import javax.servlet.http.HttpSession;
 /**
  *
  * @author niZeo
@@ -71,12 +72,30 @@ public class ProductServlet extends HttpServlet {
                                     
                 case "/sign-up":
                     showRegisterForm(request, response);
-                    break;  
+                    break;
+                    
+                    
+                case "/login":
+                    userLogin(request, response);
+                    break;
+
+                default:
+                    show404Page(request, response);
+                    break;
+
             }
         } catch (SQLException ex) {
             throw new ServletException(ex);
         }
     }
+    
+    private void show404Page(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+    response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+    RequestDispatcher dispatcher = request.getRequestDispatcher("404.jsp");
+    dispatcher.forward(request, response);
+}
+
         
     private void showDefualt(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
@@ -155,4 +174,21 @@ public class ProductServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
         dispatcher.forward(request, response);
     }
+    
+    private void userLogin(HttpServletRequest request, HttpServletResponse response)
+    throws SQLException, IOException {
+    String email = request.getParameter("email");
+    String password = request.getParameter("password");
+    
+    boolean isValidUser = storeDB.validateUser(email, password);
+    
+    if (isValidUser) {
+        HttpSession session = request.getSession();   
+        session.setAttribute("email", email);
+        response.sendRedirect("home");
+    } else {
+        response.sendRedirect("sign-in?error=1");
+    }
+}
+
 }
