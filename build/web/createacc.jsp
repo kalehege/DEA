@@ -57,26 +57,26 @@
     <div class="scontainer">
         <h2>SING UP</h2>
         <form>
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required>
-          </div>
-          <div class="form-group">
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday" required>
-          </div>
-          <div class="form-group">
-            <label for="sex">Sex:</label><br>
-            <select id="sex" name="sex" required>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="birthday" name="birthday" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="con_password">Password Confirm</label>
+                <input type="text" id="con_password" name="con_password" required>
+            </div>
           <button type="submit">Sign Up</button>
         </form>
       </div>
