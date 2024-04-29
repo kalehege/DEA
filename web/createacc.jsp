@@ -34,7 +34,7 @@
 	
 	
 	<!-- Header -->
-	<%@include file="header.jsp" %>
+	<%@include file="header2.jsp" %>
 		<!--/ End Header -->
 	
 	<!-- Breadcrumbs -->
@@ -44,8 +44,8 @@
 				<div class="col-12">
 					<div class="bread-inner">
 						<ul class="bread-list">
-							<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="createacc.html">Sign Up</a></li>
+							<li><a href="index.jsp">Home<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="createacc.jsp">Sign Up</a></li>
 						</ul>
 					</div>
 				</div>
@@ -55,7 +55,7 @@
 
     <!--Form-->
     <div class="scontainer">
-        <h2>Sign Up</h2>
+        <h2>SING UP</h2>
         <form>
           <div class="form-group">
             <label for="name">Name:</label>

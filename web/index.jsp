@@ -103,7 +103,7 @@
 						<div class="content">
 							<p>Flash Sale</p>
 							<h3>Unique <br> Accessories <br> Up to <span>40%</span> Off</h3>
-							<a href="#">Discover Now</a>
+                                                        <a href="accessories.jsp">Discover Now</a>
 						</div>
 					</div>
 				</div>
@@ -452,7 +452,7 @@
 					<div class="single-service">
 						<i class="ti-rocket"></i>
 						<h4>Free shiping</h4>
-						<p>Orders over $100</p>
+						<p>Orders over LKR10000.00</p>
 					</div>
 					<!-- End Single Service -->
 				</div>

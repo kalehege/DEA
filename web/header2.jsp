@@ -34,7 +34,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.jsp"><h2>Fashion Fusion</h2></a>
+							<a href="index.jsp"><img src = "images/logo.png"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
@@ -67,19 +67,19 @@
 					<div class="col-lg-2 col-md-3 col-12">
 						<div class="right-bar">
 							<!-- Search Form -->
-							<div class="sinlge-bar">
+							<!--<div class="sinlge-bar">
 								<a href="#" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-							</div>
+							</div>-->
 							<div class="sinlge-bar">
 								<a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 							</div>
 							<div class="sinlge-bar shopping">
-								<a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
+								<a href="cart.jsp" class="single-icon"><i class="ti-bag"></i> <span class="total-count">2</span></a>
 								<!-- Shopping Item -->
 								<div class="shopping-item">
 									<div class="dropdown-cart-header">
 										<span>2 Items</span>
-										<a href="#">View Cart</a>
+										<a href="cart.jsp">View Cart</a>
 									</div>
 									<ul class="shopping-list">
 										<li>
@@ -125,11 +125,12 @@
 													<li class="active"><a href="index.jsp">Home</a></li>
 													<!--<li><a href="#">Product</a></li>-->												
 													<!--<li><a href="#">Service</a></li>-->
-													<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
+													<li><a href="#">Products<i class="ti-angle-down"></i><span class="new">New</span></a>
 														<ul class="dropdown">
 															
-															<li><a href="cart.jsp">Cart</a></li>
-															<li><a href="checkout.jsp">Checkout</a></li>
+															<li><a href="mens.jsp">Men</a></li>
+															<li><a href="women.jsp">Women</a></li>
+                                                                                                                        <li><a href="accessories.jsp">Accessories</a></li>
 														</ul>
 													</li>
 													<!--<li><a href="#">Pages</a></li>-->								
