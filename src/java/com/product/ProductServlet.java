@@ -28,6 +28,8 @@ public class ProductServlet extends HttpServlet {
     public void init() {
         storeDB = new StoreDB();
     }
+    
+    
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
@@ -36,6 +38,7 @@ public class ProductServlet extends HttpServlet {
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
+        request.getSession().setMaxInactiveInterval(30 * 60);
         String action = request.getServletPath();
 
         try {
