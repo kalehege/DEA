@@ -28,7 +28,7 @@
 <body>
 
 <!-- Header -->
- <%@include file="header2.jsp" %>
+ <%@include file="header.jsp" %>
   <!--/ End Header -->
 
   <!-- Breadcrumbs -->
@@ -64,7 +64,18 @@
                     <p><c:out value="${product.size}" /></p>
                     <p class="price">Rs <c:out value="${product.price}" /></p>
                     <center>
-                        <input type="button" class="btn btn-primary madd-to-cart" value="Add to cart">
+                        <form action="cart" method="post">
+                               
+                            <input type="hidden" value="<c:out value="${product.name}" />" name="p_name">
+                            <input type="hidden" value="<c:out value="${product.description}" />" name="p_description">
+                            <input type="hidden" value="<c:out value="${product.price}" />" name="p_price">  
+                            <input type="hidden" value="<c:out value="${product.size}" />" name="p_size">
+                            <input type="hidden" value="<c:out value="${product.category}" />" name="p_category">
+                            <input type="hidden" value="<%= session.getAttribute("email") %>" name="customer_email">                 
+
+                            <input type="submit" class="btn btn-primary madd-to-cart" value="Add to cart">
+
+                        </form>
                     </center>
                 </div>
             </div> 

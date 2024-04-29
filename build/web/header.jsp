@@ -9,6 +9,7 @@
 							<ul class="list-main">
 								<li><i class="ti-headphone-alt"></i> 077 200 2000</li>
 								<li><i class="ti-email"></i> fashionfusion@gmail.com</li>
+                                                    
 							</ul>
 						</div>
 						<!--/ End Top Left -->
@@ -17,13 +18,13 @@
 						<!-- Top Right -->
 						<div class="right-content">
 							<ul class="list-main">
-								<li><i class="ti-location-pin"></i> No 45 , Pitipana Road , Homagama</li>
-                                                                
-                                                                <% if (session.getAttribute("email") != null) { %>
-                                                                <li><i class="ti-user"></i> <a href="#">My account</a></li>
-								<% } else { %>
-                                                                <li><i class="ti-power-off"></i><a href="login.jsp">Login</a></li>                                                              
-                                                                <% } %>
+                                                            <li><i class="ti-location-pin"></i> No 45 , Pitipana Road , Homagama</li>
+
+                                                            <% if (session.getAttribute("email") != null) { %>
+                                                            <li><i class="ti-user"></i> <a href="myaccount.jsp">My account</a></li>
+                                                            <% } else { %>
+                                                            <li><i class="ti-power-off"></i><a href="sign-in">Login</a></li>                                                              
+                                                            <% } %>
 							</ul>
 						</div>
 						<!-- End Top Right -->
@@ -73,7 +74,7 @@
 							
 							
 							<div class="sinlge-bar shopping">
-								<a href="#" class="single-icon">My Cart <i class="ti-bag"></i> <span class="total-count">2</span></a>
+								<a href="cart.jsp" class="single-icon">My Cart <i class="ti-bag"></i> <span class="total-count">2</span></a>
 								<!-- Shopping Item -->
 								<div class="shopping-item">
 									<div class="dropdown-cart-header">
@@ -114,27 +115,7 @@
 			<div class="container">
 				<div class="cat-nav-head">
 					<div class="row">
-						<div class="col-lg-3">
-							<div class="all-category">
-								<h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="true"></i>CATEGORIES</h3>
-								<ul class="main-category">
-									
-									<li>
-									
-											<li class="single-menu">
-												<a href="mens.jsp" class="title-link"><B>Shop Men's</B></a>
-											</li>
-											<li class="single-menu">
-												<a href="women.jsp" class="title-link"><b>Shop Women's</b></a>
-											</li>
-                                                                                        <li class="single-menu">
-												<a href="accessories.jsp" class="title-link"><B>Shop Accessories</B></a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-						</div>
+						
 						<div class="col-lg-9 col-12">
 							<div class="menu-area">
 								<!-- Main Menu -->
@@ -147,9 +128,11 @@
 												<!--<li><a href="#">Service</a></li>-->
 												<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 													<ul class="dropdown">
-                                                                                                            <li><a href = "view_all_product.jsp">Shop</a></li>
-														<li><a href="cart.jsp">Cart</a></li>
-														<li><a href="checkout.jsp">Checkout</a></li>
+                                                                                                            <li><a href = "view_all_product.jsp">T-Shirt</a></li>
+														<li><a href="view_all_product">Shirt</a></li>
+														<li><a href="view_all_product.jsp">Trousers</a></li>
+                                                                                                                <li><a href="view_all_product">Shorts</a></li>
+                                                                                                                
 													</ul>
 												</li>
 												<!--<li><a href="#">Pages</a></li>-->								

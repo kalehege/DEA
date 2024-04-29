@@ -8,28 +8,40 @@ public class Product {
     protected String description;
     protected String size;
     protected String price;
+    protected String category;
     
     public Product() {}
         
-    public Product(String name, String description, String size, String price) {
+    public Product(String name, String description, String size, String price, String category ) {
         super();
         this.name = name;
         this.description = description;
         this.size = size;
         this.price = price;
+        this.category = category;
     }
            
-    public Product(int id, String name, String description, String size, String price) {
+    public Product(int id, String name, String description, String size, String price, String category) {
         super();
         this.id = id;
         this.name = name;
         this.description = description;
         this.size = size;
-        this.price = price;
+        this.price = price;    
+        this.category = category;
+
     }
 
     public int getId() {
         return id;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public void setId(int id) {

@@ -34,7 +34,7 @@
 	
 	
 	<!-- Header -->
-	<%@include file="header2.jsp" %>
+	<%@include file="header.jsp" %>
 	
 	<!-- Breadcrumbs -->
 	<div class="breadcrumbs">
@@ -52,7 +52,7 @@
 		</div>
 	</div>
     <div class="scontainer">
-        <h2>SING IN</h2>
+        <h2>SIGN IN</h2>
         <form action="login" method="post">
           <div class="form-group">
             <label for="email">Email</label>

@@ -11,6 +11,7 @@ import java.util.List;
 
 import com.product.Product;
 import com.product.Customer;
+import com.product.Cart;
 
 public class StoreDB {
     
@@ -18,8 +19,8 @@ public class StoreDB {
     private String jdbcUsername = "root";
     private String jdbcPassword = "";
 
-    private static final String INSERT_PRODUCT_SQL = "INSERT INTO products" + "  (name, description, size, price) VALUES " +
-        " (?, ?, ?, ?);";
+    private static final String INSERT_PRODUCT_SQL = "INSERT INTO products" + "  (name, description, size, price, category) VALUES " +
+        " (?, ?, ?, ?, ?);";
     
        
     private static final String INSERT_CUSTOMER_SQL = "INSERT INTO customers" + "  (email, f_name, l_name, password, dob) VALUES " +
@@ -30,8 +31,11 @@ public class StoreDB {
         
     private static final String SELECT_Product_BY_ID = "select id,name,description,size,price from products where id =?";
     
-        private static final String SELECT_validateUser_ID = "SELECT * FROM customers WHERE email = ? AND password = ?";
+    private static final String SELECT_validateUser_ID = "SELECT * FROM customers WHERE email = ? AND password = ?";
 
+        
+    private static final String INSERT_ADDToCART_SQL = "INSERT INTO cart" + "  (p_name, p_description, p_price, p_size, p_catagory, customer_email) VALUES " +
+        " (?, ?, ?, ?, ?, ?);";
 
     public StoreDB() {}
     
@@ -74,6 +78,23 @@ public class StoreDB {
             preparedStatement.setString(2, product.getDescription());
             preparedStatement.setString(3, product.getSize());               
             preparedStatement.setString(4, product.getPrice());
+            preparedStatement.setString(5, product.getCategory());
+            System.out.println(preparedStatement);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+    }
+    
+    public void AddToCart(Cart cart) throws SQLException {
+        System.out.println(INSERT_ADDToCART_SQL);
+        try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_ADDToCART_SQL)) {
+            preparedStatement.setString(1, cart.getP_name());
+            preparedStatement.setString(2, cart.getP_description());
+            preparedStatement.setString(3, cart.getP_price());               
+            preparedStatement.setString(4, cart.getP_size());
+            preparedStatement.setString(5, cart.getP_catagory());    
+            preparedStatement.setString(6, cart.getCustomer_email());
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -98,6 +119,7 @@ public class StoreDB {
     }
 
     }
+    
 
     
     public List < Product > selectAllProducts() {
@@ -115,7 +137,8 @@ public class StoreDB {
                 String description = rs.getString("description");
                 String size = rs.getString("size");        
                 String price = rs.getString("price");
-                products.add(new Product(id, name, description, size, price));
+                String category = rs.getString("category");
+                products.add(new Product(id, name, description, size, price, category));
             }
         } catch (SQLException e) {
             printSQLException(e);
@@ -136,7 +159,8 @@ public class StoreDB {
                 String description = rs.getString("description");
                 String size = rs.getString("size");        
                 String price = rs.getString("price");
-                product = new Product(id, name, description, size, price);
+                String category = rs.getString("category");
+                product = new Product(id, name, description, size, price, category);
             }
         } catch (SQLException e) {
             printSQLException(e);
