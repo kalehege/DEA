@@ -12,6 +12,7 @@ import java.util.List;
 import com.product.Product;
 import com.product.Customer;
 import com.product.Cart;
+import javax.servlet.http.HttpServletRequest;
 
 public class StoreDB {
     
@@ -37,6 +38,9 @@ public class StoreDB {
     private static final String INSERT_ADDToCART_SQL = "INSERT INTO cart" + "  (p_name, p_description, p_price, p_size, p_catagory, customer_email) VALUES " +
         " (?, ?, ?, ?, ?, ?);";
 
+    private static final String SELECT_Cart_BY_USerMail = "SELECT * FROM cart WHERE customer_email = ?";
+
+    
     public StoreDB() {}
     
         
@@ -102,26 +106,6 @@ public class StoreDB {
         }
     }
     
-        
-    public void userRegister(Customer customer) throws SQLException {
-    System.out.println(INSERT_CUSTOMER_SQL);
-    try (Connection connection = getConnection(); 
-         PreparedStatement preparedStatement = connection.prepareStatement(INSERT_CUSTOMER_SQL)) {
-        preparedStatement.setString(1, customer.getEmail());
-        preparedStatement.setString(2, customer.getF_name());
-        preparedStatement.setString(3, customer.getL_name());               
-        preparedStatement.setString(4, customer.getPassword());  
-        preparedStatement.setString(5, customer.getDob());
-        System.out.println(preparedStatement);
-        preparedStatement.executeUpdate();
-    } catch (SQLException e) {
-        printSQLException(e);
-    }
-
-    }
-    
-
-    
     public List < Product > selectAllProducts() {
 
         List < Product > products = new ArrayList < > ();
@@ -146,6 +130,56 @@ public class StoreDB {
         return products;
     }
     
+        
+    public void userRegister(Customer customer) throws SQLException {
+    System.out.println(INSERT_CUSTOMER_SQL);
+    try (Connection connection = getConnection(); 
+         PreparedStatement preparedStatement = connection.prepareStatement(INSERT_CUSTOMER_SQL)) {
+        preparedStatement.setString(1, customer.getEmail());
+        preparedStatement.setString(2, customer.getF_name());
+        preparedStatement.setString(3, customer.getL_name());               
+        preparedStatement.setString(4, customer.getPassword());  
+        preparedStatement.setString(5, customer.getDob());
+        System.out.println(preparedStatement);
+        preparedStatement.executeUpdate();
+    } catch (SQLException e) {
+        printSQLException(e);
+    }
+
+    }
+    
+
+    
+    public List<Cart> selectCartByUserEmailFromSession(HttpServletRequest request) {
+        List<Cart> carts = new ArrayList<>();
+        String userEmail = (String) request.getSession().getAttribute("email");
+
+        if (userEmail != null) {
+            try (Connection connection = getConnection();
+                 PreparedStatement preparedStatement = connection.prepareStatement(SELECT_Cart_BY_USerMail)) {
+
+                preparedStatement.setString(1, userEmail);
+
+                ResultSet rs = preparedStatement.executeQuery();
+
+                while (rs.next()) {
+                    int cart_id = rs.getInt("cart_id");
+                    String p_name = rs.getString("p_name");
+                    String p_description = rs.getString("p_description");
+                    String p_price = rs.getString("p_price");        
+                    String p_size = rs.getString("p_size");
+                    String p_catagory = rs.getString("p_catagory");
+                    String customer_email = rs.getString("customer_email");
+
+                    carts.add(new Cart(cart_id, p_name, p_description, p_price, p_size, p_catagory, customer_email));
+                }
+            } catch (SQLException e) {
+                printSQLException(e);
+            }
+        }
+        return carts;
+    }
+      
     public Product selectProduct(int id) {
         Product product = null;
         try (Connection connection = getConnection();

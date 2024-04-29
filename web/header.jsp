@@ -1,3 +1,5 @@
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <header class="header shop">
 		<!-- Topbar -->
 		<div class="topbar">
@@ -71,8 +73,6 @@
 					<div class="col-lg-2 col-md-3 col-12">
 						<div class="right-bar">
 							<!-- Search Form -->
-							
-							
 							<div class="sinlge-bar shopping">
 								<a href="cart.jsp" class="single-icon">My Cart <i class="ti-bag"></i> <span class="total-count">2</span></a>
 								<!-- Shopping Item -->
@@ -82,25 +82,25 @@
 										<a href="#">View Cart</a>
 									</div>
 									<ul class="shopping-list">
-										<li>
-											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-											<h4><a href="#">Woman Ring</a></h4>
-											<p class="quantity">1x - <span class="amount">LKR1000.00</span></p>
-										</li>
-										<li>
-											<a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
-											<a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-											<h4><a href="#">Woman Necklace</a></h4>
-											<p class="quantity">1x - <span class="amount">LKR2750.00</span></p>
-										</li>
+                                                                            <c:forEach var="cart" items="${listCart}">
+                                                                                    <li>
+                                                                                        <a href="#" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
+                                                                                        <a class="cart-img" href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
+                                                                                        <h4><a href="#"><c:out value="${cart.p_name}" /></a></h4>
+                                                                                        <p class="quantity">1x - <span class="amount">LKR <c:out value="${cart.p_price}" /></span></p>
+                                                                                    </li>
+                                                                            </c:forEach>	
 									</ul>
 									<div class="bottom">
 										<div class="total">
 											<span>Total</span>
 											<span class="total-amount">LKR3750.00</span>
 										</div>
-										<a href="checkout.jsp" class="btn animate">Checkout</a>
+                                                                            <% if (session.getAttribute("email") != null) { %>
+                                                                                <li><i class="ti-user"></i> <a href="myaccount.jsp">My account</a></li>
+                                                                                <% } else { %>
+                                                                                <li>You need to sign-in</li>                                                              
+                                                                                <% } %>
 									</div>
 								</div>
 								<!--/ End Shopping Item -->

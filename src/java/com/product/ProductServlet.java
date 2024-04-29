@@ -77,7 +77,6 @@ public class ProductServlet extends HttpServlet {
                     showRegisterForm(request, response);
                     break;
                     
-                    
                 case "/login":
                     userLogin(request, response);
                     break;                 
@@ -104,7 +103,12 @@ public class ProductServlet extends HttpServlet {
 
         
     private void showDefualt(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
+    throws SQLException, IOException, ServletException {
+        
+        
+        List <Cart> listCart = storeDB.selectCartByUserEmailFromSession(request);
+        request.setAttribute("listCart", listCart);
+        
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request, response);
     }
@@ -113,6 +117,12 @@ public class ProductServlet extends HttpServlet {
         throws SQLException, IOException, ServletException {
         List < Product > listProduct = storeDB.selectAllProducts();
         request.setAttribute("listProduct", listProduct);
+        
+                
+        List<Cart> listCart = storeDB.selectCartByUserEmailFromSession(request);
+        request.setAttribute("listCart", listCart);
+
+        
         RequestDispatcher dispatcher = request.getRequestDispatcher("view_all_product.jsp");
         dispatcher.forward(request, response);
     }
@@ -183,6 +193,15 @@ public class ProductServlet extends HttpServlet {
         response.sendRedirect(referer);
 
     }
+    
+        
+//    private void showAllAddToCart(HttpServletRequest request, HttpServletResponse response)
+//        throws SQLException, IOException, ServletException {
+//        List < Cart > listCart = storeDB.selectAllToCart();
+//        request.setAttribute("listCart", listCart);
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("header.jsp");
+//        dispatcher.forward(request, response);
+//    }
 
    
     private void showRegisterForm(HttpServletRequest request, HttpServletResponse response)
