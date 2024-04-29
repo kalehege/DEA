@@ -17,9 +17,17 @@
 						<!-- Top Right -->
 						<div class="right-content">
 							<ul class="list-main">
-								<li><i class="ti-location-pin"></i> No 45 , Pitipana Road , Homagama</li>
-							    <li><i class="ti-user"></i> <a href="#">My account</a></li>
-								<li><i class="ti-power-off"></i><a href="login.jsp">Login</a></li>
+                                                            <li><i class="ti-location-pin"></i> No 45 , Pitipana Road , Homagama</li>
+                                                            
+                                                            <% if (session.getAttribute("email") != null) { %>
+                                                            
+                                                            <li><i class="ti-user"></i> <a href="#">My account</a></li>
+                                                            
+                                                            <% } else { %>
+                                                            
+                                                            <li><i class="ti-power-off"></i><a href="sign-in">Login</a></li> 
+                                                            
+                                                            <% } %>
 							</ul>
 						</div>
 						<!-- End Top Right -->
