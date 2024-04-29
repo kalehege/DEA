@@ -73,6 +73,11 @@ public class ProductServlet extends HttpServlet {
                     showRegisterForm(request, response);
                     break;
                     
+                    
+                case "/login":
+                    userLogin(request, response);
+                    break;
+
                 default:
                     show404Page(request, response);
                     break;
@@ -168,4 +173,19 @@ public class ProductServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
         dispatcher.forward(request, response);
     }
+    
+    private void userLogin(HttpServletRequest request, HttpServletResponse response)
+    throws SQLException, IOException {
+    String email = request.getParameter("email");
+    String password = request.getParameter("password");
+    
+    boolean isValidUser = storeDB.validateUser(email, password);
+    
+    if (isValidUser) {
+        response.sendRedirect("home");
+    } else {
+        response.sendRedirect("sign-in?error=1");
+    }
+}
+
 }

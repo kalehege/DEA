@@ -53,7 +53,7 @@
 	</div>
     <div class="scontainer">
         <h2>SING IN</h2>
-        <form>
+        <form action="login" method="post">
           <div class="form-group">
             <label for="email">Email</label>
             <input type="text" id="email" name="email" required>
@@ -62,11 +62,24 @@
             <label for="password">Password:</label>
             <input type="text" id="password" name="password" required>
           </div>
+            <% 
+    
+                String error = request.getParameter("error");
+                     if (error != null && error.equals("1")) { 
+            %>
+            <div class="alert alert-danger" role="alert">
+                Invalid email or password. Please try again.
+            </div>
+            <% } %>
           <button type="submit">Sign In</button>
         </form>          
         <p>Don't have an account? <a href="sign-up">Create one</a></p>
+                    
+        <form action="login?error=1" method="post">
 
+            
       </div>
+
 
     <%@include file="footer.jsp" %>
 
