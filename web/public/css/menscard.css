@@ -50,3 +50,24 @@ text-align: center;
    font-family: Arial, sans-serif; 
    text-align: center;
 }
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60; /* Adjust color as needed */
+    
+}
+.mac{
+    padding: 10px;
+}
+ #productCarousel .carousel-inner .carousel-item img {
+      width: 100%;
+      height: 500px; /* Adjust height as needed */
+      object-fit: cover;
+    }
+    .custom-height {
+    height: 500px;
+    overflow-y: auto;
+}
+.mac2{
+    padding-top: 30px;
+}
