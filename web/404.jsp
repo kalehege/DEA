@@ -39,7 +39,7 @@
         <!-- Include the GIF here -->
         <img src="public/images/404.gif" alt="404 GIF">
         <h1 class="error-heading"></h1>
-        <a href="/" class="btn btn-primary error-link">Go back to homepage</a>
+        <a href="/DEA/home" class="btn btn-primary error-link">Go back to homepage</a>
     </div>
     <!-- Bootstrap JS (optional) -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
