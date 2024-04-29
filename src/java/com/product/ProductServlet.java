@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.product.StoreDB;
 import com.product.Product;
+import javax.servlet.http.HttpSession;
 /**
  *
  * @author niZeo
@@ -182,6 +183,8 @@ public class ProductServlet extends HttpServlet {
     boolean isValidUser = storeDB.validateUser(email, password);
     
     if (isValidUser) {
+        HttpSession session = request.getSession();   
+        session.setAttribute("email", email);
         response.sendRedirect("home");
     } else {
         response.sendRedirect("sign-in?error=1");
