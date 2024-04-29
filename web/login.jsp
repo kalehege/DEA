@@ -51,39 +51,25 @@
 			</div>
 		</div>
 	</div>
-    <div class="lcontainer">
-        <div class="login-container">
-            <h2>LOGIN</h2>
-            <br>
+    <div class="scontainer">
+        <h2>SING IN</h2>
+        <form>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" required>
+          </div>
+          <button type="submit">Sign In</button>
+        </form>          
+        <p>Don't have an account? <a href="createacc.jsp">Create one</a></p>
 
-            <form id="login-form" action="login.php" method="POST">
-                <div class="input-group">
-                    <table>
-                    <tr>
-                        <td><label for="username">Username &nbsp;</label></td>
-                        <td><input type="text" id="username" name="username" required></td>
-                    </tr>
+      </div>
 
-                    <tr>
-                        <td><label for="password">Password</label></td>
-                        <td><input type="password" id="password" name="password" required></td>
-                    </tr>
-                
-                </table>
-                </div>
-                <button type="submit">Login</button>
-            </form>
-            <p>Don't have an account? <a href="createacc.jsp">Create one</a></p>
-        </div>
-    </div>
+    <%@include file="footer.jsp" %>
 
-    <!-- Start Footer Area -->
-	        <%@include file="footer.jsp" %>
-
-		
-	
- 
-	<!-- Jquery -->
-   <%@include file="js.jsp" %>
+    <%@include file="js.jsp" %>
 </body>
 </html>
