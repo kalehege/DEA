@@ -1,0 +1,44 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 220px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 70px;
+  margin-top: 40px;}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #faa300;
+}
+
+.card img {
+  border-radius: 4px;
+}
+
+.card h3 {
+   text-align: center;
+}
+
+.card p {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.card a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.blue-button {
+            background-color: #dbd9d5;
+            color: #faa300;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+
