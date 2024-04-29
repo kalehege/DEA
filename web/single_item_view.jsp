@@ -26,9 +26,17 @@
 
 </head>
 <body>
+    
+        <c:if test="${product != null}">
+        <h1>ID: <c:out value='${product.id}' /></h1>
+        <h1>Name: <c:out value='${product.name}' /></h1>
+        <h1>Description: <c:out value='${product.description}' /></h1>
+        <h1>Size: <c:out value='${product.size}' /></h1>
+        <h1>Price: <c:out value='${product.price}' /></h1>
+    </c:if>
 
 <!-- Header -->
- <%@include file="header2.jsp" %>
+ <%@include file="header.jsp" %>
   <!--/ End Header -->
 
   <!-- Breadcrumbs -->
