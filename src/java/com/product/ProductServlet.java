@@ -112,7 +112,7 @@ public class ProductServlet extends HttpServlet {
         String size = request.getParameter("size");     
         String price = request.getParameter("price");
         Product newProduct = new Product(name, description, size, price);
-        storeDB.insertUser(newProduct);
+        storeDB.insertProduct(newProduct);
         response.sendRedirect("product-view");
     }
 
