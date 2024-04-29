@@ -34,7 +34,7 @@
 	
 	
 	<!-- Header -->
-	<%@include file="header2.jsp" %>
+	<%@include file="header.jsp" %>
 		<!--/ End Header -->
 	
 	<!-- Breadcrumbs -->
