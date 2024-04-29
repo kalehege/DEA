@@ -80,6 +80,9 @@ public class ProductServlet extends HttpServlet {
                     
                 case "/login":
                     userLogin(request, response);
+                    break;                 
+                case "/cart":
+                    AddToCart(request, response);
                     break;
 
                 default:
@@ -163,6 +166,22 @@ public class ProductServlet extends HttpServlet {
         Customer newCustomer = new Customer(email, f_name, l_name, password, dob);
         storeDB.userRegister(newCustomer);
         response.sendRedirect("sign-in");
+    }
+    
+        
+    private void AddToCart(HttpServletRequest request, HttpServletResponse response)
+    throws SQLException, IOException {
+        String p_name = request.getParameter("p_name");
+        String p_description = request.getParameter("p_description");
+        String p_price = request.getParameter("p_price");     
+        String p_size	 = request.getParameter("p_size");
+        String p_catagory = request.getParameter("p_category");      
+        String customer_email = request.getParameter("customer_email");
+        Cart addCart = new Cart(p_name, p_description, p_price, p_size, p_catagory, customer_email);
+        storeDB.AddToCart(addCart);
+        String referer = request.getHeader("Referer");
+        response.sendRedirect(referer);
+
     }
 
    
