@@ -18,8 +18,8 @@ public class StoreDB {
     private String jdbcUsername = "root";
     private String jdbcPassword = "";
 
-    private static final String INSERT_PRODUCT_SQL = "INSERT INTO products" + "  (name, description, size, price) VALUES " +
-        " (?, ?, ?, ?);";
+    private static final String INSERT_PRODUCT_SQL = "INSERT INTO products" + "  (name, description, size, price, category) VALUES " +
+        " (?, ?, ?, ?, ?);";
     
        
     private static final String INSERT_CUSTOMER_SQL = "INSERT INTO customers" + "  (email, f_name, l_name, password, dob) VALUES " +
@@ -74,6 +74,7 @@ public class StoreDB {
             preparedStatement.setString(2, product.getDescription());
             preparedStatement.setString(3, product.getSize());               
             preparedStatement.setString(4, product.getPrice());
+            preparedStatement.setString(5, product.getCategory());
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -115,7 +116,8 @@ public class StoreDB {
                 String description = rs.getString("description");
                 String size = rs.getString("size");        
                 String price = rs.getString("price");
-                products.add(new Product(id, name, description, size, price));
+                String category = rs.getString("category");
+                products.add(new Product(id, name, description, size, price, category));
             }
         } catch (SQLException e) {
             printSQLException(e);
@@ -136,7 +138,8 @@ public class StoreDB {
                 String description = rs.getString("description");
                 String size = rs.getString("size");        
                 String price = rs.getString("price");
-                product = new Product(id, name, description, size, price);
+                String category = rs.getString("category");
+                product = new Product(id, name, description, size, price, category);
             }
         } catch (SQLException e) {
             printSQLException(e);

@@ -30,6 +30,11 @@
                     <label for="price">Price</label>
                     <input type="text" name="price" class="form-control">
                 </div>
+                             
+                <div class="col-md-12">
+                    <label for="category">Category</label>
+                    <input type="text" name="category" class="form-control">
+                </div>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
