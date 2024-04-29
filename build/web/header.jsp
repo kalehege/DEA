@@ -147,9 +147,11 @@
 												<!--<li><a href="#">Service</a></li>-->
 												<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 													<ul class="dropdown">
-                                                                                                            <li><a href = "view_all_product.jsp">Shop</a></li>
-														<li><a href="cart.jsp">Cart</a></li>
-														<li><a href="checkout.jsp">Checkout</a></li>
+                                                                                                            <li><a href = "view_all_product.jsp">T-Shirt</a></li>
+														<li><a href="view_all_product">Shirt</a></li>
+														<li><a href="view_all_product.jsp">Trousers</a></li>
+                                                                                                                <li><a href="view_all_product">Shorts</a></li>
+                                                                                                                
 													</ul>
 												</li>
 												<!--<li><a href="#">Pages</a></li>-->								
