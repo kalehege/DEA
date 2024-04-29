@@ -34,7 +34,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-                                                    <a href="index.jsp"><img src = "images/logo.png"></a>
+                                                    <a href="index.jsp"><img src = "public/images/logo.png"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
@@ -143,6 +143,7 @@
 												<!--<li><a href="#">Service</a></li>-->
 												<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 													<ul class="dropdown">
+                                                                                                            <li><a href = "view_all_product.jsp">Shop</a></li>
 														<li><a href="cart.jsp">Cart</a></li>
 														<li><a href="checkout.jsp">Checkout</a></li>
 													</ul>
