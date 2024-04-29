@@ -43,7 +43,7 @@ public class StoreDB {
     
 
         
-    public void insertUser(Product product) throws SQLException {
+    public void insertProduct(Product product) throws SQLException {
         System.out.println(INSERT_PRODUCT_SQL);
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_PRODUCT_SQL)) {
             preparedStatement.setString(1, product.getName());
