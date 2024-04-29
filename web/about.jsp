@@ -1,9 +1,3 @@
-<%-- 
-    Document   : about
-    Created on : Apr 27, 2024, 3:17:00?PM
-    Author     : Tharindu
---%>
-
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -68,7 +62,7 @@
                 <div class="col-lg-12">
                     <div class="single-head">
                         <div class="title">
-                            <h4>About Us</h4>
+                            <center><h4><b>About Us</b></h4></center>
                             <h5 align="center">Welcome to Fashion Fusion! Our team is dedicated to bringing you the latest trends and styles in the exciting world of fashion</h5>
                         </div>
                         <div class="single-info">
@@ -76,11 +70,11 @@
                             <p></p>
                         </div>
 						<div class="title">
-                            <h4>Vision</h4>
+                                                    <center><h4><b>Vision</b></h4></center>
 							<h5 align="center">Our Vision is to completely transform the way people buy branded apparel online by creating a flawless, motivating environment that values uniqueness and self-expression.</h5>
 						</div>
 						<div class="title">
-                            <h4>Mission</h4>
+                                                    <center><h4><b>Mission</b></h4></center>
 							<h5 align="center">Our Mission is to become the go-to brand for ethical and stylish consumers worldwide by using creativity, morality, and a genuine passion for fashion. </h5>
 						</div>
                     </div>
@@ -90,91 +84,92 @@
     </section>
     <br><br>
 
-	<section class="contact-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="single-head">
+<section class="contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="single-head">
 
-                        <table align="center">
-							<tr>
-								<td><div class="ccard">
-									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
-									<h5><center>Malinda Kaushalya</center></h5><br>
-									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
-								  </div></td>
+                    <table align="center">
+                        <tr>
+                            <td><div class="ccard">
+                                <img src="public/images/about us/chamod.jpg" alt="Example Image" style="width: 100%"><br>
+                                <h5><center>Chamod <br>Tharindu</center></h5><br>
+                                <p>Chamod is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
+                              </div></td>
 
-								  <td><div class="ccard">
-									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
-									<h5><center>Thilina Sandaruwan</center></h5><br>
-									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
-								  </div></td>
-					
-								  <td><div class="ccard">
-									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
-									<h5><center>Ravindra Sampath</center></h5><br>
-									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
-								  </div></td>
+                              <td><div class="ccard">
+                                <img src="public/images/about us/thilina.jpg" alt="Example Image" style="width: 100%"><br>
+                                <h5><center>Thilina <br>Sandaruwan</center></h5><br>
+                                <p>Thilina is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
+                              </div></td>
+                
+                              <td><div class="ccard">
+                                <img src="public/images/about us/sampath.jpg" alt="Example Image" style="width: 100%"><br>
+                                <h5><center>Ravindra <br>Sampath</center></h5><br>
+                                <p>Sampath is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
+                              </div></td>
 
-								  <td><div class="ccard">
-									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
-									<h5><center>Chamini Gamage</center></h5><br>
-									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
-								  </div></td>
+                              <td><div class="ccard">
+                                                                      <img src="public/images/about us/Malinda.jpg" alt="Example Image" style="width: 100%"><br>
+                                <h5><center>Malinda <br>Kawshalya</center></h5><br>
+                                <p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
+                              </div></td>
 
-								</tr>
-							
-								<tr>
-									<td><div class="ccard">
-									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
-									<h5><center>Charith Bhupa</center></h5><br>
-									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
-								  </div></td>
-						
-								  <td><div class="ccard">
-									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
-									<h5><center>Ravindu Pahan</center></h5><br>
-									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
-								  </div></td>
-						
-								  <td><div class="ccard">
-									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
-									<h5><center>Bhanuka</center></h5><br>
-									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
-								  </div></td>
-						
-								  <td><div class="ccard">
-									<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
-									<h5><center>Hashan Shavindha</center></h5><br>
-									<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
-								  </div></td>
-
-								</tr>
-
-								<tr><center>
-									<td><div class="ccard">
-										<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
-										<h5><center>Chamod Tharindu</center></h5><br>
-										<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
-									  </div></td>
-						
-									  <td><div class="ccard">
-										<img src="images/women/frok1.jpg" alt="Example Image" style="width: 100%"><br>
-										<h5><center>Tharindu Premrathne</center></h5><br>
-										<p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
-									  </div></td></center>
-
-								</tr>
-
-
-							</table>
-
+                            </tr>
                         
-                    </div>
+                            <tr>
+                                <td><div class="ccard">
+                                <img src="public/images/about us/tharindu.jpg" alt="Example Image" style="width: 100%"><br>
+                                <h5><center>Tharindu <br>Premarathna</center></h5><br>
+                                <p>Tharindu is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering.</p>
+                              </div></td>
+                    
+                              <td><div class="ccard">
+                                <img src="public/images/about us/bhanuka.jpg" alt="Example Image" style="width: 100%"><br>
+                                <h5><center>Bhanuka <br>Heshan</center></h5><br>
+                                <p>Bhanuka is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
+                              </div></td>
+                    
+                              <td><div class="ccard">
+                                <img src="public/images/about us/hashi.jpg" alt="Example Image" style="width: 100%"><br>
+                                <h5><center>Hashan <br>Shavindha</center></h5><br>
+                                <p>Hashan is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering.</p>
+                              </div></td>
+                    
+                              <td><div class="ccard">
+                                <img src="public/images/about us/bhupa.jpg" alt="Example Image" style="width: 100%"><br>
+                                <h5><center>Chirath <br>Bhupa</center></h5><br>
+                                <p>Chirath is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering.</p>
+                              </div></td>
+
+                            </tr>
+
+                            <tr><center>
+                                <td><div class="ccard">
+                                    <img src="public/images/about us/pahan.jpg" alt="Example Image" style="width: 100%"><br>
+                                    <h5><center>Ravindu <br>Pahan</center></h5><br>
+                                    <p>Pahan is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering..</p>
+                                  </div></td>
+                    
+                                  <td><div class="ccard">
+                                    <img src="public/images/about us/chamini.jpg" alt="Example Image" style="width: 100%"><br>
+                                    <h5><center>Chamini <br>Gamage</center></h5><br>
+                                    <p>Chamini is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
+                                  </div></td></center>
+
+                            </tr>
+
+
+                        </table>
+
+                    
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 <br><br><br><br>
 
 
