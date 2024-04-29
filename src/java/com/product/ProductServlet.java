@@ -71,12 +71,25 @@ public class ProductServlet extends HttpServlet {
                                     
                 case "/sign-up":
                     showRegisterForm(request, response);
-                    break;  
+                    break;
+                    
+                default:
+                    show404Page(request, response);
+                    break;
+
             }
         } catch (SQLException ex) {
             throw new ServletException(ex);
         }
     }
+    
+    private void show404Page(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+    response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+    RequestDispatcher dispatcher = request.getRequestDispatcher("404.jsp");
+    dispatcher.forward(request, response);
+}
+
         
     private void showDefualt(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
