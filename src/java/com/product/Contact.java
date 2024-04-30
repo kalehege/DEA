@@ -13,7 +13,9 @@ public class Contact {
         
     protected int id;
     protected String name;
+        
     protected String email;
+    protected String subject;
     protected String message;  
     
         
