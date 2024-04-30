@@ -7,7 +7,7 @@
 						<!-- Single Widget -->
 						<div class="single-footer about">
 							<div class="logo">
-								<a href="index.jsp"><h2><img src = "public/images/logo 2.png"></h2>
+								<a href="home"><h2><img src = "public/images/logo 2.png"></h2>
 							</div>
 							<p class="text">" Your go-to destination for cutting-edge fashion trends, quality garments, and personalized style consultations... "</p>
                                                         <p class="call"> Got Question..? Call us 24/7<span><center>011 200 2000</center></p></span></p>
@@ -19,10 +19,10 @@
 						<div class="single-footer links">
 							<h4>Information</h4>
 							<ul>
-								<li><a href="about.jsp">About Us</a></li>
+								<li><a href="about">About Us</a></li>
 								
 								<li><a href="terms.jsp">Terms & Conditions</a></li>
-								<li><a href="contact.jsp">Contact Us</a></li>
+								<li><a href="contact">Contact Us</a></li>
 								
 							</ul>
 						</div>
