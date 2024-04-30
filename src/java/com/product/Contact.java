@@ -25,7 +25,7 @@ public class Contact {
    
          super();
         this.name = name;
-        this.name = subject;
+        this.subject = subject;
         this.email = email;
         this.message = message;
      }
