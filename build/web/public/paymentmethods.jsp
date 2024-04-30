@@ -32,16 +32,11 @@
     <!-- Slider Area -->
     <!--/ End Slider Area -->
     <!-- Profile Information Section -->
-    <section class="vh-100 py-3 gradient-custom">
+      <section class="vh-100 py-3 gradient-custom">
         <div class="container h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="container col-12 align-content-center text-center">
                                         
-                    <h1>User Profile</h1>
-                    <a class="btn btn-danger" href="logout.php">Logout</a>
-                </div>
-                <div class="scontainer">
-                                       
                     <h1>Add cards</h1>
                     <a class="btn btn-danger" href="logout.php">Select</a>
                 </div>
@@ -61,6 +56,7 @@
         <input type="submit" value="Add Card">
     </form>
 
+
       </div>
             </div>
         </div>
@@ -71,6 +67,3 @@
     <%@include file="js.jsp" %>
 </body>
 </html>
-
-
-
