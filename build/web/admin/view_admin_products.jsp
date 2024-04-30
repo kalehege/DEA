@@ -22,6 +22,7 @@
                     <th>Description</th>
                     <th>Size</th>
                     <th>Price</th>
+                    <th>Category</th>
                     <th>View</th>
 
                     <th>Delete</th>
@@ -44,6 +45,9 @@
                         </td>
                         <td>
                            <c:out value="${product.price}" />
+                        </td>
+                        <td>
+                           <c:out value="${product.category}" />
                         </td>
                         <td><a class="btn btn-primary" href="#">View</a></td>
 

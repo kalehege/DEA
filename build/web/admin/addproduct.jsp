@@ -33,8 +33,14 @@
                              
                 <div class="col-md-12">
                     <label for="category">Category</label>
-                    <input type="text" name="category" class="form-control">
+                    <select name="category" class="form-control">
+                        <option value="t_shirt">T-Shirt</option>
+                        <option value="shirt">Shirt</option>
+                        <option value="trousers">Trousers</option>
+                        <option value="shorts">Shorts</option>
+                    </select>
                 </div>
+
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
