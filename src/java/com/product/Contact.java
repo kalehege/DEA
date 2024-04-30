@@ -21,7 +21,7 @@ public class Contact {
         
     public Contact(){}
     
-     public Contact (String name, String email, String subject, String message){
+     public Contact (String name, String subject, String email, String message){
    
          super();
         this.name = name;
@@ -31,7 +31,7 @@ public class Contact {
      }
      
              
-     public Contact (int id, String name, String email, String subject, String message){
+     public Contact (int id, String name, String subject, String email, String message){
    
          super();
          this.id = id;
