@@ -161,9 +161,10 @@ public class StoreDB {
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
+                String subject = rs.getString("subject");
                 String email = rs.getString("email");
                 String message = rs.getString("message");
-                contacts.add(new Contact (id, name, email, message));
+                contacts.add(new Contact (id, name, subject, email, message));
             }
         } catch (SQLException e) {
             printSQLException(e);
