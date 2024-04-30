@@ -28,6 +28,9 @@ public class StoreDB {
         " (?, ?, ?, ?, ?);";
 
     private static final String SELECT_ALL_Products = "select * from products ORDER BY ID DESC;";
+    
+    private static final String SELECT_PRODUCTS_BY_CATEGORY = "SELECT * FROM products WHERE category = ? ORDER BY id DESC;";
+
 
         
     private static final String SELECT_Product_BY_ID = "select id,name,description,size,price from products where id =?";
@@ -129,6 +132,26 @@ public class StoreDB {
         }
         return products;
     }
+    
+    public List<Product> selectProductsByCategory(String category) {
+    List<Product> products = new ArrayList<>();
+    try (Connection connection = getConnection();
+         PreparedStatement preparedStatement = connection.prepareStatement(SELECT_PRODUCTS_BY_CATEGORY)) {
+        preparedStatement.setString(1, category);
+        ResultSet rs = preparedStatement.executeQuery();
+        while (rs.next()) {
+            int id = rs.getInt("id");
+            String name = rs.getString("name");
+            String description = rs.getString("description");
+            String size = rs.getString("size");        
+            String price = rs.getString("price");
+            products.add(new Product(id, name, description, size, price, category));
+        }
+    } catch (SQLException e) {
+        printSQLException(e);
+    }
+    return products;
+}
     
         
     public void userRegister(Customer customer) throws SQLException {

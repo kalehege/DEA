@@ -145,12 +145,12 @@
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
 												<li class="active"><a href="home">Home</a></li>
-												<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
+												<li><a href="all-products?category=all">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 													<ul class="dropdown">
-                                                                                                            <li><a href = "view_all_product.jsp">T-Shirt</a></li>
-														<li><a href="view_all_product">Shirt</a></li>
-														<li><a href="view_all_product.jsp">Trousers</a></li>
-                                                                                                                <li><a href="view_all_product">Shorts</a></li>
+                                                                                                            <li><a href = "all-products?category=t_shirt">T-Shirt</a></li>
+														<li><a href="all-products?category=shirt">Shirt</a></li>
+														<li><a href="all-products?category=trousers">Trousers</a></li>
+                                                                                                                <li><a href="all-products?category=shorts">Shorts</a></li>
                                                                                                                 
 													</ul>
 												</li>

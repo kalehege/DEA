@@ -58,7 +58,7 @@ public class ProductServlet extends HttpServlet {
                     break;    
                                     
                 case "/all-products":
-                    showAllProduct(request, response);
+                    showProductsByCategory(request, response);
                     break;
                 case "/home":
                     showDefualt(request, response);
@@ -135,19 +135,26 @@ public class ProductServlet extends HttpServlet {
         dispatcher.forward(request, response);
     }
         
-    private void showAllProduct(HttpServletRequest request, HttpServletResponse response)
+    private void showProductsByCategory(HttpServletRequest request, HttpServletResponse response)
         throws SQLException, IOException, ServletException {
-        List < Product > listProduct = storeDB.selectAllProducts();
-        request.setAttribute("listProduct", listProduct);
         
-                
-        List<Cart> listCart = storeDB.selectCartByUserEmailFromSession(request);
-        request.setAttribute("listCart", listCart);
-
+    String category = request.getParameter("category");
         
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view_all_product.jsp");
-        dispatcher.forward(request, response);
+    List<Product> listProduct;
+    if (category != null && category.equals("all")) {
+        listProduct = storeDB.selectAllProducts();
+    } else {
+        listProduct = storeDB.selectProductsByCategory(category);
     }
+    request.setAttribute("listProduct", listProduct);
+
+    List<Cart> listCart = storeDB.selectCartByUserEmailFromSession(request);
+    request.setAttribute("listCart", listCart);
+
+    RequestDispatcher dispatcher = request.getRequestDispatcher("view_all_product.jsp");
+    dispatcher.forward(request, response);
+}
+
         
     private void listProductAdmin(HttpServletRequest request, HttpServletResponse response)
     throws SQLException, IOException, ServletException {
