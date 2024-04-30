@@ -144,9 +144,7 @@
 									<div class="navbar-collapse">	
 										<div class="nav-inner">	
 											<ul class="nav main-menu menu navbar-nav">
-												<li class="active"><a href="index.jsp">Home</a></li>
-												<!--<li><a href="#">Product</a></li>-->												
-												<!--<li><a href="#">Service</a></li>-->
+												<li class="active"><a href="home">Home</a></li>
 												<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 													<ul class="dropdown">
                                                                                                             <li><a href = "view_all_product.jsp">T-Shirt</a></li>
@@ -156,13 +154,7 @@
                                                                                                                 
 													</ul>
 												</li>
-												<!--<li><a href="#">Pages</a></li>-->								
-												<!--<li><a href="#">Blog<i class="ti-angle-down"></i></a>
-													<ul class="dropdown">
-														<li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
-													</ul>
-												</li>-->
-												<li><a href="about.jsp">About Us</a></li>
+												<li><a href="about">About Us</a></li>
 												<li><a href="contact.jsp">Contact Us</a></li>
 												</ul>
 										</div>

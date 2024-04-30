@@ -63,7 +63,10 @@ public class ProductServlet extends HttpServlet {
                 case "/home":
                     showDefualt(request, response);
                     break;
-                    
+                                
+                case "/about":
+                    showAbout(request, response);
+                    break;    
                                     
                 case "/sign-in":
                     showLoginForm(request, response);
@@ -110,6 +113,13 @@ public class ProductServlet extends HttpServlet {
         request.setAttribute("listCart", listCart);
         
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+        dispatcher.forward(request, response);
+    }
+    
+            
+    private void showAbout(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+        RequestDispatcher dispatcher = request.getRequestDispatcher("about.jsp");
         dispatcher.forward(request, response);
     }
         
