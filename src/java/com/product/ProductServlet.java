@@ -128,6 +128,10 @@ public class ProductServlet extends HttpServlet {
                 case "/admin":
                     showAdminPanelPage(request, response);
                     break;
+                                    
+                case "/admin/contact-view":
+                    showAdminContact(request, response);
+                    break;
 
 
                 default:
