@@ -21,10 +21,11 @@ public class Contact {
         
     public Contact(){}
     
-     public Contact (String name, String email, String message){
+     public Contact (String name, String email, String subject, String message){
    
          super();
         this.name = name;
+        this.name = subject;
         this.email = email;
         this.message = message;
      }
