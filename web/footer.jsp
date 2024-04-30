@@ -37,7 +37,7 @@
 								
 								
 								
-								<li><a href="privacypolicy.jsp">Privacy Policy</a></li>
+								<li><a href="#">Privacy Policy</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->
