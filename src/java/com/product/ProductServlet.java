@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.product.StoreDB;
 import com.product.Product;
+import java.util.ArrayList;
+import java.util.Collections;
 import javax.servlet.http.HttpSession;
 /**
  *
@@ -116,6 +118,21 @@ public class ProductServlet extends HttpServlet {
         
         List <Cart> listCart = storeDB.selectCartByUserEmailFromSession(request);
         request.setAttribute("listCart", listCart);
+        
+                
+        List < Product > listProduct = storeDB.selectAllProducts();
+        request.setAttribute("listProduct", listProduct);
+        
+                Collections.shuffle(listProduct);
+
+        List<Product> randomProducts = new ArrayList<>();
+
+        for (int i = 0; i < 3 && i < listProduct.size(); i++) {
+    
+            randomProducts.add(listProduct.get(i));
+        }
+            
+        request.setAttribute("listProduct", randomProducts);
         
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request, response);

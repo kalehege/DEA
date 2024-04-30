@@ -121,123 +121,10 @@
 	<div class="product-area most-popular section">
         <div class="container">
             <div class="row">
-				<div class="col-12">
-					<div class="section-title">
-						<h2>Hot Item</h2>
-					</div>
-				</div>
-            </div>
-            <div class="row">
                 <div class="col-12">
-                    <div class="owl-carousel popular-slider">
-						<!-- Start Single Product -->
-						<div class="single-product">
-							<div class="product-img">
-								<a href="product-details.html">
-									<img class="default-img" src="public/images/hot item 550,750/sunglass.png" alt="#">
-									<img class="hover-img" src="public/images/hot item 550,750/sunglass.pn" alt="#">
-									<span class="out-of-stock">Hot</span>
-								</a>
-								<div class="button-head">
-									<div class="product-action">
-										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-									</div>
-									<div class="product-action-2">
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-							</div>
-							<div class="product-content">
-								<h3><a href="product-details.html">Black Sunglass For Women</a></h3>
-								<div class="product-price">
-									<span class="old">LKR2350.00</span>
-									<span>LKR1850.00</span>
-								</div>
-							</div>
-						</div>
-						<!-- End Single Product -->
-						<!-- Start Single Product -->
-						<div class="single-product">
-                            <div class="product-img">
-                                <a href="product-details.html">
-                                    <img class="default-img" src="public/images/hot item 550,750/hot coll.png" alt="Womens Hot Collection">
-                                    <img class="hover-img" src="public/images/hot item 550,750/hot coll.png" alt="Womens Hot Collection">
-                                </a>
-								<div class="button-head">
-									<div class="product-action">
-										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-									</div>
-									<div class="product-action-2">
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-                            </div>
-                            <div class="product-content">
-                                <h3><a href="product-details.html">Women Hot Collection</a></h3>
-                                <div class="product-price">
-                                    <span>LKR3500.00</span>
-                                </div>
-                            </div>
+                        <div class="section-title">
+                                <h2>Hot Item</h2>
                         </div>
-						<!-- End Single Product -->
-						<!-- Start Single Product -->
-						<div class="single-product">
-                            <div class="product-img">
-                                <a href="product-details.html">
-                                    <img class="default-img" src="public/images/hot item 550,750/pink.png" alt="#">
-                                    <img class="hover-img" src="public/images/hot item 550,750/pink.png" alt="#">
-									<span class="new">New</span>
-                                </a>
-								<div class="button-head">
-									<div class="product-action">
-										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-									</div>
-									<div class="product-action-2">
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-                            </div>
-                            <div class="product-content">
-                                <h3><a href="product-details.html">Awesome Pink Show</a></h3>
-                                <div class="product-price">
-                                    <span>LKR2850.00</span>
-                                </div>
-                            </div>
-                        </div>
-						<!-- End Single Product -->
-						<!-- Start Single Product -->
-						<div class="single-product">
-                            <div class="product-img">
-                                <a href="product-details.html">
-                                    <img class="default-img" src="public/images/hot item 550,750/bag.png" alt="#">
-                                    <img class="hover-img" src="public/images/hot item 550,750/bag.png" alt="#">
-                                </a>
-								<div class="button-head">
-									<div class="product-action">
-										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
-									</div>
-									<div class="product-action-2">
-										<a title="Add to cart" href="#">Add to cart</a>
-									</div>
-								</div>
-                            </div>
-                            <div class="product-content">
-                                <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
-                                <div class="product-price">
-                                    <span>LKR5450.00</span>
-                                </div>
-                            </div>
-                        </div>
-						<!-- End Single Product -->
-                    </div>
                 </div>
             </div>
         </div>
@@ -257,59 +144,29 @@
 						</div>
 					</div>
 					<!-- Start Single List  -->
-					<div class="single-list">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12">
-								<div class="list-image overlay">
-									<img src="public/images/115,140 on sale/115.140 on sale1.png" alt="#">
-									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-12 no-padding">
-								<div class="content">
-									<h4 class="title"><a href="#">Ray Ban Men Sunglass</a></h4>
-									<p class="price with-discount">LKR 7,890</p>
-								</div>
-							</div>
-						</div>
-					</div>
+                                        <c:forEach var="product" items="${listProduct}" varStatus="loop">
+                                            <c:if test="${loop.index < 3}">
+                                                <div class="single-list">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-12">
+                                                            <div class="list-image overlay">
+                                                                <img src="public/images/115,140 on sale/115.140 on sale1.png" alt="#">
+                                                                <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-12 no-padding">
+                                                            <div class="content">
+                                                                <h4 class="title"><a href="#"><c:out value="${product.name}" /></a></h4>
+                                                                <p class="price with-discount">LKR <c:out value="${product.price}" /></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </c:if>
+                                        </c:forEach>
+
 					<!-- End Single List  -->
-					<!-- Start Single List  -->
-					<div class="single-list">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12">
-								<div class="list-image overlay">
-									<img src="public/images/115,140 on sale/115.140 on sale2.png" alt="#">
-									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-12 no-padding">
-								<div class="content">
-									<h5 class="title"><a href="#">NIKE Air Casual Shoe Men</a></h5>
-									<p class="price with-discount">LKR 12,500</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- End Single List  -->
-					<!-- Start Single List  -->
-					<div class="single-list">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12">
-								<div class="list-image overlay">
-									<img src="public/images/115,140 on sale/115.140 on sale3.png" alt="#">
-									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-12 no-padding">
-								<div class="content">
-									<h5 class="title"><a href="#">Jar Santo Flower Printed Shirt</a></h5>
-									<p class="price with-discount">LKR 4,500</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- End Single List  -->
+				
 				</div>
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="row">
@@ -320,6 +177,9 @@
 						</div>
 					</div>
 					<!-- Start Single List  -->
+                                                                                
+                                        <c:forEach var="product" items="${listProduct}" varStatus="loop">
+                                            <c:if test="${loop.index < 3}">
 					<div class="single-list">
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
@@ -330,49 +190,15 @@
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h5 class="title"><a href="#">BURBERRY Women Handbag</a></h5>
-									<p class="price with-discount">LKR 5,750</p>
+									<h5 class="title"><a href="#"><c:out value="${product.name}" /></a></h5>
+									<p class="price with-discount">LKR <c:out value="${product.price}" /></p>
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>					
 					<!-- End Single List  -->
-					<!-- Start Single List  -->
-					<div class="single-list">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12">
-								<div class="list-image overlay">
-									<img src="public/images/115,140 on sale/115.140 on sale5.png" alt="#">
-									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-12 no-padding">
-								<div class="content">
-									<h5 class="title"><a href="#">JARGO Men Flat Slippers</a></h5>
-									<p class="price with-discount">LKR 3,950</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- End Single List  -->
-					<!-- Start Single List  -->
-					<div class="single-list">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12">
-								<div class="list-image overlay">
-									<img src="public/images/115,140 on sale/115.140 on sale6.png" alt="#">
-									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-12 no-padding">
-								<div class="content">
-									<h5 class="title"><a href="#">Romax Men Watch Blue Edition</a></h5>
-									<p class="price with-discount">LKR 37,890</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- End Single List  -->
+                                            </c:if>
+                                        </c:forEach>
 				</div>
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="row">
@@ -383,6 +209,9 @@
 						</div>
 					</div>
 					<!-- Start Single List  -->
+                                                                                
+                                        <c:forEach var="product" items="${listProduct}" varStatus="loop">
+                                            <c:if test="${loop.index < 3}">
 					<div class="single-list">
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
@@ -393,49 +222,17 @@
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h5 class="title"><a href="#">WOWEN Baggy Beige  UNISEX</a></h5>
-									<p class="price with-discount">LKR 5,650</p>
+									<h5 class="title"><a href="#"><c:out value="${product.name}" /></a></h5>
+									<p class="price with-discount">LKR <c:out value="${product.price}" /></p>
 								</div>
 							</div>
 						</div>
 					</div>
+                                                                                    
+                                            </c:if>
+                                        </c:forEach>
 					<!-- End Single List  -->
-					<!-- Start Single List  -->
-					<div class="single-list">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12">
-								<div class="list-image overlay">
-									<img src="public/images/115,140 on sale/115.140 on sale8.png" alt="#">
-									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-12 no-padding">
-								<div class="content">
-									<h5 class="title"><a href="#">LEVIS Light Blue Jean Women</a></h5>
-									<p class="price with-discount">LKR 17,600</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- End Single List  -->
-					<!-- Start Single List  -->
-					<div class="single-list">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12">
-								<div class="list-image overlay">
-									<img src="public/images/115,140 on sale/115.140 on sale9.png" alt="#">
-									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-12 no-padding">
-								<div class="content">
-									<h5 class="title"><a href="#">ANIME Printed Baggy Unisex</a></h5>
-									<p class="price with-discount">LKR 3,950</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- End Single List  -->
+					
 				</div>
 			</div>
 		</div>
