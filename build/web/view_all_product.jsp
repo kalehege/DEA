@@ -38,7 +38,7 @@
       <div class="col-12">
         <div class="bread-inner">
           <ul class="bread-list">
-            <li><a href="index.jsp">Home<i class="ti-arrow-right"></i></a></li>
+            <li><a href="Home">Home<i class="ti-arrow-right"></i></a></li>
             <li class="active"><a href="mens.jsp">Man category</a></li>
           </ul>
         </div>
