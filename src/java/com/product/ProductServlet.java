@@ -125,7 +125,7 @@ public class ProductServlet extends HttpServlet {
                     break;
                     
                                     
-                case "/admin/":
+                case "/admin":
                     showAdminPanelPage(request, response);
                     break;
 
@@ -418,7 +418,7 @@ public class ProductServlet extends HttpServlet {
     private void showAdminPanelPage (HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
        
-        RequestDispatcher dispatcher = request.getRequestDispatcher("admin_panel.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_panel.jsp");
         dispatcher.forward(request, response);
     }
 
