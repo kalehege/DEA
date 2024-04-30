@@ -1,17 +1,32 @@
-<%-- 
-    Document   : admin_contac_view
-    Created on : May 1, 2024, 12:18:07 AM
-    Author     : niZeo
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <br><br>
+    <div class="container"><a href="admin_panel.php" class="btn btn-primary">Go Back</a></div><br><br>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Name</th>
+                    <th>Message</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>asd</td>
+                        <td>asd</td>
+                        <td>asd</td>
+                        <td>asd</td>
+                    </tr>
+
+            </tbody>
+        </table>
+    </div>
