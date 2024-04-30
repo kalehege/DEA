@@ -103,52 +103,26 @@
      <h1 class ="mh1" style="text-align: center;"> Similar Products </h1>
     <!-- First Row -->
     <div class="row justify-content-center">
-        
+                                                
+        <c:forEach var="product" items="${listProduct}" varStatus="loop">
+                                            
+            <c:if test="${loop.index < 3}">
             <div class="col-md-4">
                 <div class="mcard" style="text-align: center;">
                     
                         <img src="public/images/Men/vs1.jpg" alt="Example Image">
                     </a>
-                    <h3>Polo T-shirt</h3>
-                    <p>Introducing our Polo T-Shirt: crafted from premium cotton blend fabric for comfort and durability. Features classic polo collar, button placket, and a tailored fit</p>
-                    <h6 class="mac">Available Sizes M L XL</h6>
-                    <p class="price">Rs1500</p>
+                    <h3><c:out value='${product.name}' /></h3>
+                    <p><c:out value='${product.description}' /></p>
+                    <h6 class="mac"><c:out value='${product.size}' /></h6>
+                    <p class="price">Rs <c:out value='${product.price}' /></p>
                     <center>
                         <input type="button" class="btn btn-primary madd-to-cart" value="View Product">
                     </center>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="mcard" style="text-align: center;">
-                    
-                        <img src="public/images/Men/vs1.jpg" alt="Example Image" >
-                    </a>
-                    <h3>Polo T-shirt</h3>
-                    <p>Introducing our Polo T-Shirt: crafted from premium cotton blend fabric for comfort and durability. Features classic polo collar, button placket, and a tailored fit</p>
-                    <h6 class="mac">Available Sizes M L XL</h6>
-                    <p class="price">Rs1500</p>
-                    <center>
-                        <input type="button" class="btn btn-primary madd-to-cart" value="View Product">
-                    </center>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="mcard" style="text-align: center;">
-                    
-                        <img src="public/images/Men/vs1.jpg" alt="Example Image">
-                    </a>
-                    <h3>Polo T-shirt</h3>
-                    <p>Introducing our Polo T-Shirt: crafted from premium cotton blend fabric for comfort and durability. Features classic polo collar, button placket, and a tailored fit</p>
-                    <h6 class="mac">Available Sizes M L XL</h6>
-                    <p class="price">Rs1500</p>
-                    <center>
-                        <input type="button" class="btn btn-primary madd-to-cart" value="View Product">
-                    </center>
-                </div>
-            </div>
-            
-            
-        
+            </div>                                  
+            </c:if>                   
+        </c:forEach>
     </div>
 
   

@@ -196,8 +196,28 @@ public class ProductServlet extends HttpServlet {
         
     private void showEditForm(HttpServletRequest request, HttpServletResponse response)
     throws SQLException, ServletException, IOException {
+        
+        List <Cart> listCart = storeDB.selectCartByUserEmailFromSession(request);
+        request.setAttribute("listCart", listCart);
+        
+                
+        List < Product > listProduct = storeDB.selectAllProducts();
+        request.setAttribute("listProduct", listProduct);
+        
+                Collections.shuffle(listProduct);
+
+        List<Product> randomProducts = new ArrayList<>();
+
+        for (int i = 0; i < 3 && i < listProduct.size(); i++) {
+    
+            randomProducts.add(listProduct.get(i));
+        }
+            
+        request.setAttribute("listProduct", randomProducts);
+        
         int id = Integer.parseInt(request.getParameter("id"));
         Product existingProduct = storeDB.selectProduct(id);
+        
         RequestDispatcher dispatcher = request.getRequestDispatcher("single_item_view.jsp");
         request.setAttribute("product", existingProduct);
         dispatcher.forward(request, response);
