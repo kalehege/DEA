@@ -418,7 +418,7 @@ public class ProductServlet extends HttpServlet {
     private void showAdminPanelPage (HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
        
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view_admin_products.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("admin_panel.jsp");
         dispatcher.forward(request, response);
     }
 
