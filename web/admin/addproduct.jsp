@@ -11,7 +11,7 @@
     <div class="container mt-4">
 
         <h1 class="col-12">Product Insert</h1>
-        <form method="post" action="insert" enctype="multipart/form-data">
+        <form method="post" action="insert"">
             <div class="row mb-3">
                 <div class="col-md-4">
                     <label for="title">Name:</label>
