@@ -148,6 +148,29 @@ public class StoreDB {
         return products;
     }
     
+        
+    public List < Contact > selectAllContacts() {
+
+        List < Contact > contacts = new ArrayList < > ();
+        try (Connection connection = getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_Conatct);) {
+            System.out.println(preparedStatement);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                String email = rs.getString("email");
+                String message = rs.getString("message");
+                contacts.add(new Contact (id, name, email, message));
+            }
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+        return contacts;
+    }
+    
     public List<Product> selectProductsByCategory(String category) {
     List<Product> products = new ArrayList<>();
     try (Connection connection = getConnection();
