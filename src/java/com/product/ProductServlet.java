@@ -285,19 +285,23 @@ public class ProductServlet extends HttpServlet {
     
         
     private void AddToCart(HttpServletRequest request, HttpServletResponse response)
-    throws SQLException, IOException {
+        throws SQLException, IOException, ServletException {
+
         String p_name = request.getParameter("p_name");
         String p_description = request.getParameter("p_description");
         String p_price = request.getParameter("p_price");     
-        String p_size	 = request.getParameter("p_size");
+        String p_size = request.getParameter("p_size");
         String p_catagory = request.getParameter("p_category");      
         String customer_email = request.getParameter("customer_email");
-        Cart addCart = new Cart(p_name, p_description, p_price, p_size, p_catagory, customer_email);
-        storeDB.AddToCart(addCart);
+
+        if (!"null".equals(customer_email)) {
+            Cart addCart = new Cart(p_name, p_description, p_price, p_size, p_catagory, customer_email);
+            storeDB.AddToCart(addCart);
+        }
         String referer = request.getHeader("Referer");
         response.sendRedirect(referer);
-
     }
+
     
         
 //    private void showAllAddToCart(HttpServletRequest request, HttpServletResponse response)
@@ -386,8 +390,9 @@ public class ProductServlet extends HttpServlet {
     throws SQLException, IOException {
         int id = Integer.parseInt(request.getParameter("cart_id"));
         storeDB.deleteCart(id);
-        response.sendRedirect("view-cart");
-
+                
+        String referer = request.getHeader("Referer");
+        response.sendRedirect(referer);
     }
 
 }
