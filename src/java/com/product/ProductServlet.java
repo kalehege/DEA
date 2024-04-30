@@ -125,7 +125,7 @@ public class ProductServlet extends HttpServlet {
                     break;
                     
                                     
-                case "/admin/view-all-contact":
+                case "/admin/":
                     showAdminPanelPage(request, response);
                     break;
 
