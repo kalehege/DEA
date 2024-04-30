@@ -74,12 +74,26 @@
 						<div class="right-bar">
 							<!-- Search Form -->
 							<div class="sinlge-bar shopping">
-								<a href="cart.jsp" class="single-icon">My Cart <i class="ti-bag"></i> <span class="total-count">2</span></a>
+                                                                <a href="cart.jsp" class="single-icon">My Cart <i class="ti-bag"></i> 
+                                                                    <span class="total-count">
+                                                                        <c:set var="cartCount" value="0" />
+                                                                        <c:forEach var="cart" items="${listCart}">
+                                                                            <c:set var="cartCount" value="${cartCount + 1}" />
+                                                                        </c:forEach>
+                                                                        <c:out value="${cartCount}" />
+                                                                    </span>
+
+                                                                </a>
 								<!-- Shopping Item -->
 								<div class="shopping-item">
 									<div class="dropdown-cart-header">
-										<span>2 Items</span>
-										<a href="#">View Cart</a>
+                                                                            <c:set var="cartCount" value="0" />
+                                                                            <c:forEach var="cart" items="${listCart}">
+                                                                                <c:set var="cartCount" value="${cartCount + 1}" />
+                                                                            </c:forEach>
+										<span>Items</span>
+                                                                                
+										<a href="#"><c:out value="${cartCount}" /> View Cart</a>
 									</div>
 									<ul class="shopping-list">
                                                                             <c:forEach var="cart" items="${listCart}">
@@ -94,10 +108,17 @@
 									<div class="bottom">
 										<div class="total">
 											<span>Total</span>
-											<span class="total-amount">LKR3750.00</span>
+                                                                                        <span class="total-amount">
+                                                                                                <c:set var="totalPrice" value="0" />
+                                                                                                <c:forEach var="cart" items="${listCart}">
+                                                                                                    <c:set var="totalPrice" value="${totalPrice + cart.p_price}" />
+                                                                                                </c:forEach>
+                                                                                                LKR <c:out value="${totalPrice}" />
+                                                                                            </span>
+
 										</div>
                                                                             <% if (session.getAttribute("email") != null) { %>
-                                                                                <li><i class="ti-user"></i> <a href="myaccount.jsp">My account</a></li>
+                                                                                <a href="checkout.jsp" class="btn animate">Checkout</a>
                                                                                 <% } else { %>
                                                                                 <li>You need to sign-in</li>                                                              
                                                                                 <% } %>
