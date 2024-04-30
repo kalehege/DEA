@@ -405,9 +405,17 @@ public class ProductServlet extends HttpServlet {
     private void showMyProfile (HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
        
-        
         RequestDispatcher dispatcher = request.getRequestDispatcher("myaccount.jsp");
         dispatcher.forward(request, response);
     }
+    
+        
+    private void showAdminPanelPage (HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+       
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view_admin_products.jsp");
+        dispatcher.forward(request, response);
+    }
+
 
 }
