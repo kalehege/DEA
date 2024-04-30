@@ -140,8 +140,8 @@
                               </div></td>
                     
                               <td><div class="ccard">
-                                <img src="public/images/about us/hashi.jpg" alt="Example Image" style="width: 100%"><br>
-                                <h5><center>Hashan <br>Shavindha</center></h5><br>
+                                <img src="public/images/about us/Hasi.png" alt="Example Image" style="width: 100%"><br>
+                                <h5><center>Hashan <br>Shavinda</center></h5><br>
                                 <p>Hashan is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering.</p>
                               </div></td>
                     
