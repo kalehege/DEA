@@ -124,6 +124,10 @@ public class ProductServlet extends HttpServlet {
             
     private void showAbout(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
+                
+        List <Cart> listCart = storeDB.selectCartByUserEmailFromSession(request);
+        request.setAttribute("listCart", listCart);
+        
         RequestDispatcher dispatcher = request.getRequestDispatcher("about.jsp");
         dispatcher.forward(request, response);
     }
@@ -131,6 +135,12 @@ public class ProductServlet extends HttpServlet {
         
     private void showContact(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
+        
+                
+        List <Cart> listCart = storeDB.selectCartByUserEmailFromSession(request);
+        request.setAttribute("listCart", listCart);
+        
+        
         RequestDispatcher dispatcher = request.getRequestDispatcher("contact.jsp");
         dispatcher.forward(request, response);
     }
