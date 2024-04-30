@@ -134,6 +134,11 @@ public class ProductServlet extends HttpServlet {
                 case "/admin/contact-view":
                     showAdminContact(request, response);
                     break;
+                    
+                                    
+                case "/addcontact":
+                    insertContact(request, response);
+                    break;
 
 
                 default:
