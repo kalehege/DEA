@@ -13,32 +13,44 @@ public class Contact {
         
     protected int id;
     protected String name;
+        
     protected String email;
+    protected String subject;
     protected String message;  
     
         
     public Contact(){}
     
-     public Contact (String name, String email, String message){
+     public Contact (String name, String subject, String email, String message){
    
          super();
         this.name = name;
+        this.subject = subject;
         this.email = email;
         this.message = message;
      }
      
              
-     public Contact (int id, String name, String email, String message){
+     public Contact (int id, String name, String subject, String email, String message){
    
          super();
          this.id = id;
         this.name = name;
+        this.subject = subject;
         this.email = email;
         this.message = message;
      }
 
     public int getId() {
         return id;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 
     public void setId(int id) {

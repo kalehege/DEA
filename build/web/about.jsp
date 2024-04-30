@@ -46,7 +46,7 @@
 					<div class="bread-inner">
 						<ul class="bread-list">
 							<li><a href="index.jsp">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="about.jsp">About Us</a></li>
+							<li class="active"><a href="about">About Us</a></li>
 						</ul>
 					</div>
 				</div>
@@ -140,8 +140,8 @@
                               </div></td>
                     
                               <td><div class="ccard">
-                                <img src="public/images/about us/hashi.jpg" alt="Example Image" style="width: 100%"><br>
-                                <h5><center>Hashan <br>Shavindha</center></h5><br>
+                                <img src="public/images/about us/Hasi.png" alt="Example Image" style="width: 100%"><br>
+                                <h5><center>Hashan <br>Shavinda</center></h5><br>
                                 <p>Hashan is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering.</p>
                               </div></td>
                     

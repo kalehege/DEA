@@ -54,7 +54,7 @@
 										<h1><span><h3>Elegent</h3> </span>Shirts For Man</h1>
 										
 										<div class="button">
-                                                                                    <a href="mens.jsp" class="btn">Shop Now!</a>
+                                                                                    <a href="all-products" class="btn">Shop Now!</a>
 										</div>
 									</div>
 								</div>
@@ -79,7 +79,7 @@
 						<div class="content">
 							<p>Men's Collectons</p>
 							<h3>Handy Men <br> Choice</h3>
-							<a href="mens.jsp">Discover Now</a>
+							<a href="all-products">Discover Now</a>
 						</div>
 					</div>
 				</div>
@@ -91,7 +91,7 @@
 						<div class="content">
 							<p>Ladies Collectons</p>
 							<h3>Elegent Girls <br> Choice</h3>
-							<a href="women.jsp">Shop Now</a>
+							<a href="all-products">Shop Now</a>
 						</div>
 					</div>
 				</div>
@@ -103,7 +103,7 @@
 						<div class="content">
 							<p>Flash Sale</p>
 							<h3>Unique <br> Accessories <br> Up to <span>40%</span> Off</h3>
-                                                        <a href="accessories.jsp">Discover Now</a>
+                                                        <a href="all-products">Discover Now</a>
 						</div>
 					</div>
 				</div>
