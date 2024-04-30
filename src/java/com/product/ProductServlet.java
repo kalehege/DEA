@@ -136,24 +136,26 @@ public class ProductServlet extends HttpServlet {
     }
         
     private void showProductsByCategory(HttpServletRequest request, HttpServletResponse response)
-        throws SQLException, IOException, ServletException {
+       
+            throws SQLException, IOException, ServletException {
         
-    String category = request.getParameter("category");
-        
-    List<Product> listProduct;
-    if (category != null && category.equals("all")) {
-        listProduct = storeDB.selectAllProducts();
-    } else {
-        listProduct = storeDB.selectProductsByCategory(category);
+            String category = request.getParameter("category");
+
+            List<Product> listProduct;
+            if (category != null && category.equals("all")) {
+                listProduct = storeDB.selectAllProducts();
+            } else {
+                listProduct = storeDB.selectProductsByCategory(category);
+            }
+            request.setAttribute("listProduct", listProduct);
+
+            List<Cart> listCart = storeDB.selectCartByUserEmailFromSession(request);
+            request.setAttribute("listCart", listCart);
+
+            RequestDispatcher dispatcher = request.getRequestDispatcher("view_all_product.jsp");
+            dispatcher.forward(request, response);
+
     }
-    request.setAttribute("listProduct", listProduct);
-
-    List<Cart> listCart = storeDB.selectCartByUserEmailFromSession(request);
-    request.setAttribute("listCart", listCart);
-
-    RequestDispatcher dispatcher = request.getRequestDispatcher("view_all_product.jsp");
-    dispatcher.forward(request, response);
-}
 
         
     private void listProductAdmin(HttpServletRequest request, HttpServletResponse response)
