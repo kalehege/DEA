@@ -7,29 +7,40 @@ public class Product {
     protected String name;
     protected String description;
     protected String size;
+    protected String image;
     protected String price;
     protected String category;
     
     public Product() {}
         
-    public Product(String name, String description, String size, String price, String category ) {
+    public Product(String name, String description, String image, String size, String price, String category ) {
         super();
         this.name = name;
         this.description = description;
+        this.image = image;
         this.size = size;
         this.price = price;
         this.category = category;
     }
            
-    public Product(int id, String name, String description, String size, String price, String category) {
+    public Product(int id, String name, String description, String image, String size, String price, String category) {
         super();
         this.id = id;
         this.name = name;
+        this.image = image;
         this.description = description;
         this.size = size;
         this.price = price;    
         this.category = category;
 
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public int getId() {

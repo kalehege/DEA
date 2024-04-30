@@ -11,7 +11,7 @@
     <div class="container mt-4">
 
         <h1 class="col-12">Product Insert</h1>
-        <form method="post" action="insert">
+        <form method="post" action="insert" enctype="multipart/form-data">
             <div class="row mb-3">
                 <div class="col-md-4">
                     <label for="title">Name:</label>
@@ -25,12 +25,12 @@
                     <label for="size">Size:</label>
                     <input type="text" name="size" class="form-control">
                 </div>
-                
+
                 <div class="col-md-12">
                     <label for="price">Price</label>
                     <input type="text" name="price" class="form-control">
                 </div>
-                             
+
                 <div class="col-md-12">
                     <label for="category">Category</label>
                     <select name="category" class="form-control">
@@ -41,10 +41,16 @@
                     </select>
                 </div>
 
+                <!-- Image upload field -->
+                <div class="col-md-12">
+                    <label for="image">Image</label>
+                    <input type="file" name="image" class="form-control-file">
+                </div>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
