@@ -93,6 +93,12 @@ public class ProductServlet extends HttpServlet {
                 case "/cart":
                     AddToCart(request, response);
                     break;
+                    
+                                   
+                case "/view-cart":
+                    showCart(request, response);
+                    break;
+
 
                 default:
                     show404Page(request, response);
@@ -311,6 +317,19 @@ public class ProductServlet extends HttpServlet {
     } else {
         response.sendRedirect("sign-in?error=1");
     }
-}
+
+    }
+    
+        
+    private void showCart(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+        
+                
+        List <Cart> listCart = storeDB.selectCartByUserEmailFromSession(request);
+        request.setAttribute("listCart", listCart);
+        
+        RequestDispatcher dispatcher = request.getRequestDispatcher("cart.jsp");
+        dispatcher.forward(request, response);
+    }
 
 }
