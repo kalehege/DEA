@@ -35,6 +35,9 @@ public class StoreDB {
 
     private static final String SELECT_ALL_Products = "select * from products ORDER BY ID DESC;";
     
+        
+    private static final String SELECT_ALL_Conatct = "select * from contacts ORDER BY ID DESC;";
+    
     private static final String SELECT_PRODUCTS_BY_CATEGORY = "SELECT * FROM products WHERE category = ? ORDER BY id DESC;";
 
 
