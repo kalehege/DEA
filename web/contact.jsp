@@ -76,8 +76,14 @@
 												<input name="name" type="text" placeholder="">
 											</div>
 										</div>
+                                                                                <div class="col-lg-6 col-12">
+                                                                                            <div class="form-group">
+                                                                                                    <label>Subject<span>*</span></label>
+                                                                                                    <input name="subject" type="subject" placeholder="">
+                                                                                            </div>	
+                                                                                    </div>
 
-										<div class="col-lg-6 col-12">
+										<div class="col-lg-12 col-12">
 											<div class="form-group">
 												<label>Email<span>*</span></label>
 												<input name="email" type="email" placeholder="">
