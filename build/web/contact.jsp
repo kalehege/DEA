@@ -76,24 +76,14 @@
 												<input name="name" type="text" placeholder="">
 											</div>
 										</div>
-										<div class="col-lg-6 col-12">
-											<div class="form-group">
-												<label>Your Subjects<span>*</span></label>
-												<input name="subject" type="text" placeholder="">
-											</div>
-										</div>
+
 										<div class="col-lg-6 col-12">
 											<div class="form-group">
 												<label>Email<span>*</span></label>
 												<input name="email" type="email" placeholder="">
 											</div>	
 										</div>
-										<div class="col-lg-6 col-12">
-											<div class="form-group">
-												<label>Contact Number<span>*</span></label>
-												<input name="company_name" type="text" placeholder="">
-											</div>	
-										</div>
+				
 										<div class="col-12">
 											<div class="form-group message">
 												<label>your message<span>*</span></label>
