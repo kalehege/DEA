@@ -77,7 +77,8 @@
                   </a>
                 </div>
               </div>
-                   <c:if test="${product != null}">
+                   
+                <c:if test="${product != null}">
               <div class="col-md-6 custom-height">
                 <!-- Product details -->
                 <h1 class="brand-color mac"><c:out value='${product.name}' /></h1>
