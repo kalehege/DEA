@@ -144,7 +144,7 @@
 									</ul>
 									<div class="button5">
 										<a href="#" class="btn">Checkout</a>
-										<a href="all-products" class="btn">Continue shopping</a>
+										<a href="all-products?category=all" class="btn">Continue shopping</a>
 									</div>
 								</div>
 							</div>
