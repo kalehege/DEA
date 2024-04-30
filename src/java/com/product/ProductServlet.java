@@ -313,15 +313,7 @@ public class ProductServlet extends HttpServlet {
         response.sendRedirect(referer);
     }
 
-    
-        
-//    private void showAllAddToCart(HttpServletRequest request, HttpServletResponse response)
-//        throws SQLException, IOException, ServletException {
-//        List < Cart > listCart = storeDB.selectAllToCart();
-//        request.setAttribute("listCart", listCart);
-//        RequestDispatcher dispatcher = request.getRequestDispatcher("header.jsp");
-//        dispatcher.forward(request, response);
-//    }
+   
 
    
     private void showRegisterForm(HttpServletRequest request, HttpServletResponse response)
