@@ -33,7 +33,7 @@ public class StoreDB {
 
 
         
-    private static final String SELECT_Product_BY_ID = "select id,name,description,size,price,category from products where id =?";
+    private static final String SELECT_Product_BY_ID = "select id,name,description,image,size,price,category from products where id =?";
     
     private static final String SELECT_validateUser_ID = "SELECT * FROM customers WHERE email = ? AND password = ?";
 

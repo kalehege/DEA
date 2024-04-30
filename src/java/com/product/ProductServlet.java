@@ -215,11 +215,12 @@ public class ProductServlet extends HttpServlet {
     throws SQLException, IOException {
         String name = request.getParameter("name");
         String description = request.getParameter("description");
+        String image = request.getParameter("image");
         String size = request.getParameter("size");     
         String price = request.getParameter("price");
         String category = request.getParameter("category");
-        String image = request.getParameter("image");
-        Product newProduct = new Product(name, image, description, size, price, category);
+
+        Product newProduct = new Product(name, description, image, size, price, category);
         storeDB.insertProduct(newProduct);
         response.sendRedirect("product-view");
     }

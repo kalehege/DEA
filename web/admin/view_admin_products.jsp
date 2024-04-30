@@ -40,7 +40,7 @@
                     <td><c:out value="${product.size}" /></td>
                     <td><c:out value="${product.price}" /></td>
                     <td><c:out value="${product.category}" /></td>
-                    <td><a class="btn btn-primary" href="#">View</a></td>
+                    <td><a class="btn btn-primary" href="../product?id=${product.id}">View</a></td>
                     <td><a class="btn btn-danger" href="#">Delete</a></td>
                 </tr>
             </c:forEach>
