@@ -31,17 +31,26 @@ public class Contact {
      }
      
              
-     public Contact (int id, String name, String email, String message){
+     public Contact (int id, String name, String email, String subject, String message){
    
          super();
          this.id = id;
         this.name = name;
+        this.email = email;
         this.email = email;
         this.message = message;
      }
 
     public int getId() {
         return id;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 
     public void setId(int id) {
