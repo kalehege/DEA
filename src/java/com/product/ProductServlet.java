@@ -413,6 +413,14 @@ public class ProductServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_panel.jsp");
         dispatcher.forward(request, response);
     }
+    
+            
+    private void showAdminContact (HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+       
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_contac_view.jsp");
+        dispatcher.forward(request, response);
+    }
 
 
 }
