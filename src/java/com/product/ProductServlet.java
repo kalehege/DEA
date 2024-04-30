@@ -56,6 +56,9 @@ public class ProductServlet extends HttpServlet {
                 case "/admin/product-view":
                     listProductAdmin(request, response);
                     break;
+                 
+                
+                    
                                   
                 case "/product":
                     showEditForm(request, response);
