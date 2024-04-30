@@ -241,13 +241,13 @@ public class ProductServlet extends HttpServlet {
     }
     
         
-    private void listContactAdmin(HttpServletRequest request, HttpServletResponse response)
-    throws SQLException, IOException, ServletException {
-        List < Contact > listContact = storeDB.selectAllContacts();
-        request.setAttribute("listContact", listContact);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/view_admin_products.jsp");
-        dispatcher.forward(request, response);
-    }
+//    private void listContactAdmin(HttpServletRequest request, HttpServletResponse response)
+//    throws SQLException, IOException, ServletException {
+//        List < Contact > listContact = storeDB.selectAllContacts();
+//        request.setAttribute("listContact", listContact);
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/view_admin_products.jsp");
+//        dispatcher.forward(request, response);
+//    }
     
         
     private void showEditForm(HttpServletRequest request, HttpServletResponse response)
@@ -437,7 +437,10 @@ public class ProductServlet extends HttpServlet {
             
     private void showAdminContact (HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-       
+               
+        List < Contact > listContact = storeDB.selectAllContacts();
+        request.setAttribute("listContact", listContact);
+        
         RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_contac_view.jsp");
         dispatcher.forward(request, response);
     }
