@@ -10,4 +10,12 @@ package com.product;
  */
 public class Contact {
     
+        
+    protected int id;
+    protected String name;
+    protected String email;
+    protected String message;  
+    
+    
+    
 }
