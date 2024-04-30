@@ -8,11 +8,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import javax.servlet.http.HttpServletRequest;
+
 
 import com.product.Product;
 import com.product.Customer;
 import com.product.Cart;
-import javax.servlet.http.HttpServletRequest;
+import com.product.Contact;
 
 public class StoreDB {
     
@@ -26,8 +28,15 @@ public class StoreDB {
        
     private static final String INSERT_CUSTOMER_SQL = "INSERT INTO customers" + "  (email, f_name, l_name, password, dob) VALUES " +
         " (?, ?, ?, ?, ?);";
+    
+        
+    private static final String INSERT_Contact_SQL = "INSERT INTO contacts" + "  (name, email, message) VALUES " +
+        " (?, ?, ?);";
 
     private static final String SELECT_ALL_Products = "select * from products ORDER BY ID DESC;";
+    
+        
+    private static final String SELECT_ALL_Conatct = "select * from contacts ORDER BY ID DESC;";
     
     private static final String SELECT_PRODUCTS_BY_CATEGORY = "SELECT * FROM products WHERE category = ? ORDER BY id DESC;";
 
@@ -137,6 +146,29 @@ public class StoreDB {
             printSQLException(e);
         }
         return products;
+    }
+    
+        
+    public List < Contact > selectAllContacts() {
+
+        List < Contact > contacts = new ArrayList < > ();
+        try (Connection connection = getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_Conatct);) {
+            System.out.println(preparedStatement);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                String email = rs.getString("email");
+                String message = rs.getString("message");
+                contacts.add(new Contact (id, name, email, message));
+            }
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+        return contacts;
     }
     
     public List<Product> selectProductsByCategory(String category) {
@@ -251,6 +283,21 @@ public class StoreDB {
             rowDeleted = statement.executeUpdate() > 0;
         }
         return rowDeleted;
+    }
+    
+        
+    public void insertContact(Contact contact) throws SQLException {
+        System.out.println(INSERT_Contact_SQL);
+        try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_Contact_SQL)) {
+            preparedStatement.setString(1, contact.getName());
+            preparedStatement.setString(2, contact.getEmail());    
+            preparedStatement.setString(3, contact.getMessage());
+
+            System.out.println(preparedStatement);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
     }
 
 

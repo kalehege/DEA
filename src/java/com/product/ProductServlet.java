@@ -11,12 +11,14 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.product.StoreDB;
-import com.product.Product;
 import java.util.ArrayList;
 import java.util.Collections;
 import javax.servlet.http.HttpSession;
+
+import com.product.StoreDB;
+import com.product.Product;
+import com.product.Contact;
+
 /**
  *
  * @author niZeo
@@ -123,6 +125,20 @@ public class ProductServlet extends HttpServlet {
                 case "/remove-cart":
                     deleteCart(request, response);
                     break;
+                    
+                                    
+                case "/admin":
+                    showAdminPanelPage(request, response);
+                    break;
+                                    
+                case "/admin/contact-view":
+                    showAdminContact(request, response);
+                    break;
+                    
+                                    
+                case "/addcontact":
+                    insertContact(request, response);
+                    break;
 
 
                 default:
@@ -225,6 +241,15 @@ public class ProductServlet extends HttpServlet {
     }
     
         
+//    private void listContactAdmin(HttpServletRequest request, HttpServletResponse response)
+//    throws SQLException, IOException, ServletException {
+//        List < Contact > listContact = storeDB.selectAllContacts();
+//        request.setAttribute("listContact", listContact);
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/view_admin_products.jsp");
+//        dispatcher.forward(request, response);
+//    }
+    
+        
     private void showEditForm(HttpServletRequest request, HttpServletResponse response)
     throws SQLException, ServletException, IOException {
         
@@ -308,15 +333,7 @@ public class ProductServlet extends HttpServlet {
         response.sendRedirect(referer);
     }
 
-    
-        
-//    private void showAllAddToCart(HttpServletRequest request, HttpServletResponse response)
-//        throws SQLException, IOException, ServletException {
-//        List < Cart > listCart = storeDB.selectAllToCart();
-//        request.setAttribute("listCart", listCart);
-//        RequestDispatcher dispatcher = request.getRequestDispatcher("header.jsp");
-//        dispatcher.forward(request, response);
-//    }
+   
 
    
     private void showRegisterForm(HttpServletRequest request, HttpServletResponse response)
@@ -405,9 +422,41 @@ public class ProductServlet extends HttpServlet {
     private void showMyProfile (HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
        
-        
         RequestDispatcher dispatcher = request.getRequestDispatcher("myaccount.jsp");
         dispatcher.forward(request, response);
     }
+    
+        
+    private void showAdminPanelPage (HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+       
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_panel.jsp");
+        dispatcher.forward(request, response);
+    }
+    
+            
+    private void showAdminContact (HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+               
+        List < Contact > listContact = storeDB.selectAllContacts();
+        request.setAttribute("listContact", listContact);
+        
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_contac_view.jsp");
+        dispatcher.forward(request, response);
+    }
+    
+        
+    private void insertContact(HttpServletRequest request, HttpServletResponse response)
+    throws SQLException, IOException {
+        String name = request.getParameter("name");
+        String email = request.getParameter("email");
+        String message = request.getParameter("message");
+
+        Contact newContact = new Contact(name, email, message);
+        storeDB.insertContact(newContact);
+        String referer = request.getHeader("Referer");
+        response.sendRedirect(referer);
+    }
+
 
 }
