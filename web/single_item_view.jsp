@@ -27,13 +27,8 @@
 </head>
 <body>
     
-        <c:if test="${product != null}">
-        <h1>ID: <c:out value='${product.id}' /></h1>
-        <h1>Name: <c:out value='${product.name}' /></h1>
-        <h1>Description: <c:out value='${product.description}' /></h1>
-        <h1>Size: <c:out value='${product.size}' /></h1>
-        <h1>Price: <c:out value='${product.price}' /></h1>
-    </c:if>
+        
+
 
 <!-- Header -->
  <%@include file="header.jsp" %>
@@ -58,6 +53,7 @@
 
 
 <h1 class='mh1'>View Product</h1>
+
 <!-- comment -->
 <div class="container mt-5" >
             <div class="row">
@@ -81,16 +77,14 @@
                   </a>
                 </div>
               </div>
+                   <c:if test="${product != null}">
               <div class="col-md-6 custom-height">
                 <!-- Product details -->
-                <h1 class="brand-color mac">Viscose Shirt</h1>
-                <p class="mt-3 mac">Introducing our Polo T-Shirt: crafted from premium cotton blend fabric for comfort and durability. Features classic polo collar, button placket, and a tailored fit.</p>
+                <h1 class="brand-color mac"><c:out value='${product.name}' /></h1>
+                <p class="mt-3 mac"><c:out value='${product.description}' /></p>
                 
-                <p class="mac">Quantity:
-                  <input type="number" id="quantityInput" value="1" min="1" onchange="calculateTotalPrice()">
-                </p>
                 <p id="totalPrice" class="price">
-                    price: 2500
+                    price:LKR <c:out value='${product.price}' />
                 </p>
                 <p class="mt-4 mac">
                   <button class="btn btn-primary mr-3">Add to Cart</button>
@@ -99,6 +93,7 @@
                 <p class="mt-2 mac">Availability: <span id="availability" class="font-weight-bold">In Stock</span></p>
                 <p>Customer Rating: <span id="rating">4.5</span></p>
               </div>
+                  </c:if>
             </div>
           </div>
 <!-- comment -->
@@ -157,20 +152,6 @@
 
   
 </div>
-<script>
-function calculateTotalPrice() {
-    // Get the quantity input value
-    var quantity = parseInt(document.getElementById("quantityInput").value);
-    
-    // Define the price per unit
-    var pricePerUnit = 2500;
-    
-    // Calculate the total price
-    var totalPrice = quantity * pricePerUnit;
-    
-    // Update the total price display
-    document.getElementById("totalPrice").textContent = "Price: " + totalPrice;
-}</script>
 	<!-- Start Footer Area -->
 	<%@include file="footer.jsp" %>
 	<!-- /End Footer Area -->
