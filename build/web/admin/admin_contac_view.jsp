@@ -14,8 +14,9 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Email</th>
                     <th>Name</th>
+                    <th>Subject</th>
+                    <th>Email</th>
                     <th>Message</th>
 
                 </tr>
@@ -26,6 +27,7 @@
                     <tr>
                         <td><c:out value="${contact.id}" /></td>
                         <td><c:out value="${contact.name}" /></td>
+                        <td><c:out value="${contact.subject}" /></td>
                         <td><c:out value="${contact.email}" /></td>
                         <td><c:out value="${contact.message}" /></td>
                     </tr>

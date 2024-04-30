@@ -30,7 +30,7 @@ public class StoreDB {
         " (?, ?, ?, ?, ?);";
     
         
-    private static final String INSERT_Contact_SQL = "INSERT INTO contacts" + "  (name, email, message) VALUES " +
+    private static final String INSERT_Contact_SQL = "INSERT INTO contacts" + "  (name, email, subject, message) VALUES " +
         " (?, ?, ?);";
 
     private static final String SELECT_ALL_Products = "select * from products ORDER BY ID DESC;";
@@ -161,9 +161,10 @@ public class StoreDB {
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
+                String subject = rs.getString("subject");
                 String email = rs.getString("email");
                 String message = rs.getString("message");
-                contacts.add(new Contact (id, name, email, message));
+                contacts.add(new Contact (id, name, subject, email, message));
             }
         } catch (SQLException e) {
             printSQLException(e);
@@ -290,8 +291,9 @@ public class StoreDB {
         System.out.println(INSERT_Contact_SQL);
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_Contact_SQL)) {
             preparedStatement.setString(1, contact.getName());
-            preparedStatement.setString(2, contact.getEmail());    
-            preparedStatement.setString(3, contact.getMessage());
+            preparedStatement.setString(2, contact.getSubject()); 
+            preparedStatement.setString(3, contact.getEmail());    
+            preparedStatement.setString(4, contact.getMessage());
 
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();

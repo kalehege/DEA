@@ -7,6 +7,9 @@
 </head>
 
 <body>
+    <!-- comment -->
+    <br><br>
+    <div class="container"><a href="../admin" class="btn btn-primary">Go Back</a></div><br><br>
 
     <div class="container mt-4">
 

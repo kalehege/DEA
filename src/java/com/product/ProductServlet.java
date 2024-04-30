@@ -404,7 +404,10 @@ public class ProductServlet extends HttpServlet {
     throws SQLException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         storeDB.deleteProduct(id);
-        response.sendRedirect("admin/product-view");
+//        response.sendRedirect("admin/product-view");
+
+        String referer = request.getHeader("Referer");
+        response.sendRedirect(referer);
 
     }
     
@@ -449,10 +452,11 @@ public class ProductServlet extends HttpServlet {
     private void insertContact(HttpServletRequest request, HttpServletResponse response)
     throws SQLException, IOException {
         String name = request.getParameter("name");
+        String subject = request.getParameter("subject");
         String email = request.getParameter("email");
         String message = request.getParameter("message");
 
-        Contact newContact = new Contact(name, email, message);
+        Contact newContact = new Contact(name, subject, email, message);
         storeDB.insertContact(newContact);
         String referer = request.getHeader("Referer");
         response.sendRedirect(referer);
