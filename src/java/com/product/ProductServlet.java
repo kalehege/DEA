@@ -107,6 +107,12 @@ public class ProductServlet extends HttpServlet {
                     showCompletePayemnt(request, response);
                     break;
                     
+                                    
+                case "/my-account":
+                    showMyProfile(request, response);
+                    break;
+                    
+                    
                     
                                     
                 case "/delete":
@@ -393,6 +399,15 @@ public class ProductServlet extends HttpServlet {
                 
         String referer = request.getHeader("Referer");
         response.sendRedirect(referer);
+    }
+    
+        
+    private void showMyProfile (HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+       
+        
+        RequestDispatcher dispatcher = request.getRequestDispatcher("myaccount.jsp");
+        dispatcher.forward(request, response);
     }
 
 }

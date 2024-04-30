@@ -23,7 +23,7 @@
                                                             <li><i class="ti-location-pin"></i> No 45 , Pitipana Road , Homagama</li>
 
                                                             <% if (session.getAttribute("email") != null) { %>
-                                                            <li><i class="ti-user"></i> <a href="myaccount.jsp">My account</a></li>
+                                                            <li><i class="ti-user"></i> <a href="my-account">My account</a></li>
                                                             <% } else { %>
                                                             <li><i class="ti-power-off"></i><a href="sign-in">Login</a></li>                                                              
                                                             <% } %>
@@ -41,7 +41,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-                                                    <a href="index.jsp"><img src = "public/images/logo.png"></a>
+                                                    <a href="home"><img src = "public/images/logo.png"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
