@@ -88,7 +88,20 @@
                     price:LKR <c:out value='${product.price}' />
                 </p>
                 <p class="mt-4 mac">
-                  <button class="btn btn-primary mr-3">Add to Cart</button>
+                                   <center>
+                        <form action="cart" method="post">
+                               
+                            <input type="hidden" value="<c:out value="${product.name}" />" name="p_name">
+                            <input type="hidden" value="<c:out value="${product.description}" />" name="p_description">
+                            <input type="hidden" value="<c:out value="${product.price}" />" name="p_price">  
+                            <input type="hidden" value="<c:out value="${product.size}" />" name="p_size">
+                            <input type="hidden" value="<c:out value="${product.category}" />" name="p_category">
+                            <input type="hidden" value="<%= session.getAttribute("email") %>" name="customer_email">                 
+
+                            <input type="submit" class="btn btn-primary mr-3"" value="Add to cart">
+
+                        </form>
+                    </center>
                  
                 </p>
                 <p class="mt-2 mac">Availability: <span id="availability" class="font-weight-bold">In Stock</span></p>
@@ -117,7 +130,18 @@
                     <h6 class="mac"><c:out value='${product.size}' /></h6>
                     <p class="price">Rs <c:out value='${product.price}' /></p>
                     <center>
-                        <input type="button" class="btn btn-primary madd-to-cart" value="View Product">
+                        <form action="cart" method="post">
+                               
+                            <input type="hidden" value="<c:out value="${product.name}" />" name="p_name">
+                            <input type="hidden" value="<c:out value="${product.description}" />" name="p_description">
+                            <input type="hidden" value="<c:out value="${product.price}" />" name="p_price">  
+                            <input type="hidden" value="<c:out value="${product.size}" />" name="p_size">
+                            <input type="hidden" value="<c:out value="${product.category}" />" name="p_category">
+                            <input type="hidden" value="<%= session.getAttribute("email") %>" name="customer_email">                 
+
+                            <input type="submit" class="btn btn-primary madd-to-cart" value="Add to cart">
+
+                        </form>
                     </center>
                 </div>
             </div>                                  
