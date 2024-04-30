@@ -3,9 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/WRS/Desktop/DEA-Final-Assignment/DEA/web/css/reset.css</file>
-            <file>file:/C:/Users/WRS/Desktop/DEA-Final-Assignment/DEA/web/css/bootstrap.css</file>
-            <file>file:/C:/Users/WRS/Desktop/DEA-Final-Assignment/DEA/web/index.jsp</file>
+            <file>file:/E:/Work/Hosting/DEA/web/myaccount.jsp</file>
+            <file>file:/E:/Work/Hosting/DEA/web/createacc.jsp</file>
+            <file>file:/E:/Work/Hosting/DEA/web/single_item_view.jsp</file>
+            <file>file:/E:/Work/Hosting/DEA/web/header.jsp</file>
+            <file>file:/E:/Work/Hosting/DEA/src/java/com/product/StoreDB.java</file>
+            <file>file:/E:/Work/Hosting/DEA/src/java/com/product/ProductServlet.java</file>
         </group>
     </open-files>
 </project-private>
