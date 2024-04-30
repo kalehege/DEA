@@ -8,11 +8,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import javax.servlet.http.HttpServletRequest;
+
 
 import com.product.Product;
 import com.product.Customer;
 import com.product.Cart;
-import javax.servlet.http.HttpServletRequest;
+import com.product.Contact;
 
 public class StoreDB {
     
