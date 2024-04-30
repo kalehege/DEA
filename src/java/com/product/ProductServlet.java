@@ -123,6 +123,11 @@ public class ProductServlet extends HttpServlet {
                 case "/remove-cart":
                     deleteCart(request, response);
                     break;
+                    
+                                    
+                case "/admin/view-all-contact":
+                    showAdminPanelPage(request, response);
+                    break;
 
 
                 default:
