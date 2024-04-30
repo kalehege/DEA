@@ -258,6 +258,21 @@ public class StoreDB {
         }
         return rowDeleted;
     }
+    
+        
+    public void insertContact(Contact contact) throws SQLException {
+        System.out.println(INSERT_Contact_SQL);
+        try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_Contact_SQL)) {
+            preparedStatement.setString(1, contact.getName());
+            preparedStatement.setString(2, contact.getEmail());    
+            preparedStatement.setString(3, contact.getMessage());
+
+            System.out.println(preparedStatement);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+    }
 
 
     
