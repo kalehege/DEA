@@ -10,7 +10,7 @@
     <div class="container text-center">
         <br><br>
         <h1>Admin Panel</h1>
-        <a href="/view-all-contact"" class="btn btn-primary">Contact View</a>
+        <a href="/contact-view"" class="btn btn-primary">Contact View</a>
         <a href="/addproduct.jsp" class="btn btn-primary">Add Product</a>
         <a href="/view_admin_products.jsp" class="btn btn-primary">View Product</a>
 
