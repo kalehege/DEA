@@ -11,12 +11,14 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.product.StoreDB;
-import com.product.Product;
 import java.util.ArrayList;
 import java.util.Collections;
 import javax.servlet.http.HttpSession;
+
+import com.product.StoreDB;
+import com.product.Product;
+import com.product.Contact;
+
 /**
  *
  * @author niZeo
