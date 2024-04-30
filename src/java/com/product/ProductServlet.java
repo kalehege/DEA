@@ -106,6 +106,12 @@ public class ProductServlet extends HttpServlet {
                 case "/payemnt-complete":
                     showCompletePayemnt(request, response);
                     break;
+                    
+                    
+                                    
+                case "/delete":
+                    deleteProduct(request, response);
+                    break;
 
 
                 default:
@@ -359,6 +365,15 @@ public class ProductServlet extends HttpServlet {
         
         RequestDispatcher dispatcher = request.getRequestDispatcher("payment.jsp");
         dispatcher.forward(request, response);
+    }
+    
+    
+    private void deleteProduct(HttpServletRequest request, HttpServletResponse response)
+    throws SQLException, IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        storeDB.deleteProduct(id);
+        response.sendRedirect("admin/product-view");
+
     }
 
 }
