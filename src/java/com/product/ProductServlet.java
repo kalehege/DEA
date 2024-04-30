@@ -427,6 +427,19 @@ public class ProductServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_contac_view.jsp");
         dispatcher.forward(request, response);
     }
+    
+        
+    private void insertContact(HttpServletRequest request, HttpServletResponse response)
+    throws SQLException, IOException {
+        String name = request.getParameter("name");
+        String email = request.getParameter("email");
+        String message = request.getParameter("message");
+
+        Contact newContact = new Contact(name, email, message);
+        storeDB.insertContact(newContact);
+        String referer = request.getHeader("Referer");
+        response.sendRedirect(referer);
+    }
 
 
 }
