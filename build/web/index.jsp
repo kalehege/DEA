@@ -151,12 +151,12 @@
                                                         <div class="col-lg-6 col-md-6 col-12">
                                                             <div class="list-image overlay">
                                                                 <img src="public/images/115,140 on sale/115.140 on sale1.png" alt="#">
-                                                                <a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                                                <a href="product?id=<c:out value='${product.id}' />" class="buy"><i class="fa fa-shopping-bag"></i></a>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-6 col-md-6 col-12 no-padding">
                                                             <div class="content">
-                                                                <h4 class="title"><a href="#"><c:out value="${product.name}" /></a></h4>
+                                                                <h4 class="title"><a href="product?id=<c:out value='${product.id}' />"><c:out value="${product.name}" /></a></h4>
                                                                 <p class="price with-discount">LKR <c:out value="${product.price}" /></p>
                                                             </div>
                                                         </div>
@@ -185,12 +185,12 @@
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
 									<img src="public/images/115,140 on sale/115.140 on sale4.png" alt="#">
-									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+									<a href="product?id=<c:out value='${product.id}' />" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h5 class="title"><a href="#"><c:out value="${product.name}" /></a></h5>
+									<h5 class="title"><a href="product?id=<c:out value='${product.id}' />"><c:out value="${product.name}" /></a></h5>
 									<p class="price with-discount">LKR <c:out value="${product.price}" /></p>
 								</div>
 							</div>
@@ -217,12 +217,12 @@
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
 									<img src="public/images/115,140 on sale/115.140 on sale7.png" alt="#">
-									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
+									<a href="product?id=<c:out value='${product.id}' />" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h5 class="title"><a href="#"><c:out value="${product.name}" /></a></h5>
+									<h5 class="title"><a href="product?id=<c:out value='${product.id}' />"><c:out value="${product.name}" /></a></h5>
 									<p class="price with-discount">LKR <c:out value="${product.price}" /></p>
 								</div>
 							</div>
