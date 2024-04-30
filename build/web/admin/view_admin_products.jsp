@@ -34,7 +34,7 @@
                     <td><c:out value="${product.id}" /></td>
                     <td><c:out value="${product.name}" /></td>
                     <td>
-                        <img src="path/to/images/${product.image}" alt="Product Image" style="max-width: 100px; max-height: 100px;">
+                        <img src=public/images/product/${product.image}" alt="Product Image" style="max-width: 100px; max-height: 100px;">
                     </td>
                     <td><c:out value="${product.description}" /></td>
                     <td><c:out value="${product.size}" /></td>
