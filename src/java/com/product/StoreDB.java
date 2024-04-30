@@ -82,8 +82,8 @@ public class StoreDB {
         System.out.println(INSERT_PRODUCT_SQL);
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_PRODUCT_SQL)) {
             preparedStatement.setString(1, product.getName());
-            preparedStatement.setString(2, product.getImage());
-            preparedStatement.setString(3, product.getDescription());
+            preparedStatement.setString(2, product.getDescription());    
+            preparedStatement.setString(3, product.getImage());
             preparedStatement.setString(4, product.getSize());               
             preparedStatement.setString(5, product.getPrice());
             preparedStatement.setString(6, product.getCategory());
