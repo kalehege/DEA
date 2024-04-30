@@ -42,25 +42,30 @@
                 </div>
                 <div class="scontainer">
                                        
-                    <h1>Add cards</h1>
-                    <a class="btn btn-danger" href="logout.php">Select</a>
-                </div>
-                <div class="scontainer">
+                    <form action="register" method="post">
+                        <div class="form-group">
+                          <label for="f_name">First Name:</label>
+                          <input type="text" id="f_name" name="f_name" required>
+                        </div>
 
-    <h2>Add Visa Card</h2>
-    <form action="process_card.php" method="POST">
-        <label for="card_number">Card Number:</label><br>
-        <input type="text" id="card_number" name="card_number" required><br><br>
-        
-        <label for="expiry_date">Expiry Date:</label><br>
-        <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YY" required><br><br>
-        
-        <label for="cvv">CVV:</label><br>
-        <input type="text" id="cvv" name="cvv" required><br><br>
-        
-        <input type="submit" value="Add Card">
-    </form>
-
+                        <div class="form-group">     
+                          <label for="l_name">Last Name:</label>
+                          <input type="text" id="l_name" name="l_name" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="text" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="dob">Birthday:</label>
+                          <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="text" id="password" name="password" required>
+                        </div>
+                      <button type="submit">Edit Profile Data</button>
+                    </form>
       </div>
             </div>
         </div>
