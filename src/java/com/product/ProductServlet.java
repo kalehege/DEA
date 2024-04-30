@@ -404,7 +404,10 @@ public class ProductServlet extends HttpServlet {
     throws SQLException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         storeDB.deleteProduct(id);
-        response.sendRedirect("admin/product-view");
+//        response.sendRedirect("admin/product-view");
+
+        String referer = request.getHeader("Referer");
+        response.sendRedirect(referer);
 
     }
     
