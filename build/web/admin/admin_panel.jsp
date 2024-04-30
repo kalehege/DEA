@@ -11,7 +11,7 @@
         <br><br>
         <h1>Admin Panel</h1>
         <a href="/admin_contac_view.jsp" class="btn btn-primary">Contact View</a>
-        <a href="#" class="btn btn-primary">Add Product</a>
+        <a href="/addproduct.jsp" class="btn btn-primary">Add Product</a>
         <a href="#" class="btn btn-primary">View Product</a>
 
         <a href="#" class="btn btn-primary">Go Home Page</a>
