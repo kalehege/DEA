@@ -123,6 +123,15 @@ public class ProductServlet extends HttpServlet {
                 case "/remove-cart":
                     deleteCart(request, response);
                     break;
+                    
+                                    
+                case "/admin":
+                    showAdminPanelPage(request, response);
+                    break;
+                                    
+                case "/admin/contact-view":
+                    showAdminContact(request, response);
+                    break;
 
 
                 default:
@@ -308,15 +317,7 @@ public class ProductServlet extends HttpServlet {
         response.sendRedirect(referer);
     }
 
-    
-        
-//    private void showAllAddToCart(HttpServletRequest request, HttpServletResponse response)
-//        throws SQLException, IOException, ServletException {
-//        List < Cart > listCart = storeDB.selectAllToCart();
-//        request.setAttribute("listCart", listCart);
-//        RequestDispatcher dispatcher = request.getRequestDispatcher("header.jsp");
-//        dispatcher.forward(request, response);
-//    }
+   
 
    
     private void showRegisterForm(HttpServletRequest request, HttpServletResponse response)
@@ -405,9 +406,25 @@ public class ProductServlet extends HttpServlet {
     private void showMyProfile (HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
        
-        
         RequestDispatcher dispatcher = request.getRequestDispatcher("myaccount.jsp");
         dispatcher.forward(request, response);
     }
+    
+        
+    private void showAdminPanelPage (HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+       
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_panel.jsp");
+        dispatcher.forward(request, response);
+    }
+    
+            
+    private void showAdminContact (HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+       
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_contac_view.jsp");
+        dispatcher.forward(request, response);
+    }
+
 
 }
