@@ -8,7 +8,7 @@
 
 <body>
     <br><br>
-    <div class="container"><a href="admin_panel.php" class="btn btn-primary">Go Back</a></div><br><br>
+    <div class="container"><a href="../admin" class="btn btn-primary">Go Back</a></div><br><br>
     <div class="container">
         <table class="table table-bordered">
             <thead>
