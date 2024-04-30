@@ -75,7 +75,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p align="center">Copyright ©2024 <a href="#" target="_blank"><i>team_builders</i></a>  -  All Rights Reserved.</p>
+								<p align="center">Copyright ©2024 <a href="about" target="_blank"><i>team_nsbm</i></a>  -  All Rights Reserved.</p>
 							</div>
 						</div>
 						<div class="col-lg-6 col-12">
