@@ -48,7 +48,7 @@
 					<div class="bread-inner">
 						<ul class="bread-list">
 							<li><a href="index.jsp">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="contact.jsp">Contact</a></li>
+							<li class="active"><a href="contact">Contact</a></li>
 						</ul>
 					</div>
 				</div>

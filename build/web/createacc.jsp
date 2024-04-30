@@ -45,7 +45,7 @@
 					<div class="bread-inner">
 						<ul class="bread-list">
 							<li><a href="index.jsp">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="createacc.jsp">Sign Up</a></li>
+							<li class="active"><a href="sign-up">Sign Up</a></li>
 						</ul>
 					</div>
 				</div>
