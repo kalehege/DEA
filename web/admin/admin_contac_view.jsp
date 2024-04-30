@@ -1,3 +1,4 @@
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 
 <head>
@@ -20,12 +21,15 @@
                 </tr>
             </thead>
             <tbody>
+                            
+            <c:forEach var="contact" items="${listContact}">
                     <tr>
-                        <td>asd</td>
-                        <td>asd</td>
-                        <td>asd</td>
-                        <td>asd</td>
+                        <td><c:out value="${contact.id}" /></td>
+                        <td><c:out value="${contact.name}" /></td>
+                        <td><c:out value="${contact.email}" /></td>
+                        <td><c:out value="${contact.message}" /></td>
                     </tr>
+            </c:forEach>
 
             </tbody>
         </table>
