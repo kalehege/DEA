@@ -30,7 +30,7 @@ public class StoreDB {
         " (?, ?, ?, ?, ?);";
     
         
-    private static final String INSERT_Contact_SQL = "INSERT INTO contacts" + "  (name, email, message) VALUES " +
+    private static final String INSERT_Contact_SQL = "INSERT INTO contacts" + "  (name, email, subject, message) VALUES " +
         " (?, ?, ?);";
 
     private static final String SELECT_ALL_Products = "select * from products ORDER BY ID DESC;";
