@@ -27,8 +27,8 @@ public class Product {
         super();
         this.id = id;
         this.name = name;
-        this.image = image;
         this.description = description;
+        this.image = image;
         this.size = size;
         this.price = price;    
         this.category = category;
