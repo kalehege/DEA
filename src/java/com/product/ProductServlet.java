@@ -112,6 +112,11 @@ public class ProductServlet extends HttpServlet {
                 case "/delete":
                     deleteProduct(request, response);
                     break;
+                    
+                                    
+                case "/remove-cart":
+                    deleteCart(request, response);
+                    break;
 
 
                 default:
@@ -373,6 +378,15 @@ public class ProductServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         storeDB.deleteProduct(id);
         response.sendRedirect("admin/product-view");
+
+    }
+    
+        
+    private void deleteCart(HttpServletRequest request, HttpServletResponse response)
+    throws SQLException, IOException {
+        int id = Integer.parseInt(request.getParameter("cart_id"));
+        storeDB.deleteCart(id);
+        response.sendRedirect("view-cart");
 
     }
 

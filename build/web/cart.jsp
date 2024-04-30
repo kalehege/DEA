@@ -104,7 +104,7 @@
 									<!--/ End Input Order -->
 								</td>
 								<td class="total-amount" data-title="Total"><span>LKR <c:out value="${cart.p_price}" /> </span></td>
-								<td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
+								<td class="action" data-title="Remove"><a href="remove-cart?cart_id=${cart.cart_id }"><i class="ti-trash remove-icon"></i></a></td>
 							</tr>
                                                         
                                                         </c:forEach>

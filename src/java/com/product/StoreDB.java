@@ -44,6 +44,8 @@ public class StoreDB {
     private static final String SELECT_Cart_BY_USerMail = "SELECT * FROM cart WHERE customer_email = ?";
   
     private static final String DELETE_Product_SQL = "delete from products where id = ?;";
+   
+    private static final String DELETE_Cart_SQL = "delete from cart where cart_id = ?;";
 
     
     public StoreDB() {}
@@ -240,6 +242,17 @@ public class StoreDB {
         }
         return rowDeleted;
     }
+    
+        
+    public boolean deleteCart(int cart_id) throws SQLException {
+        boolean rowDeleted;
+        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_Cart_SQL);) {
+            statement.setInt(1, cart_id);
+            rowDeleted = statement.executeUpdate() > 0;
+        }
+        return rowDeleted;
+    }
+
 
     
     private void printSQLException(SQLException ex) {
