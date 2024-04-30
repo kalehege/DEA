@@ -291,8 +291,9 @@ public class StoreDB {
         System.out.println(INSERT_Contact_SQL);
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_Contact_SQL)) {
             preparedStatement.setString(1, contact.getName());
-            preparedStatement.setString(2, contact.getEmail());    
-            preparedStatement.setString(3, contact.getMessage());
+            preparedStatement.setString(2, contact.getSubject()); 
+            preparedStatement.setString(3, contact.getEmail());    
+            preparedStatement.setString(4, contact.getMessage());
 
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();
