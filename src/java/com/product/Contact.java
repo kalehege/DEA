@@ -16,6 +16,15 @@ public class Contact {
     protected String email;
     protected String message;  
     
+        
+    public Contact(){}
     
+     public Contact (String name, String email, String message){
+   
+         super();
+        this.name = name;
+        this.email = email;
+        this.message = message;
+     }
     
 }
