@@ -74,7 +74,7 @@
 						<div class="right-bar">
 							<!-- Search Form -->
 							<div class="sinlge-bar shopping">
-                                                                <a href="cart.jsp" class="single-icon">My Cart <i class="ti-bag"></i> 
+                                                                <a href="view-cart" class="single-icon">My Cart <i class="ti-bag"></i> 
                                                                     <span class="total-count">
                                                                         <c:set var="cartCount" value="0" />
                                                                         <c:forEach var="cart" items="${listCart}">
@@ -93,7 +93,7 @@
                                                                             </c:forEach>
 										<span>Items</span>
                                                                                 
-										<a href="#"><c:out value="${cartCount}" /> View Cart</a>
+										<a href="view-cart"><c:out value="${cartCount}" /> View Cart</a>
 									</div>
 									<ul class="shopping-list">
                                                                             <c:forEach var="cart" items="${listCart}">
@@ -118,7 +118,7 @@
 
 										</div>
                                                                             <% if (session.getAttribute("email") != null) { %>
-                                                                                <a href="checkout.jsp" class="btn animate">Checkout</a>
+                                                                                <a href="checkout" class="btn animate">Checkout</a>
                                                                                 <% } else { %>
                                                                                 <li>You need to sign-in</li>                                                              
                                                                                 <% } %>

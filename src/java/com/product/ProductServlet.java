@@ -98,6 +98,14 @@ public class ProductServlet extends HttpServlet {
                 case "/view-cart":
                     showCart(request, response);
                     break;
+                                    
+                case "/checkout":
+                    showCheckout(request, response);
+                    break;
+                                    
+                case "/payemnt-complete":
+                    showCompletePayemnt(request, response);
+                    break;
 
 
                 default:
@@ -329,6 +337,27 @@ public class ProductServlet extends HttpServlet {
         request.setAttribute("listCart", listCart);
         
         RequestDispatcher dispatcher = request.getRequestDispatcher("cart.jsp");
+        dispatcher.forward(request, response);
+    }
+    
+        
+    private void showCheckout(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+        
+                
+        List <Cart> listCart = storeDB.selectCartByUserEmailFromSession(request);
+        request.setAttribute("listCart", listCart);
+        
+        RequestDispatcher dispatcher = request.getRequestDispatcher("checkout.jsp");
+        dispatcher.forward(request, response);
+    }
+    
+        
+    private void showCompletePayemnt (HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+       
+        
+        RequestDispatcher dispatcher = request.getRequestDispatcher("payment.jsp");
         dispatcher.forward(request, response);
     }
 

@@ -406,10 +406,14 @@
 							<div class="single-widget">
 								<h2>CART  TOTALS</h2>
 								<div class="content">
+                                                                    <c:set var="totalPrice" value="0" />
+                                                                    <c:forEach var="cart" items="${listCart}">
+                                                                        <c:set var="totalPrice" value="${totalPrice + cart.p_price}" />                 
+                                                                    </c:forEach>
 									<ul>
-										<li>Sub Total<span>$330.00</span></li>
-										<li>(+) Shipping<span>$10.00</span></li>
-										<li class="last">Total<span>$340.00</span></li>
+										<li>Sub Total<span>LKR <c:out value="${totalPrice}" /></span></li>
+										<li>(+) Shipping<span>free</span></li>
+										<li class="last">Total<span>LKR <c:out value="${totalPrice}" /></span></li>
 									</ul>
 								</div>
 							</div>
@@ -429,7 +433,7 @@
 							<!-- Payment Method Widget -->
 							<div class="single-widget payement">
 								<div class="content">
-									<img src="images/payment-method.png" alt="#">
+									<img src="/public/images/payment-method.png" alt="#">
 								</div>
 							</div>
 							<!--/ End Payment Method Widget -->
@@ -437,7 +441,7 @@
 							<div class="single-widget get-button">
 								<div class="content">
 									<div class="button">
-										<a href="#" class="btn">proceed to checkout</a>
+										<a href="payemnt-complete" class="btn">proceed to checkout</a>
 									</div>
 								</div>
 							</div>
