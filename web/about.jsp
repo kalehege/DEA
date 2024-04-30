@@ -89,6 +89,14 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="single-head">
+                    <div class ="title">
+                        <center>
+                                <h4>
+                                    <b>Project Team</b>
+                                </h4>
+                        </center>
+                        
+                    </div>
 
                     <table align="center">
                         <tr>
