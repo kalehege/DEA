@@ -139,6 +139,10 @@ public class ProductServlet extends HttpServlet {
                     break;
                     
                                     
+                case "/admin/users-view":
+                    showAdminUsersPage(request, response);
+                    break;
+                                    
                 case "/addcontact":
                     insertContact(request, response);
                     break;
