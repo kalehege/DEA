@@ -31,14 +31,12 @@
     function g(a) {
         var b, d, e = c.createElement("div"),
             f = a;
-        for (b in f)
+        for (a in f)
             if (d = f[b], "undefined" != typeof e.style[d]) return e = null, [d, b];
         return [!1]
     }
 
-    function h() {
-        return g(["transition", "WebkitTransition", "MozTransition", "OTransition"])[1]
-    }
+    
 
     function i() {
         return g(["transform", "WebkitTransform", "MozTransform", "OTransform", "msTransform"])[0]
