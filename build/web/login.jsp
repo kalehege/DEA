@@ -10,8 +10,10 @@
 	<!-- Title Tag  -->
     <title>Fashion Fusion</title>
 	<!-- Favicon -->
+
 	<link rel="icon" type="image/png" href="images/favicon.png">
 	<!-- Web Font -->
+
 	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 	
 	<!-- StyleSheet -->
@@ -43,8 +45,8 @@
 				<div class="col-12">
 					<div class="bread-inner">
 						<ul class="bread-list">
-							<li><a href="index.jsp">Home<i class="ti-arrow-right"></i></a></li>
-							<li class="active"><a href="login.jsp">Login</a></li>
+							<li><a href="home">Home<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="sign-in">Login</a></li>
 						</ul>
 					</div>
 				</div>
@@ -59,7 +61,7 @@
             <input type="text" id="email" name="email" required>
           </div>
           <div class="form-group">
-            <label for="password">Password:</label>
+            <label for="password">Password</label>
             <input type="text" id="password" name="password" required>
           </div>
             <% 
@@ -71,7 +73,7 @@
                 Invalid email or password. Please try again.
             </div>
             <% } %>
-          <button type="submit">Sign In</button>
+          <button type="submit">SIGN IN</button>
         </form>          
         <p>Don't have an account? <a href="sign-up">Create one</a></p>
                     
@@ -83,6 +85,6 @@
 
     <%@include file="footer.jsp" %>
 
-    <%@include file="js.jsp" %>
+    <%@include file = "js.jsp" %>
 </body>
 </html>
