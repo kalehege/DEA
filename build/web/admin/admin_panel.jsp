@@ -13,6 +13,7 @@
         <a href="admin/contact-view"" class="btn btn-primary">Contact View</a>
         <a href="admin/product-add" class="btn btn-primary">Add Product</a>
         <a href="admin/product-view" class="btn btn-primary">View Product</a>
+        <a href="admin/users-view" class="btn btn-primary">View Users</a>
 
         <a href="home" class="btn btn-primary">Go Home Page</a>
 
