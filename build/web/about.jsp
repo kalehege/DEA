@@ -62,8 +62,8 @@
                 <div class="col-lg-12">
                     <div class="single-head">
                         <div class="title">
-                            <center><h2><b><u>About Us</u></b></h2></center><br>
-                            <h5 align="center">"At Fashion Fusion, we're more than just an online store - we're a culmination of creativity, curated by the innovative minds of second-year undergraduates at NSBM Green University. Our passion for style, combined with our dedication to delivering quality fashion, fuels our mission to redefine the online shopping experience. From the latest trends to timeless classics, we offer a fusion of styles that cater to every individual's unique expression. Join us on this journey as we blend innovation, style, and passion to create an unparalleled shopping destination."</h5>
+                            <center><h2><b>About Us</b></h2></center><br>
+                            <h6 align="center">"At Fashion Fusion, we're more than just an online store - we're a culmination of creativity, curated by the innovative minds of second-year undergraduates at NSBM Green University. Our passion for style, combined with our dedication to delivering quality fashion, fuels our mission to redefine the online shopping experience. From the latest trends to timeless classics, we offer a fusion of styles that cater to every individual's unique expression. Join us on this journey as we blend innovation, style, and passion to create an unparalleled shopping destination."</h5>
                         </div><br>
                         
 						<div class="title">
@@ -98,14 +98,14 @@
                     <table align="center">
                         <tr>
                             <td><div class="ccard">
-                                    <a href="https://web.facebook.com/kalehege">
+                                    <a href="https://github.com/kalehege">
                                 <img src="public/images/about us/chamod.jpg" alt="Example Image" style="width: 100%"><br>
                                 <h5><center> Chamod <br>Tharindu</center></h5><br>
                                 <p>Chamod is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
                               </div></td>
 
                               <td><div class="ccard">
-                                       <a href="https://web.facebook.com/thilina.sandaruwan.7982780">
+                                       <a href="https://www.linkedin.com/in/b-t-sandaruwan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
 
                                 <img src="public/images/about us/thilina.jpg" alt="Example Image" style="width: 100%"><br>
                                 <h5><center>Thilina <br>Sandaruwan</center></h5><br>
@@ -121,7 +121,7 @@
                               </div></td>
 
                               <td><div class="ccard">
-                                <a href="https://web.facebook.com/kalehege">
+                                <a href="https://www.linkedin.com/in/malinda-kawshalya-19304527a/">
 
                                 <img src="public/images/about us/Malinda.jpg" alt="Example Image" style="width: 100%"><br>
                                 <h5><center>Malinda <br>Kawshalya</center></h5><br>
@@ -139,13 +139,14 @@
                               </div></td>
                     
                               <td><div class="ccard">
+                                <a href="https://www.linkedin.com/in/bhanuka-heshan-46006828b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                                 <img src="public/images/about us/bhanuka.jpg" alt="Example Image" style="width: 100%"><br>
                                 <h5><center>Bhanuka <br>Heshan</center></h5><br>
                                 <p>Bhanuka is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
                               </div></td>
                     
                               <td><div class="ccard">
-                                 <a href="https://web.facebook.com/kalehege">
+                                 <a href="https://www.linkedin.com/in/hashan-shavinda-608512198?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                                 <img src="public/images/about us/Hasi.png" alt="Example Image" style="width: 100%"><br>
                                 <h5><center>Hashan <br>Shavinda</center></h5><br>
                                 <p>Hashan is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering.</p>
@@ -162,14 +163,14 @@
 
                             <tr><center>
                                 <td><div class="ccard">
-                                    <a href="https://web.facebook.com/kalehege">
+                                    <a href="https://www.linkedin.com/in/ravindu-wijesinghe-5b163b255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                                     <img src="public/images/about us/pahan.jpg" alt="Example Image" style="width: 100%"><br>
                                     <h5><center>Ravindu <br>Pahan</center></h5><br>
                                     <p>Pahan is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering..</p>
                                   </div></td>
                     
                                   <td><div class="ccard">
-                                    <a href="https://web.facebook.com/kalehege">
+                                    <a href="https://www.linkedin.com/in/chamini-maduwanthi-b887b7258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B4C2v7Oi4Tl6qgOQxt%2BLylQ%3D%3D">
                                     <img src="public/images/about us/chamini.jpg" alt="Example Image" style="width: 100%"><br>
                                     <h5><center>Chamini <br>Gamage</center></h5><br>
                                     <p>Chamini is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
