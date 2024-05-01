@@ -232,6 +232,7 @@ public class StoreDB {
         preparedStatement.setString(3, customer.getL_name());               
         preparedStatement.setString(4, customer.getPassword());  
         preparedStatement.setString(5, customer.getDob());
+        preparedStatement.setString(6, customer.getU_type());
         System.out.println(preparedStatement);
         preparedStatement.executeUpdate();
     } catch (SQLException e) {
