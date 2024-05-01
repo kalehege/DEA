@@ -142,6 +142,11 @@ public class ProductServlet extends HttpServlet {
                 case "/addcontact":
                     insertContact(request, response);
                     break;
+                    
+                                    
+                case "/payment-methods":
+                    showPaymentMethodPage(request, response);
+                    break;
 
 
                 default:
@@ -465,5 +470,12 @@ public class ProductServlet extends HttpServlet {
         response.sendRedirect(referer);
     }
 
+        
+    private void showPaymentMethodPage (HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+       
+        RequestDispatcher dispatcher = request.getRequestDispatcher("paymentmethods.jsp");
+        dispatcher.forward(request, response);
+    }
 
 }
