@@ -485,6 +485,10 @@ public class ProductServlet extends HttpServlet {
         
     private void showAdminUsersPage (HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
+        
+                
+        List < Customer > listCustomer = storeDB.selectAllUsers();
+        request.setAttribute("listCustomer", listCustomer);
        
         RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_users_view.jsp");
         dispatcher.forward(request, response);
