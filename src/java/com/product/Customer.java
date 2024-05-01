@@ -55,7 +55,7 @@ public class Customer {
         this.f_name = f_name;
     }
 
-    public String getL_name() {
+    public String getL_name(){
         return l_name;
     }
 
