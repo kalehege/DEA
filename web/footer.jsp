@@ -19,7 +19,8 @@
 						<div class="single-footer links">
 							<h4>Information</h4>
 							<ul>
-                                                            <li><a href="about"><u>About Us<</u>/a></li>
+								<li><a href="about">About Us
+                                                                </li>
 								
 								<li><a href="terms.jsp">Terms & Conditions</a></li>
 								<li><a href="contact">Contact Us</a></li>
