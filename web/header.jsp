@@ -41,7 +41,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-                                                    <a href="home"><img src = "public/images/logo1.png"></a>
+                                                    <a href="home"><img src = "public/images/logo1.jpg"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
