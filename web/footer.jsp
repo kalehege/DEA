@@ -7,7 +7,7 @@
 						<!-- Single Widget -->
 						<div class="single-footer about">
 							<div class="logo">
-								<a href="home"><h2><img src = "public/images/logo 2.png"></h2>
+								<a href="home"><h2><img src = "public/images/logo2.png"></h2>
 							</div>
                                                     <p class="text"><h4>" Style Defined. Confidence Refined. Discover Your Expression..."</h4></p>
 <p class="call"> Got Question..? Call us 24/7<span><center><h3>011 200 2000</h3></center></p></span></p>
@@ -76,7 +76,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p align="center">Copyright ©2024 <a href="about" target="_blank"><i>team_nsbm</i></a>  -  All Rights Reserved.</p>
+								<p align="center">Copyright Â©2024 <a href="about" target="_blank"><i>team_nsbm</i></a>  -  All Rights Reserved.</p>
 							</div>
 						</div>
 						<div class="col-lg-6 col-12">
