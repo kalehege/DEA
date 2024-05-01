@@ -50,9 +50,9 @@
 							<!-- Single Widget -->
 							<div class="contact">
 								<ul>
-									<li>NO.45</li>
-									<li>Pitipana road</li>
-                                                                        <li>Homagama</li>
+									<li>NO.45,</li>
+									<li>Pitipana road,</li>
+                                                                        <li>Homagama.</li>
                                                                         <li><b><h6>077 200 2000 / 011 200 2000</h6></b></li>
 									
 								</ul>
