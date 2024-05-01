@@ -651,11 +651,7 @@
 	background:#F7941D;
 	color:#fff;
 }
-.header.shop .search-bar form {
-	display: inline-block;
-	float: left;
-	width: 260px;
-}
+
 .header.shop .search-bar input {
 	height: 48px;
 	background: transparent;
