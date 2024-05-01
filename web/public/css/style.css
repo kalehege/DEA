@@ -1399,7 +1399,7 @@
 	text-transform: capitalize;
 }
 .hero-area3 .small-content .title span{
-	color:#F7941D;
+	color:#3FC1C9;
 }
 .hero-area3 .small-content .des{}
 .hero-area3 .small-content .button{
@@ -1888,7 +1888,7 @@
 	display: inline-block;
 }
 .single-product .product-img .product-action-2 a:hover {
-  color:#F7941D;
+  color:#3FC1C9;
 }
 .single-product .button-head {
 	background: #fff;
@@ -2108,7 +2108,7 @@
 	text-transform: capitalize;
 }
 .shop-sidebar .categor-list li a:hover{
-	color:#F7941D;
+	color:#3FC1C9;
 }
 /* Recent Post */
 .shop-sidebar .single-post {
@@ -2589,7 +2589,7 @@
 	top: 9px;
 	height: 7px;
 	width: 7px;
-	background: #f7941d;
+	background: #3FC1C9;
 	border-radius: 50%;
 }
 .shop.single .single-des p{}
@@ -2704,7 +2704,7 @@
 	display:inline-block;
 }
 .shop.single .comment-review .rating li i{
-	color:#F7941D;
+	color:#3FC1C9;
 	font-size: 14px;
 }
 .shop.single .rating-des p{
@@ -2783,7 +2783,7 @@
 	content: "";
 	height: 2px;
 	width: 50px;
-	background: #F7941D;
+	background: #3FC1C9;
 	left: 0;
 	bottom: -1px;
 }
@@ -2867,7 +2867,7 @@
 .shop-home-list .single-list .content .price {
 	margin-top: 15px;
 	font-weight: 500;
-	background: #f7941d;
+	background: #3FC1C9;
 	display: inline-block;
 	color: #fff;
 	padding: 2px 18px;
@@ -3906,7 +3906,7 @@
 	height: 64px;
 	width: 64px;
 	line-height: 64px;
-	background: #F7941D;
+	background: #3FC1C9;
 	color: #fff;
 	font-size: 20px;
 	border-radius: 100%;
@@ -4347,7 +4347,7 @@
 	margin-bottom: 25px;
 }
 .blog-single .blog-meta .author i {
-	color: #F7941D;
+	color: #3FC1C9;
 	margin-right: 10px;
 	font-size: 13px;
 }
@@ -4528,7 +4528,7 @@
 	margin-right:5px;
 }
 .blog-single .single-comment .content a:hover{
-	color:#F7941D;
+	color:#3FC1C9;
 }
 /* Comment Form */
 .blog-single .reply form {
@@ -4658,7 +4658,7 @@
 	font-weight:400;
 }
 .contact-us .single-info ul li a:hover{
-	color:#F7941D;
+	color:#3FC1C9;
 }
 .contact-us .single-info .title {
 	margin-bottom: 10px;
@@ -4842,7 +4842,7 @@
 	display: block;
 }
 .footer .about .call a {
-	color: #f7941d;
+	color: #3FC1C9;
 	font-size: 20px;
 	font-weight: 600;
 }
@@ -4859,7 +4859,7 @@
 	font-weight: 400;
 }
 .footer .links ul li a:hover{
-	color:#F7941D;
+	color:#3FC1C9;
 	padding-left:10px;
 }
 .footer .social{}
