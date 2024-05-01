@@ -22,14 +22,16 @@
                 </tr>
             </thead>
             <tbody>
-                            
+                   <c:forEach var="customer" items="${listCustomer}">         
                     <tr>
-                        <td>asd</td>
-                        <td>asd</td>
-                        <td>asd</td>
-                        <td>asd</td>
-                        <td>asd</td>
+                        <td><c:out value="${customer.id}" /></td>
+                        <td><c:out value="${customer.email}" /></td>
+                        <td><c:out value="${customer.f_name}" /></td>
+                        <td><c:out value="${customer.l_name}" /></td>
+                        <td><c:out value="${customer.dob}" /></td>
                     </tr>
+            
+                   </c:forEach>
 
             </tbody>
         </table>
