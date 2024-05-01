@@ -34,7 +34,7 @@
 						<div class="single-footer links">
 							<h4>Customer Service</h4>
 							<ul>
-								<li><a href="paymentmethods">Payment Methods</a></li>
+								<li><a href="payment-methods">Payment Methods</a></li>
 								
 								
 								

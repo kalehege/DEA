@@ -127,7 +127,7 @@
 									<i class="fa fa-location-arrow"></i>
 									<h4 class="title">Our Address:</h4>
 									<ul>
-										<li>No 45 , Pitipana Road , Homagama .</li>
+										<li>No 45 , Pitipana Road , Homagama</li>
 									</ul>
 								</div>
 							</div>
