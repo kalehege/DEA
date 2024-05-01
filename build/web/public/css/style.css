@@ -651,7 +651,11 @@
 	background:#F7941D;
 	color:#fff;
 }
-
+.header.shop .search-bar form {
+	display: inline-block;
+	float: left;
+	width: 260px;
+}
 .header.shop .search-bar input {
 	height: 48px;
 	background: transparent;
@@ -4627,7 +4631,7 @@
 	margin-bottom:30px;
 }
 .contact-us .single-info i {
-	color: #fff;
+	color: #ffffff;
 	font-size: 18px;
 	display: inline-block;
 	margin-bottom: 15px;
@@ -4916,7 +4920,7 @@
 .login-container {
     background-color: #ECCA9C;
     padding: 60px;
-    border-radius: 50px;
+    border-radius: 60px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -4930,7 +4934,7 @@ h2 {
 
 .input-group label {
     display: block;
-    margin-bottom: 5px; /* Added spacing between label and input */
+    margin-bottom: 6px; /* Added spacing between label and input */
 }
 
 .input-group input {
