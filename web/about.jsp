@@ -113,7 +113,7 @@
                               </div></td>
                 
                               <td><div class="ccard">
-                                       <a href="https://web.facebook.com/kalehege">
+                                       <a href="https://www.linkedin.com/in/wrs-kumara-4a4612268/">
 
                                 <img src="public/images/about us/sampath.jpg" alt="Example Image" style="width: 100%"><br>
                                 <h5><center>Ravindra <br>Sampath</center></h5><br>
@@ -152,7 +152,7 @@
                               </div></td>
                     
                               <td><div class="ccard">
-                                <a href="https://web.facebook.com/kalehege">
+                                <a href="https://www.linkedin.com/in/chirath-bhupa-priyadarshana-317a04254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                                 <img src="public/images/about us/bhupa.jpg" alt="Example Image" style="width: 100%"><br>
                                 <h5><center>Chirath <br>Bhupa</center></h5><br>
                                 <p>Chirath is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering.</p>
