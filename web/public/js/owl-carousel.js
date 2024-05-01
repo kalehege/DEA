@@ -56,7 +56,6 @@
     var m, n, o;
     m = {
         start: 0,
-        startX: 0,
         startY: 0,
         current: 0,
         currentX: 0,
