@@ -41,7 +41,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-                                                    <a href="home"><img src = "public/images/FASHION FUTION LOGO 2.png"></a>
+                                                    <a href="home"><img src = "public/images/logo.png"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
