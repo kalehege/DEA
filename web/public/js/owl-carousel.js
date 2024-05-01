@@ -36,7 +36,9 @@
         return [!1]
     }
 
-    
+    function h() {
+        return g(["transition", "WebkitTransition", "MozTransition", "OTransition"])[1]
+    }
 
     function i() {
         return g(["transform", "WebkitTransform", "MozTransform", "OTransform", "msTransform"])[0]
