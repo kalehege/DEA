@@ -38,6 +38,8 @@ public class StoreDB {
         
     private static final String SELECT_ALL_Conatct = "select * from contacts ORDER BY ID DESC;";
     
+    private static final String SELECT_ALL_Users = "select * from customers ORDER BY ID DESC;";
+    
     private static final String SELECT_PRODUCTS_BY_CATEGORY = "SELECT * FROM products WHERE category = ? ORDER BY id DESC;";
 
 
@@ -171,6 +173,32 @@ public class StoreDB {
         }
         return contacts;
     }
+    
+        public List < Customer > selectAllUsers() {
+
+        List < Customer > customers = new ArrayList < > ();
+        try (Connection connection = getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_Users);) {
+            System.out.println(preparedStatement);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String email = rs.getString("email");
+                String f_name = rs.getString("f_name");
+                String l_name = rs.getString("l_name");
+                String password = rs.getString("password");
+                String dob = rs.getString("dob");
+                customers.add(new Customer (id, email, f_name, l_name, password, dob));
+            }
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+        return customers;
+    }
+    
+    
     
     public List<Product> selectProductsByCategory(String category) {
     List<Product> products = new ArrayList<>();
