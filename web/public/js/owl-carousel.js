@@ -31,7 +31,7 @@
     function g(a) {
         var b, d, e = c.createElement("div"),
             f = a;
-        for (a in f)
+        for (b in f)
             if (d = f[b], "undefined" != typeof e.style[d]) return e = null, [d, b];
         return [!1]
     }
