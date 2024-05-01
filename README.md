@@ -26,7 +26,7 @@ This is a Java web application for an online shopping site. It allows users to b
 ## Setup
 
 1. **Clone the Repository**: `https://github.com/kalehege/DEA.git`
-2. **Import Project**: Import the project into your preferred IDE (Eclipse, IntelliJ, etc.).
+2. **Import Project**: Import the project into your preferred IDE (NetBean, Eclipse, IntelliJ, etc.).
 3. **Database Configuration**: Set up a MySQL database and configure the database connection properties in `dea`.
 4. **Run the Application**: Start the application using your IDE or Maven.
 
