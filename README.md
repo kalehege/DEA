@@ -1,4 +1,3 @@
-Sure, here's a sample GitHub README file for a Java web shopping site:
 
 ---
 
