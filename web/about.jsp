@@ -140,7 +140,7 @@
                     
                               <td><div class="ccard">
                                 <img src="public/images/about us/bhanuka.jpg" alt="Example Image" style="width: 100%"><br>
-                                <h5><center>Bhanuka <br>Heshan</center></h5><br>
+                                <h5><center><b>Bhanuka <br>Heshan</b></center></h5><br>
                                 <p>Bhanuka is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
                               </div></td>
                     
