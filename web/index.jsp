@@ -87,7 +87,7 @@
 				<!-- Single Banner  -->
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="single-banner">
-						<img src="public/images/medium%20woman.jpg" alt="#">
+						<img src="public/images/women.png" alt="#">
 						<div class="content">
 							<p>Ladies Collectons</p>
 							<h3>Elegent Girls <br> Choice</h3>
