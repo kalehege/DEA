@@ -98,25 +98,32 @@
                     <table align="center">
                         <tr>
                             <td><div class="ccard">
+                                    <a href="https://web.facebook.com/kalehege">
                                 <img src="public/images/about us/chamod.jpg" alt="Example Image" style="width: 100%"><br>
-                                <h5><center>Chamod <br>Tharindu</center></h5><br>
+                                <h5><center> Chamod <br>Tharindu</center></h5><br>
                                 <p>Chamod is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
                               </div></td>
 
                               <td><div class="ccard">
+                                       <a href="https://web.facebook.com/thilina.sandaruwan.7982780">
+
                                 <img src="public/images/about us/thilina.jpg" alt="Example Image" style="width: 100%"><br>
                                 <h5><center>Thilina <br>Sandaruwan</center></h5><br>
                                 <p>Thilina is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
                               </div></td>
                 
                               <td><div class="ccard">
+                                       <a href="https://web.facebook.com/kalehege">
+
                                 <img src="public/images/about us/sampath.jpg" alt="Example Image" style="width: 100%"><br>
                                 <h5><center>Ravindra <br>Sampath</center></h5><br>
                                 <p>Sampath is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
                               </div></td>
 
                               <td><div class="ccard">
-                                                                      <img src="public/images/about us/Malinda.jpg" alt="Example Image" style="width: 100%"><br>
+                                <a href="https://web.facebook.com/kalehege">
+
+                                <img src="public/images/about us/Malinda.jpg" alt="Example Image" style="width: 100%"><br>
                                 <h5><center>Malinda <br>Kawshalya</center></h5><br>
                                 <p>Malinda is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
                               </div></td>
@@ -125,6 +132,7 @@
                         
                             <tr>
                                 <td><div class="ccard">
+                                <a href="https://web.facebook.com/kalehege">
                                 <img src="public/images/about us/tharindu.jpg" alt="Example Image" style="width: 100%"><br>
                                 <h5><center>Tharindu <br>Premarathna</center></h5><br>
                                 <p>Tharindu is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering.</p>
@@ -137,12 +145,14 @@
                               </div></td>
                     
                               <td><div class="ccard">
+                                 <a href="https://web.facebook.com/kalehege">
                                 <img src="public/images/about us/Hasi.png" alt="Example Image" style="width: 100%"><br>
                                 <h5><center>Hashan <br>Shavinda</center></h5><br>
                                 <p>Hashan is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering.</p>
                               </div></td>
                     
                               <td><div class="ccard">
+                                <a href="https://web.facebook.com/kalehege">
                                 <img src="public/images/about us/bhupa.jpg" alt="Example Image" style="width: 100%"><br>
                                 <h5><center>Chirath <br>Bhupa</center></h5><br>
                                 <p>Chirath is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering.</p>
@@ -152,12 +162,14 @@
 
                             <tr><center>
                                 <td><div class="ccard">
+                                    <a href="https://web.facebook.com/kalehege">
                                     <img src="public/images/about us/pahan.jpg" alt="Example Image" style="width: 100%"><br>
                                     <h5><center>Ravindu <br>Pahan</center></h5><br>
                                     <p>Pahan is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Software Engineering..</p>
                                   </div></td>
                     
                                   <td><div class="ccard">
+                                    <a href="https://web.facebook.com/kalehege">
                                     <img src="public/images/about us/chamini.jpg" alt="Example Image" style="width: 100%"><br>
                                     <h5><center>Chamini <br>Gamage</center></h5><br>
                                     <p>Chamini is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>

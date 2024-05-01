@@ -1504,6 +1504,7 @@
 .small-banner .single-banner img{
 	height:100%;
 	width:100%;
+         
 	-webkit-transition:all 0.4s ease;
 	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
@@ -1561,6 +1562,7 @@
 .midium-banner .single-banner img{
 	height:100%;
 	width:100%;
+        
 	-webkit-transition:all 0.4s ease;
 	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
