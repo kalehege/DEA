@@ -62,19 +62,16 @@
                 <div class="col-lg-12">
                     <div class="single-head">
                         <div class="title">
-                            <center><h4><b>About Us</b></h4></center>
-                            <h5 align="center">Welcome to Fashion Fusion! Our team is dedicated to bringing you the latest trends and styles in the exciting world of fashion</h5>
-                        </div>
-                        <div class="single-info">
-                            <p> Discover the Ideal Look for Any Occasion at Our Store.Find the perfect outfit for a night out or casual essentials for everyday wear at Our Store. We are committed to providing exceptional customer service and are passionate about fashion. Our goal is to empower individuals to express their unique identity through their clothing choices. Explore our collection and elevate your wardrobe with Our Stores.</p>
-                            <p></p>
-                        </div>
+                            <center><h2><b><u>About Us</u></b></h2></center><br>
+                            <h5 align="center">"At Fashion Fusion, we're more than just an online store - we're a culmination of creativity, curated by the innovative minds of second-year undergraduates at NSBM Green University. Our passion for style, combined with our dedication to delivering quality fashion, fuels our mission to redefine the online shopping experience. From the latest trends to timeless classics, we offer a fusion of styles that cater to every individual's unique expression. Join us on this journey as we blend innovation, style, and passion to create an unparalleled shopping destination."</h5>
+                        </div><br>
+                        
 						<div class="title">
-                                                    <center><h4><b>Vision</b></h4></center>
+                                                    <center><h2><b><u>Vision</u></b></h2></center><br>
 							<h5 align="center">Our Vision is to completely transform the way people buy branded apparel online by creating a flawless, motivating environment that values uniqueness and self-expression.</h5>
-						</div>
+                                                </div><br>
 						<div class="title">
-                                                    <center><h4><b>Mission</b></h4></center>
+                                                    <center><h2><b><u>Mission</u></b></h2></center><br>
 							<h5 align="center">Our Mission is to become the go-to brand for ethical and stylish consumers worldwide by using creativity, morality, and a genuine passion for fashion. </h5>
 						</div>
                     </div>
@@ -91,9 +88,9 @@
                 <div class="single-head">
                     <div class ="title">
                         <center>
-                                <h4>
-                                    <b>Project Team</b>
-                                </h4>
+                                <h3>
+                                    <b>// Project Team</b>
+                                </h3>
                         </center>
                         
                     </div>
