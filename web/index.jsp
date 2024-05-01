@@ -75,7 +75,7 @@
 				<!-- Single Banner  -->
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="single-banner">
-						<img src="public/images/medium.jpg" alt="men.html">
+						<img src="public/images/mens.png" alt="men.html">
 						<div class="content">
 							<p>Men's Collectons</p>
 							<h3>Handy Men <br> Choice</h3>
