@@ -9,8 +9,8 @@
 							<div class="logo">
 								<a href="home"><h2><img src = "public/images/logo 2.png"></h2>
 							</div>
-							<p class="text">" Your go-to destination for cutting-edge fashion trends, quality garments, and personalized style consultations... "</p>
-                                                        <p class="call"> Got Question..? Call us 24/7<span><center>011 200 2000</center></p></span></p>
+                                                    <p class="text"><h4>" Style Defined. Confidence Refined. Discover Your Expression..."</h4></p>
+<p class="call"> Got Question..? Call us 24/7<span><center><h3>011 200 2000</h3></center></p></span></p>
 						</div>
 						<!-- End Single Widget -->
 					</div>
@@ -19,7 +19,7 @@
 						<div class="single-footer links">
 							<h4>Information</h4>
 							<ul>
-								<li><a href="about">About Us</a></li>
+                                                            <li><a href="about"><u>About Us<</u>/a></li>
 								
 								<li><a href="terms.jsp">Terms & Conditions</a></li>
 								<li><a href="contact">Contact Us</a></li>
@@ -51,8 +51,8 @@
 								<ul>
 									<li>NO.45</li>
 									<li>Pitipana road</li>
-									<li>Homagama</li>
-                                                                        <li>077 200 2000</li>
+                                                                        <li>Homagama</li>
+                                                                        <li><b><h6>077 200 2000 / 011 200 2000</h6></b></li>
 									
 								</ul>
 							</div>
