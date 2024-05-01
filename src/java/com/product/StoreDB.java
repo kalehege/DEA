@@ -188,8 +188,9 @@ public class StoreDB {
                 String email = rs.getString("email");
                 String f_name = rs.getString("f_name");
                 String l_name = rs.getString("l_name");
+                String password = rs.getString("password");
                 String dob = rs.getString("dob");
-                customers.add(new Customer (id, email, f_name, l_name, dob));
+                customers.add(new Customer (id, email, f_name, l_name, password, dob));
             }
         } catch (SQLException e) {
             printSQLException(e);
