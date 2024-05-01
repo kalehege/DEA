@@ -89,7 +89,7 @@
                     <div class ="title">
                         <center>
                                 <h3>
-                                    <b>// Project Team</b>
+                                    <b>Project Team</b>
                                 </h3>
                         </center>
                         
@@ -141,7 +141,7 @@
                               <td><div class="ccard">
                                 <a href="https://www.linkedin.com/in/bhanuka-heshan-46006828b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                                 <img src="public/images/about us/bhanuka.jpg" alt="Example Image" style="width: 100%"><br>
-                                <h5><center>Bhanuka <br>Heshan</center></h5><br>
+                                <h5><center><b>Bhanuka <br>Heshan</b></center></h5><br>
                                 <p>Bhanuka is a second year undergraduate student of NSBM Green University. He is studying in Faculty of Compting under the BSc(Hons) in Computer Science.</p>
                               </div></td>
                     
