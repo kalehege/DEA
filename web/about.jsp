@@ -89,7 +89,7 @@
                     <div class ="title">
                         <center>
                                 <h3>
-                                    <b>// Project Team</b>
+                                    <b>Project Team</b>
                                 </h3>
                         </center>
                         
