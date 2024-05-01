@@ -75,7 +75,7 @@
 				<!-- Single Banner  -->
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="single-banner">
-						<img src="public/images/medium.jpg" alt="men.html">
+						<img src="public/images/mens.png" alt="men.html">
 						<div class="content">
 							<p>Men's Collectons</p>
 							<h3>Handy Men <br> Choice</h3>
@@ -87,7 +87,7 @@
 				<!-- Single Banner  -->
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="single-banner">
-						<img src="public/images/medium%20woman.jpg" alt="#">
+						<img src="public/images/women.png" alt="#">
 						<div class="content">
 							<p>Ladies Collectons</p>
 							<h3>Elegent Girls <br> Choice</h3>
@@ -99,7 +99,7 @@
 				<!-- Single Banner  -->
 				<div class="col-lg-4 col-12">
 					<div class="single-banner tab-height">
-						<img src="public/images/medium accessories l.png" alt="#">
+						<img src="public/images/accessories.png" alt="#">
 						<div class="content">
 							<p>Flash Sale</p>
 							<h3>Unique <br> Accessories <br> Up to <span>40%</span> Off</h3>
