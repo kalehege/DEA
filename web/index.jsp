@@ -99,7 +99,7 @@
 				<!-- Single Banner  -->
 				<div class="col-lg-4 col-12">
 					<div class="single-banner tab-height">
-						<img src="public/images/medium accessories l.png" alt="#">
+						<img src="public/images/accessories.png" alt="#">
 						<div class="content">
 							<p>Flash Sale</p>
 							<h3>Unique <br> Accessories <br> Up to <span>40%</span> Off</h3>
