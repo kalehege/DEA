@@ -26,8 +26,8 @@ public class StoreDB {
         " (?, ?, ?, ?, ?, ?);";
     
        
-    private static final String INSERT_CUSTOMER_SQL = "INSERT INTO customers" + "  (email, f_name, l_name, password, dob) VALUES " +
-        " (?, ?, ?, ?, ?);";
+    private static final String INSERT_CUSTOMER_SQL = "INSERT INTO customers" + "  (email, f_name, l_name, password, dob, u_type) VALUES " +
+        " (?, ?, ?, ?, ?, ?);";
     
         
     private static final String INSERT_Contact_SQL = "INSERT INTO contacts" + "  (name, subject, email,  message) VALUES " +
