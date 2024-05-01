@@ -10,7 +10,7 @@
   margin-top: 40px;}
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 #faa300;
+  box-shadow: 0 8px 16px 0 #3FC1C9;
 }
 
 .card img {
@@ -33,7 +33,7 @@
 }
 .blue-button {
             background-color: #dbd9d5;
-            color: #faa300;
+            color: #3FC1C9;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
