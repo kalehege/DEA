@@ -46,6 +46,14 @@ public class Customer {
         return email;
     }
 
+    public String getU_type() {
+        return u_type;
+    }
+
+    public void setU_type(String u_type) {
+        this.u_type = u_type;
+    }
+
     public void setEmail(String email) {
         this.email = email;
     }
