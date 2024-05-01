@@ -998,6 +998,7 @@
 	color:#333;
 	font-size:20px;
 	position:relative;
+        font-weight: bold;
 }
 .header.shop .right-bar .sinlge-bar .single-icon:hover{
 	color:#F7941D;
