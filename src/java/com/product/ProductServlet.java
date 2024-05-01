@@ -477,5 +477,13 @@ public class ProductServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("paymentmethods.jsp");
         dispatcher.forward(request, response);
     }
+    
+        
+    private void showAdminUsersPage (HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+       
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_users_view.jsp");
+        dispatcher.forward(request, response);
+    }
 
 }
