@@ -4609,16 +4609,17 @@
 .contact-us .title{
 	margin-bottom: 30px;
 }
-.contact-us .title h4 {
+.contact-us .title h3 {
 	font-size: 17px;
 	font-weight: 500;
 	margin-bottom: 5px;
 	color: #F7941D;
 }
-.contact-us .title h3 {
+.contact-us .title h2 {
 	font-size: 25px;
 	text-transform: capitalize;
 	font-weight: 600;
+        color: #F7941D;
 }
 .contact-us .single-head {
 	padding: 50px;
