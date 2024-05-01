@@ -34,7 +34,7 @@
 						<div class="single-footer links">
 							<h4>Customer Service</h4>
 							<ul>
-								<li><a href="paymentmethods">Payment Methods</a></li>
+								<li><a href="payment-methods">Payment Methods</a></li>
 								
 								
 								
@@ -50,9 +50,9 @@
 							<!-- Single Widget -->
 							<div class="contact">
 								<ul>
-									<li>NO.45</li>
-									<li>Pitipana road</li>
-                                                                        <li>Homagama</li>
+									<li>NO.45 ,</li>
+									<li>Pitipana road ,</li>
+                                                                        <li>Homagama .</li>
                                                                         <li><b><h6>077 200 2000 / 011 200 2000</h6></b></li>
 									
 								</ul>

@@ -998,6 +998,7 @@
 	color:#333;
 	font-size:20px;
 	position:relative;
+        font-weight: bold;
 }
 .header.shop .right-bar .sinlge-bar .single-icon:hover{
 	color:#F7941D;
@@ -1503,6 +1504,7 @@
 .small-banner .single-banner img{
 	height:100%;
 	width:100%;
+         
 	-webkit-transition:all 0.4s ease;
 	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
@@ -1560,6 +1562,7 @@
 .midium-banner .single-banner img{
 	height:100%;
 	width:100%;
+        
 	-webkit-transition:all 0.4s ease;
 	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
@@ -4608,6 +4611,7 @@
 }
 .contact-us .title{
 	margin-bottom: 30px;
+        text-decoration: underline;
 }
 .contact-us .title h3 {
 	font-size: 17px;

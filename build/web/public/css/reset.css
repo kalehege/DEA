@@ -150,6 +150,7 @@ table {
 td,
 th {
 	padding: 0;
+        
 }
 /*--------------------------------------------------------------
 # Typography
@@ -160,6 +161,7 @@ input,
 select,
 optgroup,
 textarea {
+   
 	color: #424646;
     font-family: 'Poppins', sans-serif;
 	font-weight:400;

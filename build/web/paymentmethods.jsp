@@ -37,23 +37,26 @@
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="container col-12 align-content-center text-center">
                                         
-                    <h1>Add cards</h1>
-                    <a class="btn btn-danger" href="logout.php">Select</a>
+                    <h1>Add Your Cards</h1>
+                    
                 </div>
                 <div class="scontainer">
 
     <h2>Add Visa Card</h2>
     <form action="process_card.php" method="POST">
-        <label for="card_number">Card Number:</label><br>
+        <label for="card_number">Card number:</label><br>
         <input type="text" id="card_number" name="card_number" required><br><br>
         
-        <label for="expiry_date">Expiry Date:</label><br>
+        <label for="card_number">Name on card:</label><br>
+        <input type="text" id="card_number" name="card_number" required><br><br>
+        
+        <label for="expiry_date">Expiry Date MM/YY:</label><br>
         <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YY" required><br><br>
         
         <label for="cvv">CVV:</label><br>
         <input type="text" id="cvv" name="cvv" required><br><br>
         
-        <input type="submit" value="Add Card">
+        <center><a class="btn btn-danger" href="logout.php"><Center>Save</center></a></center>
     </form>
 
 

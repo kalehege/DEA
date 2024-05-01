@@ -25,7 +25,7 @@
                                                             <% if (session.getAttribute("email") != null) { %>
                                                             <li><i class="ti-user"></i> <a href="my-account">My account</a></li>
                                                             <% } else { %>
-                                                            <li><i class="ti-power-off"></i><a href="sign-in">Login</a></li>                                                              
+                                                            <li><i class="ti-power-off"></i><a href="sign-in"><b>Login</b></a></li>                                                              
                                                             <% } %>
 							</ul>
 						</div>

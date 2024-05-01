@@ -51,10 +51,10 @@
                                                                     
 									<div class="hero-text">
                                                                             
-										<h1><span><h3>Elegent</h3> </span>Shirts For Man</h1>
+										<h1><span><h3>Elegent</h3> </span>Shirts For Men</h1>
 										
 										<div class="button">
-                                                                                    <a href="all-products" class="btn">Shop Now!</a>
+                                                                                    <a href="all-products" class="btn">Shop Now</a>
 										</div>
 									</div>
 								</div>
