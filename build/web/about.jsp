@@ -62,8 +62,8 @@
                 <div class="col-lg-12">
                     <div class="single-head">
                         <div class="title">
-                            <center><h2><b>About Us</b></h2></center><br>
-                            <h6 align="center">"At Fashion Fusion, we're more than just an online store - we're a culmination of creativity, curated by the innovative minds of second-year undergraduates at NSBM Green University. Our passion for style, combined with our dedication to delivering quality fashion, fuels our mission to redefine the online shopping experience. From the latest trends to timeless classics, we offer a fusion of styles that cater to every individual's unique expression. Join us on this journey as we blend innovation, style, and passion to create an unparalleled shopping destination."</h5>
+                            <center><h2><b><u>About Us</u></b></h2></center><br>
+                            <h5 align="center">"At Fashion Fusion, we're more than just an online store - we're a culmination of creativity, curated by the innovative minds of second-year undergraduates at NSBM Green University. Our passion for style, combined with our dedication to delivering quality fashion, fuels our mission to redefine the online shopping experience. From the latest trends to timeless classics, we offer a fusion of styles that cater to every individual's unique expression. Join us on this journey as we blend innovation, style, and passion to create an unparalleled shopping destination."</h5>
                         </div><br>
                         
 						<div class="title">
@@ -89,7 +89,7 @@
                     <div class ="title">
                         <center>
                                 <h3>
-                                    <b>Project Team</b>
+                                    <b>// Project Team</b>
                                 </h3>
                         </center>
                         

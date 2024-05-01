@@ -4,10 +4,10 @@
     transition: 0.3s;
     width: 200px;
     border-radius: 5px;
-    background-color: #f0e9c0;
+    background-color: #bce9db;
     padding: 20px;
     margin: 20px;
-    border: 2px solid #ffdf00;
+    border: 2px solid #3FC1C9;
   }
   
   .ccard:hover {
@@ -29,7 +29,7 @@
   }
   
   .add-to-cart {
-    background-color: #faa300;
+    background-color: #3FC1C9;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -37,5 +37,5 @@
     cursor: pointer;
   }
   .add-to-cart:hover {
-    background-color: #0056b3;
+    background-color: #3FC1C9;
   }

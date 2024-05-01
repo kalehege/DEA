@@ -122,7 +122,7 @@
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background:##a29bfe;
+  background:#a29bfe;
   -webkit-animation: preloader-fx 1.6s linear infinite;
   animation: preloader-fx 1.6s linear infinite;
 }
@@ -4611,10 +4611,10 @@
 }
 .contact-us .title{
 	margin-bottom: 30px;
-        text-decoration: underline;
+       
 }
 .contact-us .title h3 {
-	font-size: 17px;
+	font-size: 20px;
 	font-weight: 500;
 	margin-bottom: 5px;
 	color: #3FC1C9;

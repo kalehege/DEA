@@ -396,7 +396,7 @@
 	display:none;
 }
 .slicknav_nav li:hover a{
-	color:#F7941D;
+	color:#3FC1C9;
 	background:transparent;
 }
 .slicknav_nav li:hover{
@@ -410,7 +410,7 @@
 	background:transparent;
 }
 .slicknav_nav li .dropdown li a:hover{
-	color:#F7941D;
+	color:#3FC1C9;
 	background:transparent;
 }
 .slicknav_nav li .slicknav_item{
@@ -426,12 +426,12 @@
 	padding-bottom:0px;
 }
 .slicknav_menu .slicknav_icon-bar {
-	background-color: #F7941D;
+	background-color: #3FC1C9;
 	box-shadow: none;
 	text-shadow: none;
 }
 .slicknav_nav .slicknav_arrow{
-	color:#F7941D;
+	color:#3FC1C9;
 }
 .slicknav_menu .slicknav_icon-bar {
 	display: block;
@@ -877,7 +877,7 @@
 	width: 50%;
 	height: 100%;
 	border-bottom: 1px solid #e6ebee;
-	background: #F7941D;
+	background: #3FC1C9;
 	color: #fff;
 	border: none;
 }
@@ -1109,7 +1109,7 @@
 	display:none;
 }
 .slicknav_nav li:hover a{
-	color:#F7941D;
+	color:#3FC1C9;
 	background:transparent;
 }
 .slicknav_nav li:hover{
@@ -1123,7 +1123,7 @@
 	background:transparent;
 }
 .slicknav_nav li .dropdown li a:hover{
-	color:#F7941D;
+	color:#3FC1C9;
 	background:transparent;
 }
 .slicknav_nav li .slicknav_item{
@@ -1139,12 +1139,12 @@
 	padding-bottom:0px;
 }
 .slicknav_menu .slicknav_icon-bar {
-	background-color: #F7941D;
+	background-color: #3FC1C9;
 	box-shadow: none;
 	text-shadow: none;
 }
 .slicknav_nav .slicknav_arrow{
-	color:#F7941D;
+	color:#3FC1C9;
 }
 .slicknav_menu .slicknav_icon-bar {
 	display: block;
