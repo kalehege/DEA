@@ -9,6 +9,7 @@ public class Customer {
     protected String l_name;
     protected String password;
     protected String dob;
+    protected String u_type;
     
     public Customer() {}
         
