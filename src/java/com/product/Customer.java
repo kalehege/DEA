@@ -9,19 +9,21 @@ public class Customer {
     protected String l_name;
     protected String password;
     protected String dob;
+    protected String u_type;
     
     public Customer() {}
         
-    public Customer(String email, String f_name, String l_name, String password, String dob) {
+    public Customer(String email, String f_name, String l_name, String password, String dob, String u_type) {
         super();
         this.email = email;
         this.f_name = f_name;
         this.l_name = l_name;
         this.password = password;
         this.dob = dob;
+        this.u_type = u_type;
     }
            
-    public Customer(int id, String email, String f_name, String l_name, String password, String dob) {
+    public Customer(int id, String email, String f_name, String l_name, String password, String dob, String u_type) {
         super();
         this.id = id;
         this.email = email;
@@ -29,6 +31,7 @@ public class Customer {
         this.l_name = l_name;
         this.password = password;
         this.dob = dob;
+        this.u_type = u_type;
     }
 
     public int getId() {
@@ -41,6 +44,14 @@ public class Customer {
 
     public String getEmail() {
         return email;
+    }
+
+    public String getU_type() {
+        return u_type;
+    }
+
+    public void setU_type(String u_type) {
+        this.u_type = u_type;
     }
 
     public void setEmail(String email) {

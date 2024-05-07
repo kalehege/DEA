@@ -26,8 +26,8 @@ public class StoreDB {
         " (?, ?, ?, ?, ?, ?);";
     
        
-    private static final String INSERT_CUSTOMER_SQL = "INSERT INTO customers" + "  (email, f_name, l_name, password, dob) VALUES " +
-        " (?, ?, ?, ?, ?);";
+    private static final String INSERT_CUSTOMER_SQL = "INSERT INTO customers" + "  (email, f_name, l_name, password, dob, u_type) VALUES " +
+        " (?, ?, ?, ?, ?, ?);";
     
         
     private static final String INSERT_Contact_SQL = "INSERT INTO contacts" + "  (name, subject, email,  message) VALUES " +
@@ -190,7 +190,8 @@ public class StoreDB {
                 String l_name = rs.getString("l_name");
                 String password = rs.getString("password");
                 String dob = rs.getString("dob");
-                customers.add(new Customer (id, email, f_name, l_name, password, dob));
+                String u_type = rs.getString("u_type");
+                customers.add(new Customer (id, email, f_name, l_name, password, dob, u_type));
             }
         } catch (SQLException e) {
             printSQLException(e);
@@ -231,6 +232,7 @@ public class StoreDB {
         preparedStatement.setString(3, customer.getL_name());               
         preparedStatement.setString(4, customer.getPassword());  
         preparedStatement.setString(5, customer.getDob());
+        preparedStatement.setString(6, customer.getU_type());
         System.out.println(preparedStatement);
         preparedStatement.executeUpdate();
     } catch (SQLException e) {

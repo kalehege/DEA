@@ -321,7 +321,8 @@ public class ProductServlet extends HttpServlet {
         String l_name = request.getParameter("l_name");     
         String password = request.getParameter("password");
         String dob = request.getParameter("dob");
-        Customer newCustomer = new Customer(email, f_name, l_name, password, dob);
+        String u_type = "user";
+        Customer newCustomer = new Customer(email, f_name, l_name, password, dob, u_type);
         storeDB.userRegister(newCustomer);
         response.sendRedirect("sign-in");
     }

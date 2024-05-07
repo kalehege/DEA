@@ -1,4 +1,3 @@
-        //all js
 	<script src="public/js/jquery.min.js"></script>
         <script src="public/js/jquery-migrate-3.0.0.js"></script>
         <script src="public/js/jquery-ui.min.js"></script>
