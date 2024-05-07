@@ -433,7 +433,7 @@
 							<!-- Payment Method Widget -->
 							<div class="single-widget payement">
 								<div class="content">
-									<img src="/public/images/payment-method.png" alt="#">
+                                                                    <img src="public/images/payment-method.png" alt="#">
 								</div>
 							</div>
 							<!--/ End Payment Method Widget -->
