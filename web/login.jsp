@@ -61,8 +61,8 @@
             <input type="text" id="email" name="email" required>
           </div>
           <div class="form-group">
-            <label for="password">Password</label>
-            <input type="text" id="password" name="password" required>
+              <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required>
           </div>
             <% 
     
