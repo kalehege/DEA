@@ -248,8 +248,21 @@ public class ProductServlet extends HttpServlet {
     throws SQLException, IOException, ServletException {
         List < Product > listProduct = storeDB.selectAllProducts();
         request.setAttribute("listProduct", listProduct);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/view_admin_products.jsp");
-        dispatcher.forward(request, response);
+        
+                
+        HttpSession session = request.getSession(false); 
+        Customer customer = (Customer) session.getAttribute("customer");
+
+        if (customer != null && "admin".equals(customer.getU_type())) {
+                    
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/view_admin_products.jsp");
+        
+            dispatcher.forward(request, response);
+        } else {
+            response.sendRedirect("../home");
+        }
+
+
     }
     
         
@@ -295,8 +308,19 @@ public class ProductServlet extends HttpServlet {
         
     private void showNewForm(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/addproduct.jsp");
-        dispatcher.forward(request, response);
+        
+                
+        HttpSession session = request.getSession(false); 
+        if (session != null && session.getAttribute("email") != null) {
+                   
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/addproduct.jsp");
+        
+            dispatcher.forward(request, response); 
+        } else {
+            response.sendRedirect("../home");
+        }
+         
+
     }
         
     private void insertProduct(HttpServletRequest request, HttpServletResponse response)
@@ -376,7 +400,7 @@ public class ProductServlet extends HttpServlet {
         HttpSession session = request.getSession();   
         session.setAttribute("email", email);
                         
-        session.setAttribute("customer", customer); // Store the entire user object in session
+        session.setAttribute("customer", customer); 
 
         response.sendRedirect("home");
     } else {
@@ -443,6 +467,7 @@ public class ProductServlet extends HttpServlet {
         
     private void showMyProfile(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         HttpSession session = request.getSession(false); 
         if (session != null && session.getAttribute("email") != null) {
             RequestDispatcher dispatcher = request.getRequestDispatcher("myaccount.jsp");
@@ -455,12 +480,19 @@ public class ProductServlet extends HttpServlet {
 
     
         
-    private void showAdminPanelPage (HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
-       
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_panel.jsp");
-        dispatcher.forward(request, response);
+    private void showAdminPanelPage(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        HttpSession session = request.getSession(false); 
+        Customer customer = (Customer) session.getAttribute("customer");
+
+        if (customer != null && "admin".equals(customer.getU_type())) {
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_panel.jsp");
+            dispatcher.forward(request, response);
+        } else {
+            response.sendRedirect("home");
+        }
     }
+
     
             
     private void showAdminContact (HttpServletRequest request, HttpServletResponse response)
@@ -469,8 +501,19 @@ public class ProductServlet extends HttpServlet {
         List < Contact > listContact = storeDB.selectAllContacts();
         request.setAttribute("listContact", listContact);
         
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_contac_view.jsp");
-        dispatcher.forward(request, response);
+                
+        HttpSession session = request.getSession(false); 
+        Customer customer = (Customer) session.getAttribute("customer");
+        
+        if (customer != null && "admin".equals(customer.getU_type())) {
+                    
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_contac_view.jsp");
+            dispatcher.forward(request, response);
+        } else {
+            response.sendRedirect("../home");
+        }
+
+
     }
     
         
@@ -503,8 +546,17 @@ public class ProductServlet extends HttpServlet {
         List < Customer > listCustomer = storeDB.selectAllUsers();
         request.setAttribute("listCustomer", listCustomer);
        
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_users_view.jsp");
-        dispatcher.forward(request, response);
+                HttpSession session = request.getSession(false); 
+        Customer customer = (Customer) session.getAttribute("customer");
+        
+        if (customer != null && "admin".equals(customer.getU_type())) {
+                    
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/admin/admin_users_view.jsp");
+            dispatcher.forward(request, response);
+        }else {
+            response.sendRedirect("../home");
+        }
+
     }
 
 }
