@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2024 at 09:03 PM
+-- Generation Time: May 10, 2024 at 06:34 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -63,15 +63,17 @@ CREATE TABLE `customers` (
   `f_name` varchar(255) NOT NULL,
   `l_name` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `dob` varchar(255) NOT NULL
+  `dob` varchar(255) NOT NULL,
+  `u_type` varchar(255) DEFAULT 'user'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `customers`
 --
 
-INSERT INTO `customers` (`id`, `email`, `f_name`, `l_name`, `password`, `dob`) VALUES
-(4, 'admin@gmail.com', 'admin', 'admin', 'admin@gmail.com', '2024-04-29');
+INSERT INTO `customers` (`id`, `email`, `f_name`, `l_name`, `password`, `dob`, `u_type`) VALUES
+(4, 'admin@gmail.com', 'admin', 'admin', 'admin@gmail.com', '2024-04-29', 'admin'),
+(5, 'user@gmail.com', 'user', 'user', 'user@gmail.com', '2024-04-29', 'user');
 
 -- --------------------------------------------------------
 
@@ -137,7 +139,7 @@ ALTER TABLE `contacts`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `products`
