@@ -331,6 +331,32 @@ public class StoreDB {
             printSQLException(e);
         }
     }
+    
+        
+    public Customer getUserByEmail(String email) throws SQLException {
+    
+        String sql = "SELECT id, f_name, l_name, password, dob, u_type FROM customers WHERE email = ?";
+    
+        try (Connection connection = getConnection(); 
+                PreparedStatement stmt = connection.prepareStatement(sql)) {
+            stmt.setString(1, email);
+            try (ResultSet rs = stmt.executeQuery()) {
+            if (rs.next()) {
+                int id = rs.getInt("id");
+                String firstName = rs.getString("f_name");
+                String lastName = rs.getString("l_name");
+                String password = rs.getString("password");
+                String dob = rs.getString("dob");
+                String userType = rs.getString("u_type");
+                
+                return new Customer(id, email, firstName, lastName, password, dob, userType);
+            } else {
+                return null; 
+            }
+        }
+   
+    } 
+        }
 
 
     

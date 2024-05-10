@@ -38,27 +38,33 @@
                 <div class="container col-12 align-content-center text-center">
                                         
                     <h1>User Profile</h1>
-                    <a class="btn btn-danger" href="logout.php">Logout</a>
+                    <a class="btn btn-danger" href="logout">Logout</a>
+                    
+                <c:if test="${customer.u_type == 'admin'}">
+                    <a class="btn btn-danger" href="admin">Admin</a>
+                </c:if>
+
+
                 </div>
                 <div class="scontainer">
                                        
                     <form action="register" method="post">
                         <div class="form-group">
                           <label for="f_name">First Name:</label>
-                          <input type="text" id="f_name" name="f_name" required>
+                        <input type="text" id="f_name" name="f_name" value="${customer.f_name}" required>
                         </div>
 
                         <div class="form-group">     
                           <label for="l_name">Last Name:</label>
-                          <input type="text" id="l_name" name="l_name" required>
+                          <input type="text" id="l_name" name="l_name" value="${customer.l_name}" required>
                         </div>
                         <div class="form-group">
                           <label for="email">Email</label>
-                          <input type="text" id="email" name="email" required>
+                          <input type="text" id="email" name="email" value="${customer.email}" required>
                         </div>
                         <div class="form-group">
                           <label for="dob">Birthday:</label>
-                          <input type="date" id="dob" name="dob" required>
+                          <input type="date" id="dob" name="dob" value="${customer.dob}" required>
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>

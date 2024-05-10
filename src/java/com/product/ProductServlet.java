@@ -368,10 +368,16 @@ public class ProductServlet extends HttpServlet {
     String password = request.getParameter("password");
     
     boolean isValidUser = storeDB.validateUser(email, password);
+                
+    Customer customer = storeDB.getUserByEmail(email);
+
     
     if (isValidUser) {
         HttpSession session = request.getSession();   
         session.setAttribute("email", email);
+                        
+        session.setAttribute("customer", customer); // Store the entire user object in session
+
         response.sendRedirect("home");
     } else {
         response.sendRedirect("sign-in?error=1");
