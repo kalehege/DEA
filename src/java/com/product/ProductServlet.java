@@ -441,12 +441,18 @@ public class ProductServlet extends HttpServlet {
     }
     
         
-    private void showMyProfile (HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
-       
-        RequestDispatcher dispatcher = request.getRequestDispatcher("myaccount.jsp");
-        dispatcher.forward(request, response);
-    }
+    private void showMyProfile(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        HttpSession session = request.getSession(false); 
+        if (session != null && session.getAttribute("email") != null) {
+            RequestDispatcher dispatcher = request.getRequestDispatcher("myaccount.jsp");
+            dispatcher.forward(request, response);
+        } else {
+            
+            response.sendRedirect("home");
+        }
+}
+
     
         
     private void showAdminPanelPage (HttpServletRequest request, HttpServletResponse response)
